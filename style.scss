@@ -1,0 +1,94 @@
+$FO: #ff5c5c;
+$F: Inter;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700;800&display=swap");
+@import 'scrolling';
+
+body {
+    background-color: $FO;
+    font-family: $F;
+    margin: 0px;
+    scroll-behavior: smooth;
+    #heading {
+        width: 98vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        #title {
+            z-index: 0;
+            #tg1 {
+                #head {
+                    position: absolute;
+                    width: 500.5px;
+                    height: 605.5px;
+                    top: 60px;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    z-index: 1;
+                }
+                #circ1 {
+                    position: absolute;
+                    width: 62vw;
+                    height: 62vw;
+                    top: -6vh;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    z-index: 1;
+                }
+                #circ2 {
+                    position: absolute;
+                    width: 88vw;
+                    height: 88vw;
+                    top: -16vh;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    z-index: 1;
+                }
+            }
+            #tg2 {
+                display: grid;
+                place-items: center;
+                #logo {
+                    margin-bottom: 14px;
+                    z-index: 2;
+                }
+                #blurb {
+                    width: 1158px;
+                    height: 125px;
+                    font-weight: 800;
+                    font-size: 70px;
+                    line-height: 71px;
+                    text-align: center;
+                    color: white;
+                    z-index: 2;
+                    #b {
+                        color: black;
+                    }
+                }
+                #d-b {
+                    margin-top: 52px;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+    #features {
+        width: 98vw;
+        height: 100vh;
+        #bg {
+            width: 98.9vw;
+            height: 100vh;
+            position: relative;
+            z-index: 2;
+        }
+    }
+    #features {
+        width: 98vw;
+        height: 100vh;
+    }
+}
