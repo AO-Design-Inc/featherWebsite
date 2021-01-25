@@ -1,7 +1,8 @@
 $FO: #ff5c5c;
 $F: Inter;
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700;800&display=swap");
-@import 'scrolling';
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import "scrolling";
 
 body {
     background-color: $FO;
@@ -78,17 +79,184 @@ body {
         }
     }
     #features {
-        width: 98vw;
-        height: 100vh;
-        #bg {
-            width: 98.9vw;
-            height: 100vh;
-            position: relative;
+        position: relative;
+        width: 98.9vw;
+        height: 120vh;
+        display: grid;
+        place-items: center;
+        background: url("./assets/bg.svg");
+        background-size: cover;
+        z-index: 1;
+        #banner {
+            width: 55vw;
+            height: 87vh;
+            margin-top: -215px;
             z-index: 2;
+            #illus {
+                position: relative;
+                width: 61vw;
+                height: auto;
+                z-index: 2;
+            }
+            #line {
+                width: 1158px;
+                font-weight: 900;
+                font-size: 70px;
+                line-height: 71px;
+                margin-top: -105px;
+                margin-left: -88px;
+                z-index: 1;
+            }
+        }
+        #ft {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .f {
+                width: 311px;
+                height: 437px;
+
+                background: #ffffff;
+                box-shadow: 0px 8px 8px rgba(255, 92, 92, 0.25);
+                border-radius: 10px;
+
+                // flex: 1 1 150px; /*  Stretching: */
+                // flex: 0 1 150px; /*  No stretching: */
+                margin: 15px;
+                margin-top: 200px;
+            }
         }
     }
-    #features {
+    #sell {
         width: 98vw;
         height: 100vh;
+        display: grid;
+        place-items: center;
+        #punch {
+            width: 1158px;
+            font-weight: 900;
+            font-size: 70px;
+            line-height: 81px;
+            margin-left: 55px;
+            color: white;
+            #is {
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 24px;
+                color: #ffd8d8;
+            }
+            #b {
+                color: black;
+            }
+        }
+    }
+    #stats {
+        width: 98.9vw;
+        height: 170vh;
+        display: grid;
+        place-items: center;
+        background-color: black;
+        #im {
+            width: 904px;
+            height: 552px;
+            background-color: blanchedalmond;
+            border-radius: 10px;
+            margin-left: -205px;
+            margin-top: -100px;
+        }
+        #s {
+            width: 363.52px;
+            margin-left: -749px;
+            margin-top: -150px;
+            color: #ff5c5c;
+            #t {
+                font-family: Georgia;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 82px;
+                line-height: 109px;
+            }
+            #l {
+                hr {
+                    border-color: #ff5c5c;
+                    margin-top: 15px;
+                }
+            }
+            #d {
+                font-size: 30px;
+                font-family: Inter;
+                font-style: italic;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 24px;
+                margin-top: 25px;
+            }
+        }
+        #l {
+            position: absolute;
+            left: 953.66px;
+            top: 3000px;
+        }
+        #r {
+            color: #ff5c5c;
+            position: absolute;
+            width: 268.84px;
+            height: 430.86px;
+            left: 1050px;
+            top: 3100px;
+            #t {
+                font-family: Inter;
+                font-style: italic;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 30px;
+            }
+            .t {
+                width: 268.84px;
+                font-family: Inter;
+                font-style: italic;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    #action {
+        width: 98vw;
+        height: 75vh;
+        display: grid;
+        place-items: center;
+        #blurb {
+            width: 1158px;
+
+            margin-left: 55px;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 900;
+            font-size: 60px;
+            line-height: 110.5%;
+            /* or 66px */
+
+            color: white;
+            button {
+                background: #000000;
+                width: 204px;
+                color: white;
+                height: 73px;
+                border-radius: (73px/2);
+                border: none;
+                margin-top: 50px;
+
+                font-family: Inter;
+                font-style: italic;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 24px;
+
+                color: #ffffff;
+            }
+        }
     }
 }
