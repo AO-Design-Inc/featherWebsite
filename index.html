@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet" />
     <link href="./main.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
@@ -15,8 +17,10 @@
             <div id="title">
                 <div id="tg1">
                     <img id="head" src="./assets/head.svg">
-                    <img id="circ1" src="./assets/circle-1.svg">
-                    <img id="circ2" src="./assets/circle-2.svg">
+                    <img class="rotate" id="circ1" src="./assets/circle-1.svg">
+                    <div class="p">
+                        <img class="two" id="circ2" src="./assets/circle-2.svg">
+                    </div>
                 </div>
                 <div id="tg2">
                     <div id="logo">
@@ -34,10 +38,12 @@
         <div id="features">
             <div id="banner">
                 <img id="illus" src="/assets/illus-banner.PNG">
-                <div id="line">
-                    <i>
-                        Feather expands the cloud market, allowing everyone to participate.
-                    </i>
+                <div class="move" style="transition: cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;">
+                    <div id="line">
+                        <i>
+                            Feather expands the cloud market, allowing everyone to participate.
+                        </i>
+                    </div>
                 </div>
             </div>
             <div id="ft">
@@ -47,12 +53,14 @@
             </div>
         </div>
         <div id="sell">
-            <div id="punch">
-                <i>
-                    <span id="is">Feather is Flexible <br></span>
-                    If you want to <span id="b">Run something.</span> <br>
-                    <span id="b">Feather</span> does it. No code wizardry required.
-                </i>
+            <div class="move a" style="transition: cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;">
+                <div id="punch">
+                    <i>
+                        <span id="is">Feather is Flexible <br></span>
+                        If you want to <span id="b">Run something.</span> <br>
+                        <span id="b">Feather</span> does it. No code wizardry required.
+                    </i>
+                </div>
             </div>
         </div>
         <div id="stats">
@@ -104,12 +112,15 @@
             </div>
         </div>
         <div id="action">
-            <div id="blurb">
-                This is the holy grail of cloud computing, We invite you to be a part of it.<br>
-                <button>Sign up</button>
+            <div class="move a" style="transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;">
+                <div id="blurb">
+                    This is the holy grail of cloud computing, We invite you to be a part of it.<br>
+                    <button>Sign up</button>
+                </div>
             </div>
         </div>
     </div>
 </body>
+<script src="animSkew.js"></script>
 
 </html>

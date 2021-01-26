@@ -22,20 +22,68 @@
   /* Firefox */
 }
 
+.rotate {
+  animation: rot infinite 55s linear;
+  transform-origin: center;
+}
+
+.two {
+  animation: two infinite 60s cubic-bezier(0.475, 0.065, 0.525, 0.935);
+  transform-origin: center;
+  object-fit: cover;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+  }
+}
+@keyframes two {
+  0.000% {
+    transform: rotate(0);
+    -o-transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.48, 0.206, 0.681, 0.333);
+  }
+  33.333% {
+    transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    animation-timing-function: cubic-bezier(0.298, 0.264, 0.702, 0.736);
+  }
+  66.667% {
+    transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    animation-timing-function: cubic-bezier(0.319, 0.667, 0.52, 0.794);
+  }
+  100% {
+    transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.319, 0.667, 0.52, 0.794);
+  }
+}
 body {
   background-color: #ff5c5c;
   font-family: Inter;
   margin: 0px;
+  transition: cubic-bezier(0.95, 0.05, 0.795, 0.035) 200ms;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body #heading {
-  width: 98vw;
+  max-width: 98vw;
   height: 100vh;
   display: grid;
   place-items: center;
 }
 body #heading #title {
   z-index: 0;
+}
+body #heading #title #tg1 {
+  overflow: hidden;
 }
 body #heading #title #tg1 #head {
   position: absolute;
@@ -59,16 +107,23 @@ body #heading #title #tg1 #circ1 {
   margin-right: auto;
   z-index: 1;
 }
-body #heading #title #tg1 #circ2 {
+body #heading #title #tg1 .p {
+  width: 100%;
+  height: 100%;
+}
+body #heading #title #tg1 .p #circ2 {
   position: absolute;
-  width: 88vw;
-  height: 88vw;
-  top: -16vh;
+  max-width: 88vw;
+  max-height: 88vw;
+  min-width: 88vw;
+  min-height: 88vw;
+  top: -25vh;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
+  overflow: clip;
 }
 body #heading #title #tg2 {
   display: grid;
@@ -171,12 +226,13 @@ body #stats {
   background-color: black;
 }
 body #stats #im {
-  width: 904px;
-  height: 552px;
+  width: 56.5rem;
+  height: 35.5rem;
+  aspect-ratio: 16/9;
   background-color: blanchedalmond;
   border-radius: 10px;
   margin-left: -205px;
-  margin-top: -100px;
+  margin-top: -165px;
 }
 body #stats #s {
   width: 363.52px;
