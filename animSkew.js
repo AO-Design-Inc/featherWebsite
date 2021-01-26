@@ -1,3 +1,5 @@
+
+
 var a = document.getElementsByClassName('move')[0]
     var b = document.getElementsByClassName('move')[1]
     var c = document.getElementsByClassName('move')[2]
@@ -18,4 +20,3 @@ var a = document.getElementsByClassName('move')[0]
     }
 
     update();
-    $(".verticalTableHeader").each(function(){$(this).height($(this).width())})

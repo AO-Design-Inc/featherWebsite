@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 .s {
   background-color: #eee;
@@ -68,6 +68,7 @@
 body {
   background-color: #ff5c5c;
   font-family: Inter;
+  font-size: 100%;
   margin: 0px;
   transition: cubic-bezier(0.95, 0.05, 0.795, 0.035) 200ms;
   scroll-behavior: smooth;
@@ -87,20 +88,21 @@ body #heading #title #tg1 {
 }
 body #heading #title #tg1 #head {
   position: absolute;
-  width: 500.5px;
-  height: 605.5px;
-  top: 60px;
+  width: 32.584vw;
+  height: 83.86vh;
+  top: 0;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 60px;
   z-index: 1;
 }
 body #heading #title #tg1 #circ1 {
   position: absolute;
   width: 62vw;
-  height: 62vw;
-  top: -6vh;
+  height: auto;
+  top: -3vw;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -113,11 +115,9 @@ body #heading #title #tg1 .p {
 }
 body #heading #title #tg1 .p #circ2 {
   position: absolute;
-  max-width: 88vw;
-  max-height: 88vw;
-  min-width: 88vw;
-  min-height: 88vw;
-  top: -25vh;
+  width: 88vw;
+  height: auto;
+  top: -15vw;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -130,15 +130,15 @@ body #heading #title #tg2 {
   place-items: center;
 }
 body #heading #title #tg2 #logo {
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
   z-index: 2;
 }
 body #heading #title #tg2 #blurb {
-  width: 1158px;
-  height: 125px;
+  width: 75.39vw;
+  height: 17.3vh;
   font-weight: 800;
-  font-size: 70px;
-  line-height: 71px;
+  font-size: 4.5vw;
+  line-height: 4.438rem;
   text-align: center;
   color: white;
   z-index: 2;
@@ -147,7 +147,7 @@ body #heading #title #tg2 #blurb #b {
   color: black;
 }
 body #heading #title #tg2 #d-b {
-  margin-top: 52px;
+  margin-top: 3.25rem;
   z-index: 2;
 }
 body #features {
@@ -194,6 +194,30 @@ body #features #ft .f {
   border-radius: 10px;
   margin: 15px;
   margin-top: 200px;
+  display: grid;
+  place-items: left;
+}
+body #features #ft .f .i {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+body #features #ft .f .t {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: -3.7rem;
+  margin-left: 2rem;
+}
+body #features #ft .f .d {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: -5rem;
+  font-size: 1.875rem;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 body #sell {
   width: 98vw;
@@ -259,6 +283,7 @@ body #stats #s #d {
   font-size: 20px;
   line-height: 24px;
   margin-top: 25px;
+  color: white;
 }
 body #stats #l {
   position: absolute;
