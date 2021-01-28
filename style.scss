@@ -13,24 +13,26 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     #heading {
-        max-width: 98vw;
+        max-width: 100vw;
         height: 100vh;
+        max-height: 1200px;
         display: grid;
         place-items: center;
         #title {
             z-index: 0;
             #tg1 {
                 overflow: hidden;
+                display: grid;
+                place-items: center;
                 #head {
                     position: absolute;
                     width: 32.584vw;
-                    height:  83.86vh;
+                    height: 40vw;
                     top: 0;
                     left: 0;
                     right: 0;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 60px;
+                    bottom: 0;
+                    margin: auto;
                     z-index: 1;
                 }
                 #circ1 {
@@ -38,10 +40,11 @@ body {
                     width: 62vw;
                     height: auto;
                     top: -3vw;
+                    top: 0;
                     left: 0;
                     right: 0;
-                    margin-left: auto;
-                    margin-right: auto;
+                    bottom: 0;
+                    margin: auto;
                     z-index: 1;
                 }
                 .p {
@@ -52,10 +55,11 @@ body {
                         width: 88vw;
                         height: auto;
                         top: -15vw;
+                        top: 0;
                         left: 0;
                         right: 0;
-                        margin-left: auto;
-                        margin-right: auto;
+                        bottom: 0;
+                        margin: auto;
                         z-index: 1;
                         overflow: clip;
                     }
@@ -72,8 +76,8 @@ body {
                     width: 75.39vw;
                     height: 17.3vh;
                     font-weight: 800;
-                    font-size: 4.5vw;
-                    line-height: 4.438rem;
+                    font-size: 70px;
+                    line-height: 71px;
                     text-align: center;
                     color: white;
                     z-index: 2;
@@ -90,8 +94,9 @@ body {
     }
     #features {
         position: relative;
-        width: 98.9vw;
+        width: 100vw;
         height: 120vh;
+        max-height: 1200px;
         display: grid;
         place-items: center;
         background: url("./assets/bg.svg");
@@ -99,7 +104,7 @@ body {
         z-index: 1;
         #banner {
             width: 55vw;
-            height: 87vh;
+            height: auto;
             margin-top: -215px;
             z-index: 2;
             #illus {
@@ -109,17 +114,18 @@ body {
                 z-index: 2;
             }
             #line {
-                width: 1158px;
+                width: 75.3vw;
                 font-weight: 900;
                 font-size: 70px;
                 line-height: 71px;
                 margin-top: -105px;
-                margin-left: -88px;
+                margin-left: -5.7vw;
                 z-index: 1;
             }
         }
         #ft {
             display: flex;
+            margin-top: 50px;
             flex-wrap: wrap;
             justify-content: center;
             .f {
@@ -133,7 +139,6 @@ body {
                 // flex: 1 1 150px; /*  Stretching: */
                 // flex: 0 1 150px; /*  No stretching: */
                 margin: 15px;
-                margin-top: 200px;
                 display: grid;
                 place-items: left;
                 .i {
@@ -154,25 +159,26 @@ body {
                     margin-top: -5rem;
                     font-size: 1.875rem;
                     font-family: Inter;
-                    // font-style: italic;  
+                    // font-style: italic;
                     font-weight: 400;
                     font-size: 1.25rem;
-                    line-height: 1.5rem;    
+                    line-height: 1.5rem;
                 }
             }
         }
     }
     #sell {
-        width: 98vw;
+        width: 100vw;
         height: 100vh;
+        max-height: 1200px;
         display: grid;
         place-items: center;
         #punch {
-            width: 1158px;
+            width: 75.3vw;
             font-weight: 900;
             font-size: 70px;
-            line-height: 81px;
-            margin-left: 55px;
+            line-height: 71px;
+            margin-left: -5.7vw;
             color: white;
             #is {
                 font-weight: 300;
@@ -186,8 +192,9 @@ body {
         }
     }
     #stats {
-        width: 98.9vw;
+        width: 100vw;
         height: 170vh;
+        max-height: 1200px;
         display: grid;
         place-items: center;
         background-color: black;
@@ -202,8 +209,7 @@ body {
         }
         #s {
             width: 363.52px;
-            margin-left: -749px;
-            margin-top: -150px;
+            margin-left: -49vw;
             color: #ff5c5c;
             #t {
                 font-family: Georgia;
@@ -229,18 +235,13 @@ body {
                 color: white;
             }
         }
-        #l {
-            position: absolute;
-            left: 953.66px;
-            top: 3000px;
-        }
         #r {
-            color: #ff5c5c;
-            position: absolute;
+            color: white;
             width: 268.84px;
             height: 430.86px;
-            left: 1050px;
-            top: 3100px;
+            margin-top: -90vh;
+            margin-left: 52vw;
+            border-left: 2px solid #ff5c5c;
             #t {
                 font-family: Inter;
                 font-style: italic;
@@ -248,6 +249,7 @@ body {
                 font-size: 20px;
                 line-height: 24px;
                 margin-bottom: 30px;
+                padding-left: 1.25rem;
             }
             .t {
                 width: 268.84px;
@@ -257,16 +259,18 @@ body {
                 font-size: 20px;
                 line-height: 24px;
                 margin-bottom: 30px;
+                padding-left: 1.25rem;
             }
         }
     }
     #action {
-        width: 98vw;
+        width: 100vw;
         height: 75vh;
+        max-height: 1200px;
         display: grid;
         place-items: center;
         #blurb {
-            width: 1158px;
+            width: 75.3vw;
 
             margin-left: 55px;
             font-family: Inter;
@@ -296,4 +300,10 @@ body {
             }
         }
     }
+}
+
+@media only screen and (min-width: 1080px) {
+}
+
+@media only screen and (max-width: 1078px) {
 }
