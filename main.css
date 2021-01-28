@@ -77,7 +77,7 @@ body {
 body #heading {
   max-width: 100vw;
   height: 100vh;
-  max-height: 1200px;
+  max-height: 1000px;
   display: grid;
   place-items: center;
 }
@@ -138,10 +138,8 @@ body #heading #title #tg2 #logo {
   z-index: 2;
 }
 body #heading #title #tg2 #blurb {
-  width: 75.39vw;
   height: 17.3vh;
   font-weight: 800;
-  font-size: 70px;
   line-height: 71px;
   text-align: center;
   color: white;
@@ -151,7 +149,6 @@ body #heading #title #tg2 #blurb #b {
   color: black;
 }
 body #heading #title #tg2 #d-b {
-  margin-top: 3.25rem;
   z-index: 2;
 }
 body #features {
@@ -166,34 +163,32 @@ body #features {
   z-index: 1;
 }
 body #features #banner {
-  width: 55vw;
   height: auto;
   margin-top: -215px;
   z-index: 2;
+  display: grid;
+  place-items: center;
 }
 body #features #banner #illus {
   position: relative;
-  width: 61vw;
   height: auto;
   z-index: 2;
 }
 body #features #banner #line {
-  width: 75.3vw;
   font-weight: 900;
-  font-size: 70px;
   line-height: 71px;
-  margin-top: -105px;
-  margin-left: -5.7vw;
+  margin-left: 7.7vw;
   z-index: 1;
 }
 body #features #ft {
+  width: 80vw;
   display: flex;
   margin-top: 50px;
-  flex-wrap: wrap;
   justify-content: center;
 }
 body #features #ft .f {
-  width: 311px;
+  width: 21vw;
+  min-width: 220px;
   height: 437px;
   background: #ffffff;
   box-shadow: 0px 8px 8px rgba(255, 92, 92, 0.25);
@@ -203,7 +198,7 @@ body #features #ft .f {
   place-items: left;
 }
 body #features #ft .f .i {
-  margin-top: 3rem;
+  margin-top: 51px;
   margin-left: 2rem;
 }
 body #features #ft .f .t {
@@ -211,13 +206,12 @@ body #features #ft .f .t {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  margin-top: -3.7rem;
   margin-left: 2rem;
 }
 body #features #ft .f .d {
+  height: 200px;
   margin-left: 2rem;
   margin-right: 2rem;
-  margin-top: -5rem;
   font-size: 1.875rem;
   font-family: Inter;
   font-weight: 400;
@@ -226,17 +220,13 @@ body #features #ft .f .d {
 }
 body #sell {
   width: 100vw;
-  height: 100vh;
   max-height: 1200px;
   display: grid;
   place-items: center;
 }
 body #sell #punch {
-  width: 75.3vw;
   font-weight: 900;
-  font-size: 70px;
   line-height: 71px;
-  margin-left: -5.7vw;
   color: white;
 }
 body #sell #punch #is {
@@ -267,7 +257,6 @@ body #stats #im {
 }
 body #stats #s {
   width: 363.52px;
-  margin-left: -49vw;
   color: #ff5c5c;
 }
 body #stats #s #t {
@@ -295,7 +284,7 @@ body #stats #r {
   color: white;
   width: 268.84px;
   height: 430.86px;
-  margin-top: -90vh;
+  margin-top: -650px;
   margin-left: 52vw;
   border-left: 2px solid #ff5c5c;
 }
@@ -320,7 +309,6 @@ body #stats #r .t {
 }
 body #action {
   width: 100vw;
-  height: 75vh;
   max-height: 1200px;
   display: grid;
   place-items: center;
@@ -350,6 +338,108 @@ body #action #blurb button {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 749px) {
+  #heading {
+    margin-top: -20px;
+  }
+  #heading #circ1,
+#heading #circ2,
+#heading #head {
+    display: none;
+  }
+  #heading #d-b {
+    margin-top: 300px;
+  }
+  #heading #blurb {
+    font-size: 60px;
+    width: 95vw;
+  }
+
+  #stats {
+    height: 75vh;
+  }
+  #stats #im,
+#stats #r {
+    display: none;
+  }
+  #stats #s {
+    margin-top: -240px;
+    margin-left: 0vw;
+  }
+
+  #action {
+    height: 150vh;
+  }
+
+  #features {
+    margin-top: 250px;
+  }
+  #features #illus {
+    width: 85vw;
+  }
+  #features #line {
+    margin-top: 15px;
+    margin-left: -10vw;
+    width: 85vw;
+    font-size: 50px;
+  }
+
+  #sell {
+    height: 120vh;
+  }
+  #sell #punch {
+    width: 85vw;
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  #heading #circ1,
+#heading #circ2,
+#heading #d-b,
+#heading #head {
+    display: block;
+  }
+  #heading #d-b {
+    margin-top: 3.25rem;
+  }
+  #heading #blurb {
+    font-size: 70px;
+    width: 75.39vw;
+  }
+
+  #stats {
+    height: 170vh;
+  }
+  #stats #im,
+#stats #r {
+    display: block;
+  }
+  #stats #s {
+    margin-left: -49vw;
+  }
+
+  #action {
+    height: 75vh;
+  }
+
+  #features #illus {
+    width: 61vw;
+  }
+  #features #line {
+    margin-top: -105px;
+    width: 75.3vw;
+    font-size: 70px;
+  }
+
+  #sell {
+    height: 100vh;
+  }
+  #sell #punch {
+    font-size: 70px;
+    width: 75.3vw;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
