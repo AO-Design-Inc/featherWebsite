@@ -176,7 +176,6 @@ body #features #banner #illus {
 }
 body #features #banner #line {
   font-weight: 900;
-  line-height: 71px;
   margin-left: 7.7vw;
   z-index: 1;
 }
@@ -226,7 +225,6 @@ body #sell {
 }
 body #sell #punch {
   font-weight: 900;
-  line-height: 71px;
   color: white;
 }
 body #sell #punch #is {
@@ -254,6 +252,9 @@ body #stats #im {
   border-radius: 10px;
   margin-left: -205px;
   margin-top: -165px;
+  background: url("./assets/illus-architecture.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 body #stats #s {
   width: 363.52px;
@@ -314,12 +315,10 @@ body #action {
   place-items: center;
 }
 body #action #blurb {
-  width: 75.3vw;
   margin-left: 55px;
   font-family: Inter;
   font-style: italic;
   font-weight: 900;
-  font-size: 60px;
   line-height: 110.5%;
   /* or 66px */
   color: white;
@@ -339,18 +338,25 @@ body #action #blurb button {
   line-height: 24px;
   color: #ffffff;
 }
+body #butt {
+  position: fixed;
+  margin: auto;
+  z-index: 4;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1) 200ms;
+}
 
 @media only screen and (max-width: 749px) {
   #heading {
-    margin-top: -20px;
+    margin-top: -20vh;
   }
   #heading #circ1,
 #heading #circ2,
-#heading #head {
+#heading #head,
+#heading #d-b {
     display: none;
   }
   #heading #d-b {
-    margin-top: 300px;
+    margin-top: 28vh;
   }
   #heading #blurb {
     font-size: 60px;
@@ -365,7 +371,7 @@ body #action #blurb button {
     display: none;
   }
   #stats #s {
-    margin-top: -240px;
+    margin-top: -50px;
     margin-left: 0vw;
   }
 
@@ -384,12 +390,34 @@ body #action #blurb button {
     margin-left: -10vw;
     width: 85vw;
     font-size: 50px;
+    line-height: 51px;
   }
 
   #sell {
     height: 120vh;
   }
   #sell #punch {
+    width: 85vw;
+    font-size: 50px;
+    line-height: 51px;
+  }
+
+  #butt {
+    top: 80vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  #features #parent {
+    display: none;
+  }
+
+  #action #blurb {
     width: 85vw;
     font-size: 50px;
   }
@@ -402,7 +430,7 @@ body #action #blurb button {
     display: block;
   }
   #heading #d-b {
-    margin-top: 3.25rem;
+    margin-top: 7vh;
   }
   #heading #blurb {
     font-size: 70px;
@@ -434,9 +462,24 @@ body #action #blurb button {
   }
 
   #sell {
-    height: 100vh;
+    height: 120vh;
   }
   #sell #punch {
+    font-size: 70px;
+    width: 75.3vw;
+    line-height: 71px;
+  }
+
+  #butt {
+    top: 50px;
+    left: 85%;
+  }
+
+  #features #parent {
+    display: flex;
+  }
+
+  #action #blurb {
     font-size: 70px;
     width: 75.3vw;
   }
