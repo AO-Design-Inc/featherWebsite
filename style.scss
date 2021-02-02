@@ -88,6 +88,7 @@ body {
                 #d-b {
                     // margin-top: 3.25rem;
                     z-index: 2;
+                    pointer-events: none;
                 }
             }
         }
@@ -311,6 +312,13 @@ body {
         margin: auto;
         z-index: 4;
         transition: cubic-bezier(0.39, 0.575, 0.565, 1) 200ms;
+    }
+    footer{
+        background-color: #ff6565;
+        color: white;
+        height: 60px;
+        display: grid;
+        place-items: center;
     }
 }
 // small

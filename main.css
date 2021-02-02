@@ -150,6 +150,7 @@ body #heading #title #tg2 #blurb #b {
 }
 body #heading #title #tg2 #d-b {
   z-index: 2;
+  pointer-events: none;
 }
 body #features {
   position: relative;
@@ -343,6 +344,13 @@ body #butt {
   margin: auto;
   z-index: 4;
   transition: cubic-bezier(0.39, 0.575, 0.565, 1) 200ms;
+}
+body footer {
+  background-color: #ff6565;
+  color: white;
+  height: 60px;
+  display: grid;
+  place-items: center;
 }
 
 @media only screen and (max-width: 749px) {
