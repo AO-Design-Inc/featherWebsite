@@ -1,0 +1,57 @@
+//sticky dashboard at the top of the page.
+@import "variables";
+#dashboard {
+    position: fixed;
+    top: 20px;
+    right: 8.3vw;
+    left: 8.3vw;
+
+    height: 60px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    //logo
+    #logo {
+        position: inherit;
+        top: inherit;
+        left: inherit;
+    }
+    //buttons div
+    #butt_container {
+        position: inherit;
+        right: inherit;
+
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        button {
+            width: clamp(160px, 180px, 12.5vw);
+            height: 60px;
+
+            margin-left: 20px;
+
+            font-size: clamp(18px, 22px, 27px);
+
+            border-radius: 30px;
+            border: 1px solid rgba(255, 92, 92, 0.25);
+            background: #fffcfc;
+
+            transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        button:hover {
+            transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            background: #ffffff;
+            box-shadow: 0px 2px 4px rgba(255, 92, 92, 0.2), 0px 4px 5px 5px rgba(255, 92, 92, 0.05),
+                0px 4px 4px rgba(255, 92, 92, 0.05);
+            border-radius: 30px;
+        }
+        button#butt_contact_form {
+            display: grid;
+            place-items: center;
+
+            width: 60px;
+        }
+    }
+}

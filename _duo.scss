@@ -1,0 +1,61 @@
+//shows the two main vectors in our approach
+@import "variables";
+.duo_blurb {
+    margin-top: clamp(120px, 15vw, 240px);
+    margin-bottom: 60px;
+
+    display: grid;
+    place-items: center;
+    text-align: center;
+    #blurb {
+        width: clamp(320px, 50vw, 670px);
+        font-size: 27px;
+    }
+    #speedbeauty {
+        font-size: clamp(55px, 10vw, 83px);
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+}
+@media only screen and (max-width: 1030px) {
+    .duo_blurb {
+        place-items: center left;
+        text-align: left;
+    }
+}
+.duo {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    #duo_container {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        .left {
+            background-color: $featherColorBlue;
+        }
+        .right {
+            background-color: $featherColorPink;
+        }
+        .box {
+            #content_container {
+                margin: 110px clamp(20px, 50vw, 6.9vw) 110px clamp(20px, 50vw, $margins);
+                color: white;
+                #duo_title {
+                    font-size: clamp(55px, 10vw, 83px);
+                    font-weight: 700;
+                    margin-bottom: 60px;
+                }
+                #small_blurb_container {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    grid-gap: 50px 2rem;
+                    font-size: 18px;
+                    #small_blurb {
+                        width: clamp(150px, 25%, 230px);
+                        border-left: solid 1px white;
+                    }
+                }
+            }
+        }
+    }
+}

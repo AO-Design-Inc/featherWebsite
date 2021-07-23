@@ -1,0 +1,12 @@
+@import "variables";
+footer {
+    background-color: $featherColorPink;
+    height: 350px;
+    width: 100vw;
+
+    display: grid;
+    place-items: center;
+    #mail {
+        color:white;
+    }
+}
