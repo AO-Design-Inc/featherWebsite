@@ -1,8 +1,16 @@
 $featherColorPink: #fb7680;
 $featherColorBlue: #8088ff;
+$bg: #fffafb;
 $textColor: rgba(0, 0, 0, 0.8);
 $fontBig: 83px;
 $margins: 8.3vw;
+
+$vw-viewport: 1920;
+@function get-vw($font) {
+    $vw-context: $vw-viewport * 0.01 * 1px;
+    @return $font / $vw-context * 1vw;
+    @return $font;
+}
 
 .spacing {
     margin: 0vw $margins 0px $margins;
@@ -23,26 +31,37 @@ $margins: 8.3vw;
         font-size: clamp(55px, 17vw, 83px);
     }
 }
-.overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
+a#link_form {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: $textColor;
+    background: linear-gradient(to right, $featherColorBlue, $featherColorBlue 50%, $textColor 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none; // text decorations are clipped in WebKit browsers
+    &:hover {
+        background-position: 0 100%;
+    }
 }
-#text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 50px;
-    color: white;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: white;
+a#link_footer {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: $bg;
+    background: linear-gradient(to right, $textColor, $textColor 50%, $bg 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none; // text decorations are clipped in WebKit browsers
+    &:hover {
+        background-position: 0 100%;
+    }
 }

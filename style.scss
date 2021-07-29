@@ -7,18 +7,31 @@
 @import "duo";
 @import "work";
 @import "contact";
+@import "form";
 @import "footer";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
+@import "particles";
+// @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
+html,
+body {
+    max-width: 100%;
+}
 
 body {
-    max-width: 100vw;
-    min-width: 100vw;
-    font-family: "Inter", sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 300;
-    color: $textColor;
+    -webkit-text-size-adjust: 100%;
+
     overflow-x: hidden;
+    touch-action: pan-y;
+    -ms-touch-action: pan-y;
+
+    position: relative;
+    // overflow-x: hidden;
+
+    color: $textColor;
     background-color: #fffafb;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     // partition parts of website using this div
     #screenCell {
         width: 100vw - (8.3vw * 2);
@@ -47,5 +60,8 @@ body {
     span#blurb {
         color: $textColor;
         font-size: clamp(27px, 5vw, 41px);
+    }
+    button {
+        cursor: pointer;
     }
 }

@@ -6,6 +6,8 @@
     width: 100vw - (8.3vw * 2);
     height: 100vh * (3 / 4);
     min-height: 700px;
+    margin-bottom: 40px;
+    z-index: -2;
     #contact_us {
         margin-bottom: 40px;
     }

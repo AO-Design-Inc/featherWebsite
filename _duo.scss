@@ -8,7 +8,7 @@
     place-items: center;
     text-align: center;
     #blurb {
-        width: clamp(320px, 50vw, 670px);
+        width: clamp(300px, 50vw, 670px);
         font-size: 27px;
     }
     #speedbeauty {
@@ -24,12 +24,13 @@
     }
 }
 .duo {
+    // display: none;
     margin-top: 60px;
     margin-bottom: 60px;
+    width: 100%;
     #duo_container {
-        width: 100vw;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
         .left {
             background-color: $featherColorBlue;
         }
@@ -38,7 +39,7 @@
         }
         .box {
             #content_container {
-                margin: 110px clamp(20px, 50vw, 6.9vw) 110px clamp(20px, 50vw, $margins);
+                margin: 130px clamp(0.3rem, 9vw, 6.25rem) 130px clamp(0.3rem, 9vw, 7.5rem);
                 color: white;
                 #duo_title {
                     font-size: clamp(55px, 10vw, 83px);
@@ -46,12 +47,13 @@
                     margin-bottom: 60px;
                 }
                 #small_blurb_container {
+                    // display: none;
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
                     grid-gap: 50px 2rem;
                     font-size: 18px;
                     #small_blurb {
-                        width: clamp(150px, 25%, 230px);
+                        width: clamp(100px, 25%, 230px);
                         border-left: solid 1px white;
                     }
                 }
