@@ -4,8 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta Content-Encoding: deflate, gzip>
     <meta name="viewport" content="width=device-width,initial-scale=0.76,minimum-scale=0.76,viewport-fit=cover">
     <meta name="description" content="Feather: We make beautiful, lightweight websites">
+    <!-- edit -->
+    <!-- normal -->
+    <meta name="description" content="Feather: We make beautiful, lightweight websites">
+    <meta name="keywords" content="feather systems webgl wasm">
+    <meta name="author" content="Feather Systems">
+    <meta name="robots" content="index, follow">
+    <!-- og -->
+    <meta property="og:description" content="Feather: We make beautiful, lightweight websites">
+    <meta property="og:site_name" content="Feather Systems">
+    <meta property="og:title" content="Feather Systems | Home">
+    <meta property="og:image" content="https://glossarie.xyz/wp-content/themes/glossarie/src/assets/img/og.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feather.systems/">
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="Feather Systems">
+    <meta name="twitter:url" content="https://feather.systems/">
+    <meta name="twitter:title" content="Feather Systems | Home">
+    <meta name="twitter:description" content="Feather: We make beautiful, lightweight websites">
+    <meta name="twitter:image:src" content="https://glossarie.xyz/wp-content/themes/glossarie/src/assets/img/og.jpg">
+    <!-- edit end -->
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
@@ -16,6 +38,10 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        let a = "Ayy This works."
+    </script>
     <title>Feather | Beauty & Speed</title>
 </head>
 
@@ -50,8 +76,9 @@
                 </button>
             </div>
         </div>
-        <canvas id="particles">
-
+        <canvas width="100%" height="100%" id="particles" class="c">
+        </canvas>
+        <canvas width="100%" height="100%" id="feather" class="c">
         </canvas>
         <div id="screenCell" class="title spacing">
             <div id="title">
@@ -253,36 +280,6 @@
                             </span>
                         </div>
                     </div>
-                    <div class="use_case">
-                        <div id="use_img"></div>
-                        <div id="use_text">
-                            <span id="use_title">
-                                Lorem Ipsum
-                            </span>
-                            <br><br>
-                            <span id="use_blurb">
-                                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et
-                                dolore magna aliqua. Ut enim ad minim veniam.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="use_case">
-                        <div id="use_img"></div>
-                        <div id="use_text">
-                            <span id="use_title">
-                                Lorem Ipsum
-                            </span>
-                            <br><br>
-                            <span id="use_blurb">
-                                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et
-                                dolore magna aliqua. Ut enim ad minim veniam.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="use_case" style="opacity: 0%;"></div>
-                    <div class="use_case" style="opacity: 0%;"></div>
                 </div>
             </div>
         </div>
@@ -323,5 +320,6 @@
     </div>
 </body>
 <script src="particle.js"></script>
+<script src="posts.js"></script>
 
 </html>

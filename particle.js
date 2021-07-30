@@ -1,7 +1,7 @@
 const canvas = document.getElementById("particles");
 var ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = 5000;
+canvas.height = 5000;
 particles = [];
 amount = 20;    // number of particles
 
@@ -12,8 +12,8 @@ class Particle{
         this.y = getRandomInt(0, window.innerHeight);
         this.vx = Math.random()/2;
         this.vy = Math.random()/3;
-        this.rad = getRandomInt(2, 9);
-        this.gradSize = getRandomInt(2, this.rad/1.1);
+        this.rad = getRandomInt(2, 15);
+        this.gradSize = getRandomInt(2, this.rad/1.5);
     }  
 
     relocate(){
@@ -52,7 +52,8 @@ var gradient;
 
 function move(){
     if (canvas.getContext){
-        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+        ctx.fillStyle = '#fffafb';
+        ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
         for(i in particles){
             p = particles[i]
             p.move();
