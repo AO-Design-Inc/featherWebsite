@@ -66,3 +66,14 @@ body {
         cursor: pointer;
     }
 }
+
+#page_wrapper {
+    margin: 0;
+    // max-width: 1440px;
+    width: 100%;
+    grid-template-columns: 100%;
+    @media only screen and (min-width: 1440px) {
+        margin: 0 auto 0 auto;
+        max-width: 1440px;
+    }
+}
