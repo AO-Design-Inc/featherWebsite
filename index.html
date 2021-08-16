@@ -35,6 +35,7 @@
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#d5615b">
     <link rel="shortcut icon" href="/icons/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <script src="work-container.js"></script>
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
@@ -265,22 +266,11 @@
                         </svg>
                     </div>
                 </div>
-                <div id="work_container" class="carousel">
-                    <div class="use_case">
-                        <div id="use_img"></div>
-                        <div id="use_text">
-                            <span id="use_title">
-                                Lorem Ipsum
-                            </span>
-                            <br><br>
-                            <span id="use_blurb">
-                                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et
-                                dolore magna aliqua. Ut enim ad minim veniam.
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                <!-- Use Cases are loaded in on connectedCallback once 
+                    work-container component is attached to the DOM -->
+                <work-container></work-container>
+                <script src="case-studies/card-function.js"></script>
+
             </div>
         </div>
         <div class="contact spacing">
