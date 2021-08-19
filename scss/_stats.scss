@@ -2,50 +2,113 @@
 @import "variables";
 
 .stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    grid-gap: 10rem;
-    margin: 0.34vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 10rem;
+  margin: 0.34vw;
 }
 @media only screen and (min-width: 1280px) {
-    #problem {
-        position: sticky;
-        position: -webkit-sticky;
-        top: 18vh;
-        height: 100vh;
-        min-height: 700px;
-        box-sizing: border-box;
-        z-index: -1;
-    }
+  #problem {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 18vh;
+    height: 100vh;
+    min-height: 700px;
+    box-sizing: border-box;
+    z-index: -1;
+  }
+}
+@keyframes time {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  4% {
+    transform: rotate(-0.14deg);
+  }
+
+  8% {
+    transform: rotate(-0.57deg);
+  }
+
+  14% {
+    transform: rotate(-0.61deg);
+  }
+
+  18% {
+    transform: rotate(0.14deg);
+  }
+
+  26% {
+    transform: rotate(2deg);
+  }
+
+  28% {
+    transform: rotate(1.9deg);
+  }
+
+  40% {
+    transform: rotate(-5.56deg);
+  }
+
+  42% {
+    transform: rotate(-5.9%);
+  }
+
+  56% {
+    transform: rotate(16deg);
+  }
+
+  58% {
+    transform: rotate(15deg);
+  }
+
+  72% {
+    transform: rotate(-47deg);
+  }
+
+  86% {
+    transform: rotate(133deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 .left {
-    #comparison {
-        margin-top: 40px;
-        background-color: #ffe3e6;
-        width: clamp(320px, 50vw, 570px);
-        height: 270px;
-        border-radius: 20px;
+  #comparison {
+    margin-top: 40px;
+    background-color: #ffe3e6af;
+    width: clamp(320px, 50vw, 570px);
+    height: 270px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      animation: time 5s infinite;
     }
+  }
 }
 #fact_container {
-    margin-bottom: 240px;
+  margin-bottom: 240px;
 }
 .right {
-    display: flex;
-    flex-wrap: wrap;
-    #fact {
-        width: clamp(280px, 45vw, 560px);
-        #number {
-            margin-top: 20px;
-            font-size: clamp(83px, 15vw, 164px);
-            font-weight: 900;
-            #lighten {
-                font-weight: 400;
-                color: $textColor;
-            }
-        }
-        #explaination {
-            font-size: 27px;
-        }
+  display: flex;
+  flex-wrap: wrap;
+  #fact {
+    width: clamp(280px, 45vw, 560px);
+    #number {
+      margin-top: 20px;
+      font-size: clamp(83px, 15vw, 164px);
+      font-weight: 900;
+      #lighten {
+        font-weight: 400;
+        color: $textColor;
+      }
     }
+    #explaination {
+      font-size: 27px;
+    }
+  }
 }
