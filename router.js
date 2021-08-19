@@ -11,6 +11,7 @@ if(window.location.hash == ""){
 function onRouteChanged() {
     var hash = window.location.hash.split('#')[1];
     for (page of pages) {
+        console.log(pages);
         if (page.id == hash)
             page.style.display = "block"; 
         else 

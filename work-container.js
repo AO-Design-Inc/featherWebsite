@@ -19,6 +19,7 @@ var caseStudiesTemplate = `
             <p class="use-blurb">When COVID19 first hit, doctors in India lacked a succinct way of reaching patients without physical contact. </p>
         </div>
     </div>
+    <div class="spacer"></div>
 </template>;`
 
 class caseStudy extends HTMLElement{
