@@ -54,20 +54,9 @@
             padding: 0 2vw;
             margin: 5vh 0 15vh 0;
 
-            .section-heading {
-                width: 40%;
-                min-width: 200px;
-                font-size: $fontMedium;
-                margin: 0;
-            }
-
             .section-text {
-                width: 50%; 
-                min-width: 300px;
-                line-height: 24px;
-                font-size: 18px;
-            
                 white-space: pre-wrap;
+                line-height: 24px;
             }
         }
 
@@ -86,7 +75,17 @@
 }
 
 @media (min-width: 1000px) {
+    .section-heading {
+        width: 40%;
+        min-width: 200px;
+        font-size: $fontMedium;
+        margin: 0;
+    }
+
     .section-text {
+        width: 50%; 
+        min-width: 300px;
+        font-size: $fontMini;
         margin: 0;
     }
 }
