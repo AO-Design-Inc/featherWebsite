@@ -4,8 +4,9 @@
     border-top: 1px solid rgba(251, 118, 128, 0.5);
     display: grid;
     place-items: center;
-    width: 100vw - (8.3vw * 2);
+    // width: 100vw - (8.3vw * 2)
     height: 100vh * math.div(3, 4);
+    max-height: 1200px;
     min-height: 700px;
     margin-bottom: 40px;
     z-index: -2;

@@ -6,12 +6,15 @@
     // grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     #work_section {
         #work_head {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            align-items: center;
+            display: flex;
             justify-content: center;
-
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));;
+            @media only screen and (max-width: 900px) {
+                justify-content: flex-start;
+                margin-left: $margins;
+            }
             #work_title {
+                margin-left: 8%;
                 font-size: 41px;
                 font-weight: 700;
             }

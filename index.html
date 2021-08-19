@@ -1,315 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta Content-Encoding: deflate, gzip>
-    <meta name="viewport" content="width=device-width,initial-scale=0.76,minimum-scale=0.76,viewport-fit=cover">
-    <meta name="description" content="Feather: We make beautiful, lightweight websites">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta Content-Encoding: deflate, gzip />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=0.76,minimum-scale=0.76,viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Feather: We make beautiful, lightweight websites"
+    />
     <!-- edit -->
     <!-- normal -->
-    <meta name="description" content="Feather: We make beautiful, lightweight websites">
-    <meta name="keywords" content="feather systems webgl wasm">
-    <meta name="author" content="Feather Systems">
-    <meta name="robots" content="index, follow">
+    <meta
+      name="description"
+      content="Feather: We make beautiful, lightweight websites"
+    />
+    <meta name="keywords" content="feather systems webgl wasm" />
+    <meta name="author" content="Feather Systems" />
+    <meta name="robots" content="index, follow" />
     <!-- og -->
-    <meta property="og:description" content="Feather: We make beautiful, lightweight websites">
-    <meta property="og:site_name" content="Feather Systems">
-    <meta property="og:title" content="Feather Systems | Home">
-    <meta property="og:image" content="https://glossarie.xyz/wp-content/themes/glossarie/src/assets/img/og.jpg">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://feather.systems/">
+    <meta
+      property="og:description"
+      content="Feather: We make beautiful, lightweight websites"
+    />
+    <meta property="og:site_name" content="Feather Systems" />
+    <meta property="og:title" content="Feather Systems | Home" />
+    <meta
+      property="og:image"
+      content="https://glossarie.xyz/wp-content/themes/glossarie/src/assets/img/og.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://feather.systems/" />
     <!-- twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="Feather Systems">
-    <meta name="twitter:url" content="https://feather.systems/">
-    <meta name="twitter:title" content="Feather Systems | Home">
-    <meta name="twitter:description" content="Feather: We make beautiful, lightweight websites">
-    <meta name="twitter:image:src" content="https://glossarie.xyz/wp-content/themes/glossarie/src/assets/img/og.jpg">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="Feather Systems" />
+    <meta name="twitter:url" content="https://feather.systems/" />
+    <meta name="twitter:title" content="Feather Systems | Home" />
+    <meta
+      name="twitter:description"
+      content="Feather: We make beautiful, lightweight websites"
+    />
+    <meta
+      name="twitter:image:src"
+      content="https://glossarie.xyz/wp-content/themes/glossarie/src/assets/img/og.jpg"
+    />
     <!-- edit end -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/icons/site.webmanifest">
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#d5615b">
-    <link rel="shortcut icon" href="/icons/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#d5615b" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
     <script src="work-container.js"></script>
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/icons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/icons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        let a = "Ayy This works."
+      let a = "Ayy This works.";
     </script>
     <title>Feather | Beauty & Speed</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <canvas width="100%" height="100%" id="particles" class="c"> </canvas>
     <div id="page_wrapper">
-        <div id="dashboard">
-            <div id="logo">
-                <a href="./index.html">
-                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M60 30C60 13.4315 46.5685 0 29.9999 0C13.4314 0 0 13.4315 0 30C0 46.5685 13.4314 60 29.9999 60C46.5685 60 60 46.5685 60 30Z"
-                            fill="black" />
-                        <path
-                            d="M22.8381 15.326C14.3984 15.326 14.4512 23.7128 14.4512 23.7128V28.5043C14.4512 28.5043 16.3726 23.7128 21.6927 23.7128H22.2091H39.6119C48.1889 23.7128 48.0003 15.4174 47.9984 15.3395H47.9779L47.9988 15.3264H43.5293H32.6812L22.8381 15.326ZM22.8381 25.81C14.3984 25.81 14.4512 34.1969 14.4512 34.1969V38.9883C14.4512 38.9883 16.3726 34.1969 21.6927 34.1969H22.2091H39.6119C48.1889 34.1969 48.0003 25.9015 47.9984 25.8235H47.9779L47.9988 25.8105H43.5293C43.5293 25.8105 36.1298 25.8106 32.6812 25.8105C29.2326 25.8104 22.8381 25.81 22.8381 25.81Z"
-                            fill="white" />
-                        <path
-                            d="M22.8381 36.2871C14.3985 36.2871 14.4512 44.674 14.4512 44.674H24.3058H24.5154C33.0926 44.674 32.9039 36.3786 32.902 36.3007H32.8814L32.9023 36.2875H28.4329H22.8266L22.8381 36.2871Z"
-                            fill="white" />
-                    </svg>
-                </a>
-            </div>
-            <div id="butt_container">
-                <button onclick="location.href='https://blog.feather.systems/';" id="butt_blog">Our Blog.</button>
-                <button aria-label="Email Us" id="butt_contact_form" onclick="location.href='./form.html';">
-                    <div>
-                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0 2C0 0.89543 0.89543 0 2 0H18C19.1046 0 20 0.89543 20 2V14C20 15.1046 19.1046 16 18 16H2C0.89543 16 0 15.1046 0 14V2ZM3.51859 2L10 7.6712L16.4814 2H3.51859ZM18 3.32877L10.6585 9.7526C10.2815 10.0825 9.7185 10.0825 9.3415 9.7526L2 3.32877V14H18V3.32877Z"
-                                fill="#0D0D0D" />
-                        </svg>
-                    </div>
-                </button>
-            </div>
+      <div id="dashboard">
+        <div id="logo">
+          <a href="./index.html">
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M60 30C60 13.4315 46.5685 0 29.9999 0C13.4314 0 0 13.4315 0 30C0 46.5685 13.4314 60 29.9999 60C46.5685 60 60 46.5685 60 30Z"
+                fill="black"
+              />
+              <path
+                d="M22.8381 15.326C14.3984 15.326 14.4512 23.7128 14.4512 23.7128V28.5043C14.4512 28.5043 16.3726 23.7128 21.6927 23.7128H22.2091H39.6119C48.1889 23.7128 48.0003 15.4174 47.9984 15.3395H47.9779L47.9988 15.3264H43.5293H32.6812L22.8381 15.326ZM22.8381 25.81C14.3984 25.81 14.4512 34.1969 14.4512 34.1969V38.9883C14.4512 38.9883 16.3726 34.1969 21.6927 34.1969H22.2091H39.6119C48.1889 34.1969 48.0003 25.9015 47.9984 25.8235H47.9779L47.9988 25.8105H43.5293C43.5293 25.8105 36.1298 25.8106 32.6812 25.8105C29.2326 25.8104 22.8381 25.81 22.8381 25.81Z"
+                fill="white"
+              />
+              <path
+                d="M22.8381 36.2871C14.3985 36.2871 14.4512 44.674 14.4512 44.674H24.3058H24.5154C33.0926 44.674 32.9039 36.3786 32.902 36.3007H32.8814L32.9023 36.2875H28.4329H22.8266L22.8381 36.2871Z"
+                fill="white"
+              />
+            </svg>
+          </a>
         </div>
-        <canvas width="100%" height="100%" id="particles" class="c">
-        </canvas>
-        <canvas width="100%" height="100%" id="feather" class="c">
-        </canvas>
-        <div id="screenCell" class="title spacing">
-            <div id="title">
-                <div id="pitch">
-                    <span id="feather">Feather</span> makes beautiful, lightweight websites.
-                    <div id="down">
-                        <svg width="90" height="31" viewBox="0 0 90 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="0.814087" width="90" height="30" rx="15" fill="black" fill-opacity="0.8" />
-                            <path d="M45.4688 19.5641L38.4375 12.0641H52.5L45.4688 19.5641Z" fill="white" stroke="white"
-                                stroke-linejoin="round" />
-                        </svg>
-
-                    </div>
-                </div>
+        <div id="butt_container">
+          <button
+            onclick="location.href='https://blog.feather.systems/';"
+            id="butt_blog"
+          >
+            Our Blog.
+          </button>
+          <button
+            aria-label="Email Us"
+            id="butt_contact_form"
+            onclick="location.href='#cta_container';"
+          >
+            <div>
+              <svg
+                width="20"
+                height="16"
+                viewBox="0 0 20 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 2C0 0.89543 0.89543 0 2 0H18C19.1046 0 20 0.89543 20 2V14C20 15.1046 19.1046 16 18 16H2C0.89543 16 0 15.1046 0 14V2ZM3.51859 2L10 7.6712L16.4814 2H3.51859ZM18 3.32877L10.6585 9.7526C10.2815 10.0825 9.7185 10.0825 9.3415 9.7526L2 3.32877V14H18V3.32877Z"
+                  fill="#0D0D0D"
+                />
+              </svg>
             </div>
+          </button>
         </div>
-        <div id="screenCell" class="intro spacing">
-            <div id="intro" class="intro">
-                <span id="blurb">
-                    Hey There 👋<br>
-                    We’re <span id="feather">Feather</span>!
-                </span>
-                <br><br>
-                We are a web design agency. We provide our partners with unmistakably special digital solutions that
-                convey
-                your vision to the world at the speed of light.
+      </div>
+      <canvas width="100%" height="100%" id="feather" class="c"> </canvas>
+      <div id="screenCell" class="title spacing">
+        <div id="title">
+          <div id="pitch">
+            <span id="feather">Feather</span> makes beautiful, lightweight
+            websites.
+            <div id="down">
+              <svg
+                width="90"
+                height="31"
+                viewBox="0 0 90 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  y="0.814087"
+                  width="90"
+                  height="30"
+                  rx="15"
+                  fill="black"
+                  fill-opacity="0.8"
+                />
+                <path
+                  d="M45.4688 19.5641L38.4375 12.0641H52.5L45.4688 19.5641Z"
+                  fill="white"
+                  stroke="white"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
+          </div>
         </div>
-        <div class="stats spacing">
-            <div id="problem" class="box left">
-                <div id="intro">
-                    <span id="blurb">
-                        <span id="feather">Problem</span> - The web is bloated.
-                    </span>
-                    <br><br>
-                    It’s plagued by bloated web experiences, boring design & sites that refuse to load.
-                </div>
-                <div id="comparison"> </div>
-            </div>
-            <div id="fact_container" class="box right">
-                <div id="fact">
-                    <div id="illustration">
-                        <svg width="117" height="84" viewBox="0 0 117 84" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M23.5871 9.98377L24.7792 9.66436C26.7579 9.13418 28.6664 10.7194 28.5084 12.7618L27.7629 22.3974C27.7366 22.7378 28.0547 23.002 28.3845 22.9136L38.8158 20.1185C39.9968 19.8021 41.1795 20.6213 41.2985 21.8381L42.9239 38.4646C43.0417 39.6693 42.2707 40.7824 41.1015 41.0957L25.4821 45.2809C23.1059 45.9176 20.6635 44.5074 20.0268 42.1312L16.2083 27.8807C15.9317 26.8483 15.9967 25.7541 16.3937 24.7617L21.5985 11.7493C21.9461 10.8803 22.6831 10.226 23.5871 9.98377Z"
-                                fill="#FB7680" />
-                            <path
-                                d="M4.4231 32.0026C4.06938 30.6825 4.85279 29.3255 6.17291 28.9718L11.4143 27.5674C12.7344 27.2137 14.0913 27.9971 14.445 29.3172L18.5348 44.5805C18.8885 45.9006 18.1051 47.2575 16.785 47.6112L11.5436 49.0157C10.2235 49.3694 8.86661 48.586 8.51288 47.2658L4.4231 32.0026Z"
-                                fill="#FB7680" />
-                            <path
-                                d="M85.4961 69.2867L84.3578 68.9817C82.4683 68.4754 81.6468 66.2531 82.7526 64.6395L87.9698 57.0269C88.1541 56.758 88.0172 56.3876 87.7023 56.3032L77.7411 53.6341C76.6133 53.3319 76.0263 52.0898 76.509 51.0266L83.1033 36.5005C83.5811 35.448 84.7502 34.8956 85.8667 35.1948L100.782 39.1913C103.051 39.7994 104.398 42.1317 103.79 44.4008L100.143 58.0091C99.8793 58.995 99.3031 59.8689 98.501 60.5L87.9836 68.7761C87.2812 69.3288 86.3594 69.518 85.4961 69.2867Z"
-                                fill="#8088FF" />
-                            <path
-                                d="M111.858 60.2274C111.52 61.488 110.224 62.2361 108.964 61.8984L103.959 60.5572C102.698 60.2195 101.95 58.9237 102.288 57.6631L106.193 43.0877C106.531 41.8271 107.827 41.079 109.087 41.4167L114.092 42.7579C115.353 43.0956 116.101 44.3914 115.763 45.652L111.858 60.2274Z"
-                                fill="#8088FF" />
-                            <path
-                                d="M41.0447 10.086L56.9092 37.5632C58.4351 40.2062 61.8146 41.1117 64.4576 39.5858L91.9347 23.7219C96.1982 21.2604 95.3573 14.8729 90.602 13.5988L47.2604 1.98542C42.5051 0.711238 38.5831 5.82252 41.0447 10.086ZM78.6016 73.4795L62.7371 46.0022C61.2112 43.3593 57.8317 42.4537 55.1887 43.9796L27.7116 59.8436C23.4481 62.3051 24.2891 68.6925 29.0443 69.9667L72.3859 81.58C77.1412 82.8542 81.0632 77.7429 78.6016 73.4795Z"
-                                fill="url(#paint0_linear)" stroke="url(#paint1_linear)" stroke-width="0.5" />
-                            <defs>
-                                <linearGradient id="paint0_linear" x1="20.4821" y1="67.4136" x2="95.6436" y2="15.2085"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#FFC9CF" stop-opacity="0.6" />
-                                    <stop offset="1" stop-color="#CED1FF" stop-opacity="0.6" />
-                                </linearGradient>
-                                <linearGradient id="paint1_linear" x1="21.0425" y1="68.214" x2="95.6438" y2="15.7721"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#FFE3E6" stop-opacity="0.59" />
-                                    <stop offset="1" stop-color="#FFE3E6" stop-opacity="0.12" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                    <div id="number">
-                        50<span id="lighten">ms</span>
-                    </div>
-                    <div id="explaination">
-                        Is the amount of time it takes for a user to form an impression of your site and decide if they
-                        will
-                        engage.
-                    </div>
-                </div>
-                <div style="margin-top: 140px;" id="fact">
-                    <div id="illustration">
-                        <svg width="118" height="82" viewBox="0 0 118 82" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.1056 39.5579C12.3084 37.1284 6.39302 38.8483 3.67164 43.5618C0.854982 48.4404 2.52651 54.6786 7.40508 57.4952L21.6224 65.7037C23.2485 66.6425 25.328 66.0853 26.2668 64.4592L34.4751 50.2418C37.2918 45.3633 35.6203 39.1251 30.7416 36.3084C26.028 33.5871 20.0453 35.0554 17.1056 39.5579Z"
-                                fill="#FB7680" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M97.008 44.5461C105.087 46.7108 111.78 53.4656 113.854 63.5969C113.989 64.2577 113.805 64.9436 113.358 65.4482C106.496 73.1857 97.3222 75.6886 89.2434 73.5239C81.1646 71.3592 74.471 64.6045 72.3978 54.4731C72.2625 53.8123 72.4463 53.1264 72.8938 52.6218C79.7549 44.8844 88.9291 42.3814 97.008 44.5461ZM91.4624 65.2447C94.8919 66.1636 98.4168 64.1285 99.3358 60.699C100.255 57.2695 98.2196 53.7446 94.7901 52.8256C91.3606 51.9067 87.8357 53.9418 86.9167 57.3713C85.9978 60.8008 88.0329 64.3257 91.4624 65.2447Z"
-                                fill="#8088FF" />
-                            <path
-                                d="M67.6832 50.2614C67.87 49.5643 68.4906 48.7043 69.2704 47.923C70.0454 47.1464 70.9377 46.4872 71.6198 46.177C77.1883 43.6444 81.3853 39.6932 83.1 33.2939C86.1413 21.9435 78.4295 10.0429 67.108 7.0093C55.7866 3.97572 43.1576 10.426 40.1163 21.7765C38.4016 28.1758 40.0607 33.6961 43.6169 38.6736C44.0525 39.2833 44.4957 40.3004 44.7786 41.3604C45.0632 42.427 45.1707 43.4821 44.9839 44.1792C44.1523 47.2828 44.1599 50.3308 45.4257 52.8872C46.695 55.4504 49.2073 57.4754 53.2924 58.57C57.3775 59.6646 60.5657 59.1671 62.9465 57.5818C65.321 56.0009 66.8516 53.3651 67.6832 50.2614ZM46.9927 59.4701C45.7314 59.1322 44.4483 59.9353 44.2011 61.2175L42.6554 69.233C42.2332 71.4224 43.5748 73.5658 45.7286 74.1429L52.0564 75.8385C54.2101 76.4156 56.4437 75.2301 57.1728 73.123L59.842 65.4084C60.2689 64.1744 59.5593 62.8373 58.298 62.4994L46.9927 59.4701Z"
-                                fill="url(#paint0_linear)" stroke="url(#paint1_linear)" stroke-width="0.5" />
-                            <defs>
-                                <linearGradient id="paint0_linear" x1="26.0058" y1="68.5994" x2="108.036" y2="45.6949"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#FFC9CF" stop-opacity="0.6" />
-                                    <stop offset="1" stop-color="#BABFFF" stop-opacity="0.4" />
-                                </linearGradient>
-                                <linearGradient id="paint1_linear" x1="26.3909" y1="69.3529" x2="97.3866" y2="32.8943"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#FFE3E6" stop-opacity="0.59" />
-                                    <stop offset="1" stop-color="#FFE3E6" stop-opacity="0.12" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                    <div id="number">
-                        75<span id="lighten">%</span>
-                    </div>
-                    <div id="explaination">
-                        Of consumers admit to making judgements on a company’s credibility based on the company’s
-                        website
-                        design
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div id="screenCell" class="intro spacing">
+        <div id="intro" class="intro">
+          <span id="blurb">
+            Hey There 👋<br />
+            We’re <span id="feather">Feather</span>!
+          </span>
+          <br /><br />
+          We are a web design agency. We provide our partners with unmistakably
+          special digital solutions that convey your vision to the world at the
+          speed of light.
         </div>
-        <div class="duo_blurb spacing">
-            <div id="blurb">
-                We solve these issues with cutting edge web technologies to give you the best of both
-                worlds.<br>
-                <span id="speedbeauty">
-                    <span id="featherBlue">Speed</span> & <span id="feather">Beauty</span>
-                </span>
-            </div>
+      </div>
+      <div class="stats spacing">
+        <div id="problem" class="box left">
+          <div id="intro">
+            <span id="blurb">
+              <span id="feather">Problem</span> - The web is bloated.
+            </span>
+            <br /><br />
+            It’s plagued by bloated web experiences, boring design & sites that
+            refuse to load.
+          </div>
+          <div id="comparison"></div>
         </div>
-        <div class="duo">
-            <div id="duo_container">
-                <div class="box left">
-                    <div id="content_container">
-                        <div id="duo_title">Speed</div>
-                        <div id="small_blurb_container">
-                            <div class="small_blurb">
-                                Site not loading? You might want to fix that. For every second of load time, conversion
-                                rates drop by an
-                                average of 4.42%.
-                            </div>
-                            <div class="small_blurb">
-                                Webassembly makes things fast. As much as 1,000x as fast as traditional
-                                Multithreaded-js (what's this?)
-                            </div>
-                            <div class="small_blurb">
-                                Our team is fully trained in optimizing for speed, adapting to whatever project
-                                you have in mind.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box right">
-                    <div id="content_container">
-                        <div id="duo_title">Beauty</div>
-                        <div id="small_blurb_container">
-                            <div class="small_blurb">
-                                Website feeling shy? Your audience is looking for confidence, and your website is your
-                                first
-                                impression. Make it count.
-                            </div>
-                            <div class="small_blurb">
-                                With Feather, you will make a mark. Our fast 3D graphics & responsive sites will make
-                                sure
-                                of it.
-                            </div>
-                            <div class="small_blurb">
-                                Our team of experienced web developers will make you a site worthy of your great ideas.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div id="fact_container" class="box right">
+          <div id="fact">
+            <div id="illustration">
+              <svg
+                width="117"
+                height="84"
+                viewBox="0 0 117 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.5871 9.98377L24.7792 9.66436C26.7579 9.13418 28.6664 10.7194 28.5084 12.7618L27.7629 22.3974C27.7366 22.7378 28.0547 23.002 28.3845 22.9136L38.8158 20.1185C39.9968 19.8021 41.1795 20.6213 41.2985 21.8381L42.9239 38.4646C43.0417 39.6693 42.2707 40.7824 41.1015 41.0957L25.4821 45.2809C23.1059 45.9176 20.6635 44.5074 20.0268 42.1312L16.2083 27.8807C15.9317 26.8483 15.9967 25.7541 16.3937 24.7617L21.5985 11.7493C21.9461 10.8803 22.6831 10.226 23.5871 9.98377Z"
+                  fill="#FB7680"
+                />
+                <path
+                  d="M4.4231 32.0026C4.06938 30.6825 4.85279 29.3255 6.17291 28.9718L11.4143 27.5674C12.7344 27.2137 14.0913 27.9971 14.445 29.3172L18.5348 44.5805C18.8885 45.9006 18.1051 47.2575 16.785 47.6112L11.5436 49.0157C10.2235 49.3694 8.86661 48.586 8.51288 47.2658L4.4231 32.0026Z"
+                  fill="#FB7680"
+                />
+                <path
+                  d="M85.4961 69.2867L84.3578 68.9817C82.4683 68.4754 81.6468 66.2531 82.7526 64.6395L87.9698 57.0269C88.1541 56.758 88.0172 56.3876 87.7023 56.3032L77.7411 53.6341C76.6133 53.3319 76.0263 52.0898 76.509 51.0266L83.1033 36.5005C83.5811 35.448 84.7502 34.8956 85.8667 35.1948L100.782 39.1913C103.051 39.7994 104.398 42.1317 103.79 44.4008L100.143 58.0091C99.8793 58.995 99.3031 59.8689 98.501 60.5L87.9836 68.7761C87.2812 69.3288 86.3594 69.518 85.4961 69.2867Z"
+                  fill="#8088FF"
+                />
+                <path
+                  d="M111.858 60.2274C111.52 61.488 110.224 62.2361 108.964 61.8984L103.959 60.5572C102.698 60.2195 101.95 58.9237 102.288 57.6631L106.193 43.0877C106.531 41.8271 107.827 41.079 109.087 41.4167L114.092 42.7579C115.353 43.0956 116.101 44.3914 115.763 45.652L111.858 60.2274Z"
+                  fill="#8088FF"
+                />
+                <path
+                  d="M41.0447 10.086L56.9092 37.5632C58.4351 40.2062 61.8146 41.1117 64.4576 39.5858L91.9347 23.7219C96.1982 21.2604 95.3573 14.8729 90.602 13.5988L47.2604 1.98542C42.5051 0.711238 38.5831 5.82252 41.0447 10.086ZM78.6016 73.4795L62.7371 46.0022C61.2112 43.3593 57.8317 42.4537 55.1887 43.9796L27.7116 59.8436C23.4481 62.3051 24.2891 68.6925 29.0443 69.9667L72.3859 81.58C77.1412 82.8542 81.0632 77.7429 78.6016 73.4795Z"
+                  fill="url(#paint0_linear)"
+                  stroke="url(#paint1_linear)"
+                  stroke-width="0.5"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear"
+                    x1="20.4821"
+                    y1="67.4136"
+                    x2="95.6436"
+                    y2="15.2085"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFC9CF" stop-opacity="0.6" />
+                    <stop offset="1" stop-color="#CED1FF" stop-opacity="0.6" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear"
+                    x1="21.0425"
+                    y1="68.214"
+                    x2="95.6438"
+                    y2="15.7721"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFE3E6" stop-opacity="0.59" />
+                    <stop offset="1" stop-color="#FFE3E6" stop-opacity="0.12" />
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
+            <div id="number">50<span id="lighten">ms</span></div>
+            <div id="explaination">
+              Is the amount of time it takes for a user to form an impression of
+              your site and decide if they will engage.
+            </div>
+          </div>
+          <div style="margin-top: 140px" id="fact">
+            <div id="illustration">
+              <svg
+                width="118"
+                height="82"
+                viewBox="0 0 118 82"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.1056 39.5579C12.3084 37.1284 6.39302 38.8483 3.67164 43.5618C0.854982 48.4404 2.52651 54.6786 7.40508 57.4952L21.6224 65.7037C23.2485 66.6425 25.328 66.0853 26.2668 64.4592L34.4751 50.2418C37.2918 45.3633 35.6203 39.1251 30.7416 36.3084C26.028 33.5871 20.0453 35.0554 17.1056 39.5579Z"
+                  fill="#FB7680"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M97.008 44.5461C105.087 46.7108 111.78 53.4656 113.854 63.5969C113.989 64.2577 113.805 64.9436 113.358 65.4482C106.496 73.1857 97.3222 75.6886 89.2434 73.5239C81.1646 71.3592 74.471 64.6045 72.3978 54.4731C72.2625 53.8123 72.4463 53.1264 72.8938 52.6218C79.7549 44.8844 88.9291 42.3814 97.008 44.5461ZM91.4624 65.2447C94.8919 66.1636 98.4168 64.1285 99.3358 60.699C100.255 57.2695 98.2196 53.7446 94.7901 52.8256C91.3606 51.9067 87.8357 53.9418 86.9167 57.3713C85.9978 60.8008 88.0329 64.3257 91.4624 65.2447Z"
+                  fill="#8088FF"
+                />
+                <path
+                  d="M67.6832 50.2614C67.87 49.5643 68.4906 48.7043 69.2704 47.923C70.0454 47.1464 70.9377 46.4872 71.6198 46.177C77.1883 43.6444 81.3853 39.6932 83.1 33.2939C86.1413 21.9435 78.4295 10.0429 67.108 7.0093C55.7866 3.97572 43.1576 10.426 40.1163 21.7765C38.4016 28.1758 40.0607 33.6961 43.6169 38.6736C44.0525 39.2833 44.4957 40.3004 44.7786 41.3604C45.0632 42.427 45.1707 43.4821 44.9839 44.1792C44.1523 47.2828 44.1599 50.3308 45.4257 52.8872C46.695 55.4504 49.2073 57.4754 53.2924 58.57C57.3775 59.6646 60.5657 59.1671 62.9465 57.5818C65.321 56.0009 66.8516 53.3651 67.6832 50.2614ZM46.9927 59.4701C45.7314 59.1322 44.4483 59.9353 44.2011 61.2175L42.6554 69.233C42.2332 71.4224 43.5748 73.5658 45.7286 74.1429L52.0564 75.8385C54.2101 76.4156 56.4437 75.2301 57.1728 73.123L59.842 65.4084C60.2689 64.1744 59.5593 62.8373 58.298 62.4994L46.9927 59.4701Z"
+                  fill="url(#paint0_linear)"
+                  stroke="url(#paint1_linear)"
+                  stroke-width="0.5"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear"
+                    x1="26.0058"
+                    y1="68.5994"
+                    x2="108.036"
+                    y2="45.6949"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFC9CF" stop-opacity="0.6" />
+                    <stop offset="1" stop-color="#BABFFF" stop-opacity="0.4" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear"
+                    x1="26.3909"
+                    y1="69.3529"
+                    x2="97.3866"
+                    y2="32.8943"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFE3E6" stop-opacity="0.59" />
+                    <stop offset="1" stop-color="#FFE3E6" stop-opacity="0.12" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div id="number">75<span id="lighten">%</span></div>
+            <div id="explaination">
+              Of consumers admit to making judgements on a company’s credibility
+              based on the company’s website design
+            </div>
+          </div>
         </div>
-        <div class="work spacing">
-            <div id="work_art"></div>
-            <div id="work_section">
-                <div id="work_head">
-                    <div id="work_title">Work</div>
-                    <div id="arrows" style="display: none;">
-                        <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M15.1432 0.0888672L24.9997 11.0459L15.1432 22.0032L12.9128 19.9968L19.6152 12.5459H0.00683594V9.54592H19.6152L12.9128 2.09522L15.1432 0.0888672Z"
-                                fill="black" fill-opacity="0.75" />
-                        </svg>
-                    </div>
-                </div>
-                <!-- Use Cases are loaded in on connectedCallback once 
-                    work-container component is attached to the DOM -->
-                <work-container></work-container>
-
-            </div>
+      </div>
+      <div class="duo_blurb spacing">
+        <div id="blurb">
+          We solve these issues with cutting edge web technologies to give you
+          the best of both worlds.<br />
+          <span id="speedbeauty">
+            <span id="featherBlue">Speed</span> &
+            <span id="feather">Beauty</span>
+          </span>
         </div>
-        <div class="contact spacing">
-            <div id="cta_container">
-                <div onclick="on()" class="cta_text" id="contact_us">
-                    <a id="link_form" href="./form.html">
-                        <p>
-                            Let's work together
-                            <svg width="61" height="61" viewBox="0 0 61 61" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M11.0035 0.5H60.6562V50.1527H55.9825V8.47854L3.96107 60.5L0.65625 57.1952L52.6777 5.17372H11.0035V0.5Z"
-                                    fill="#FE6571" fill-opacity="0.75" />
-                            </svg>
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div id="cta_container">
-                <div id="mail" class="cta_text">
-                    <a id="link_footer" href="https://buttondown.email/feather">
-                        <p class="footer">
-                            Join our mailing list
-                            <svg width="61" height="61" viewBox="0 0 61 61" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M11.0045 0.498047H60.6572V50.1507H55.9835V8.47659L3.96205 60.498L0.657227 57.1932L52.6787 5.17177H11.0045V0.498047Z"
-                                    fill="#D9DBFF" />
-                            </svg>
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </footer>
+      </div>
     </div>
-</body>
-<script src="particle.js"></script>
-<script src="posts.js"></script>
-<script src="case-studies/card-function.js"></script>
-
+    <div class="duo">
+      <div id="duo_container">
+        <div class="box left">
+          <div id="content_container">
+            <div id="duo_title">Speed</div>
+            <div id="small_blurb_container">
+              <div class="small_blurb">
+                Site not loading? You might want to fix that. For every second
+                of load time, conversion rates drop by an average of 4.42%.
+              </div>
+              <div class="small_blurb">
+                Webassembly makes things fast. As much as 1,000x as fast as
+                traditional Multithreaded-js (what's this?)
+              </div>
+              <div class="small_blurb">
+                Our team is fully trained in optimizing for speed, adapting to
+                whatever project you have in mind.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box right">
+          <div id="content_container">
+            <div id="duo_title">Beauty</div>
+            <div id="small_blurb_container">
+              <div class="small_blurb">
+                Website feeling shy? Your audience is looking for confidence,
+                and your website is your first impression. Make it count.
+              </div>
+              <div class="small_blurb">
+                With Feather, you will make a mark. Our fast 3D graphics &
+                responsive sites will make sure of it.
+              </div>
+              <div class="small_blurb">
+                Our team of experienced web developers will make you a site
+                worthy of your great ideas.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="work spacing">
+      <div id="work_art"></div>
+      <div id="work_section">
+        <div id="work_head">
+          <div id="work_title">Work</div>
+          <div id="arrows" style="display: none">
+            <svg
+              width="25"
+              height="23"
+              viewBox="0 0 25 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.1432 0.0888672L24.9997 11.0459L15.1432 22.0032L12.9128 19.9968L19.6152 12.5459H0.00683594V9.54592H19.6152L12.9128 2.09522L15.1432 0.0888672Z"
+                fill="black"
+                fill-opacity="0.75"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- Use Cases are loaded in on connectedCallback once 
+                    work-container component is attached to the DOM -->
+        <work-container></work-container>
+      </div>
+    </div>
+    <div id="page_wrapper">
+      <div class="screenCell cta" style="margin-bottom: 0px">
+        <div id="cta_container">
+          <form id="f" action="https://formspree.io/f/mwkanjzw" method="POST">
+            <div id="cta_title">Let’s work together!</div>
+            <div class="group input">
+              <input
+                placeholder="Your Email"
+                name="_replyto"
+                type="email"
+                id="username"
+                required="required"
+              />
+              <label for="username">Your Email.</label>
+            </div>
+            <div class="group text">
+              <textarea
+                id="form_message"
+                name="message"
+                required="required"
+                placeholder="Your Message"
+              ></textarea>
+              <label for="form_message" id="form_message" name="message">
+                Your message:
+              </label>
+            </div>
+            <div id="butt_cont">
+              <button id="form_submit" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="mail_cont">
+        <div id="mail" class="cta_text">
+          <a id="link_footer" href="https://buttondown.email/feather">
+            <p class="footer">
+              Join our mailing list
+              <svg
+                width="61"
+                height="61"
+                viewBox="0 0 61 61"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.0045 0.498047H60.6572V50.1507H55.9835V8.47659L3.96205 60.498L0.657227 57.1932L52.6787 5.17177H11.0045V0.498047Z"
+                  fill="#D9DBFF"
+                />
+              </svg>
+            </p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="particle.js"></script>
+  <script src="posts.js"></script>
+  <script src="case-studies/card-function.js"></script>
 </html>
