@@ -1,7 +1,7 @@
 let {{filename}}String = `
 <template id="{{filename}}">
     <div id="splash" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%), 
-        url('./assets/thumbnails/{{splash.splashImage.name}}.webp');">
+        url('./case-studies/assets/thumbnails/{{splash.splashImage.name}}.webp');">
         <div id="splash-text">
             <p class="splash-year">{{splash.year}}</p>
             <p class="splash-org">{{splash.orgType}}</p>
@@ -35,17 +35,17 @@ let {{filename}}String = `
 
             {{#image}}
                 {{#image.formats.large}}
-                <img class="section-image" src="./assets/images/{{image.formats.large.name}}.webp"/>
+                <img class="section-image" src="./case-studies/assets/images/{{image.formats.large.name}}.webp"/>
                 {{/image.formats.large}}
 
                 {{^image.formats.large}}
                     {{#image.formats.medium}}
-                    <img class="section-image" src="./assets/images/{{image.formats.medium.name}}.webp"/>
+                    <img class="section-image" src="./case-studies/assets/images/{{image.formats.medium.name}}.webp"/>
                     {{/image.formats.medium}}
 
                     {{^image.formats.medium}}
                         {{#image.formats.small}}
-                        <img class="section-image" src="./assets/images/{{image.formats.small.name}}.webp"/>
+                        <img class="section-image" src="./case-studies/assets/images/{{image.formats.small.name}}.webp"/>
                         {{/image.formats.small}}
                     {{/image.formats.medium}}
                 {{/image.formats.large}}
