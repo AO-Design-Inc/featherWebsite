@@ -49,6 +49,12 @@ form {
         border: none;
         color: #fffafb;
         border-bottom: 2px solid #fffafb;
+        &::-webkit-scrollbar{
+            display: none
+        }
+        &::-webkit-scrollbar{
+            display: none;
+        }
         @media only screen and (max-width: 660px) {
             width: 90%;
         }

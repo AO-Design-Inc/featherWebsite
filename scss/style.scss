@@ -7,63 +7,73 @@
 @import "duo";
 @import "work";
 @import "contact";
-@import "form";
+@import "cta";
 @import "footer";
 @import "particles";
 @import "casestudy";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
 html,
 body {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 body {
-    // font-family: Helvetica, Arial, sans-serif;
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
-    -webkit-text-size-adjust: 100%;
+  // font-family: Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
 
-    overflow-x: hidden;
-    touch-action: pan-y;
-    -ms-touch-action: pan-y;
+  overflow-x: hidden;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
 
-    position: relative;
-    // overflow-x: hidden;
+  position: relative;
+  // overflow-x: hidden;
 
+  color: $textColor;
+  background-color: #fffafb;
+  margin: 0;
+  padding: 0;
+  // partition parts of website using this div
+  #screenCell {
+    // width: 100vw - (8.3vw * 2);
+    height: 100vh;
+    min-height: 700px;
+    max-height: 1200px;
+
+    display: grid;
+    grid-template-areas:
+      "a a a a b b b b"
+      "a a a a b b b b"
+      "c c c c d d d d"
+      "c c c c d d d d"
+      "e e e e f f f f"
+      "e e e e f f f f";
+    align-items: start;
+  }
+  span {
+    font-weight: 700;
+  }
+  span#feather {
+    color: $featherColorPink;
+  }
+  span#featherBlue {
+    color: $featherColorBlue;
+  }
+  span#blurb {
     color: $textColor;
-    background-color: #fffafb;
-    margin: 0;
-    padding: 0;
-    // partition parts of website using this div
-    #screenCell {
-        width: 100vw - (8.3vw * 2);
-        height: 100vh;
-        min-height: 700px;
+    font-size: clamp(27px, 5vw, 41px);
+  }
+  button {
+    cursor: pointer;
+  }
+}
 
-        display: grid;
-        grid-template-areas:
-            "a a a a b b b b"
-            "a a a a b b b b"
-            "c c c c d d d d"
-            "c c c c d d d d"
-            "e e e e f f f f"
-            "e e e e f f f f";
-        align-items: start;
-    }
-    span {
-        font-weight: 700;
-    }
-    span#feather {
-        color: $featherColorPink;
-    }
-    span#featherBlue {
-        color: $featherColorBlue;
-    }
-    span#blurb {
-        color: $textColor;
-        font-size: clamp(27px, 5vw, 41px);
-    }
-    button {
-        cursor: pointer;
-    }
+#page_wrapper {
+  margin: 0 auto;
+  width: 100vw - ($margins * 2);
+  @media only screen and (min-width: 1500px) {
+    max-width: 1440px;
+  }
 }

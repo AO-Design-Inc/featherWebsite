@@ -4,6 +4,7 @@ $bg: #fffafb;
 $boacOrange: #F08B6F;
 $caseStudyBg: #FFFAFC;
 $textColor: rgba(0, 0, 0, 0.8);
+$textblack: #454444;
 $fontBig: 83px;
 $fontMedium: 3.43rem;
 $statTitle: 2.563rem;
@@ -14,62 +15,71 @@ $margins: 8.3vw;
 
 $vw-viewport: 1920;
 @function get-vw($font) {
-    $vw-context: $vw-viewport * 0.01 * 1px;
-    @return $font / $vw-context * 1vw;
-    @return $font;
-}
-
-.spacing {
-    margin: 0vw $margins 0px $margins;
+  $vw-context: $vw-viewport * 0.01 * 1px;
+  @return $font / $vw-context * 1vw;
+  @return $font;
 }
 .center_child {
-    width: 100%;
-    display: grid;
-    place-items: center;
+  width: 100%;
+  display: grid;
+  place-items: center;
 }
 #line {
-    width: inherit;
-    border: 1px solid rgba(251, 118, 128, 0.5);
+  width: inherit;
+  border: 1px solid rgba(251, 118, 128, 0.5);
 }
-#cta_container {
-    width: clamp(280px, 70vw, 850px);
-    .cta_text {
-        font-weight: 300;
-        font-size: clamp(55px, 17vw, 83px);
+#mail_cont {
+  width: clamp(280px, 70vw, 850px);
+  .cta_text {
+    font-weight: 300;
+    font-size: clamp(55px, 17vw, 83px);
+    a {
+      text-decoration: none;
+      color: $textColor;
     }
-}
-a {text-decoration: none; color: $textColor;}
-a#link_form {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    color: $textColor;
-    background: linear-gradient(to right, $featherColorBlue, $featherColorBlue 50%, $textColor 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 275ms ease;
-    text-decoration: none; // text decorations are clipped in WebKit browsers
-    &:hover {
+    a#link_form {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      color: $textColor;
+      background: linear-gradient(
+        to right,
+        $featherColorBlue,
+        $featherColorBlue 50%,
+        $textColor 50%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 275ms ease;
+      text-decoration: none; // text decorations are clipped in WebKit browsers
+      &:hover {
         background-position: 0 100%;
+      }
     }
-}
-a#link_footer {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    color: $bg;
-    background: linear-gradient(to right, $textColor, $textColor 50%, $bg 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 275ms ease;
-    text-decoration: none; // text decorations are clipped in WebKit browsers
-    &:hover {
+    a#link_footer {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      color: $bg;
+      background: linear-gradient(
+        to right,
+        $textColor,
+        $textColor 50%,
+        $bg 50%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 275ms ease;
+      text-decoration: none; // text decorations are clipped in WebKit browsers
+      &:hover {
         background-position: 0 100%;
+      }
     }
+  }
 }
