@@ -6,7 +6,7 @@ var caseStudiesTemplate = `
 <template id="temp-work-container">
     <div class="spacer"></div>
     {{#page}}
-    <div class="use-case" onclick="location.href='{{filename}}.html';">
+    <div class="use-case" onclick="location.href='#{{filename}}';">
         <img class="use-img" src="./case-studies/assets/thumbnails/{{thumbnail.formats.medium.name}}.webp"/>
         <div class="use-text">
             <p class="use-title">{{splash.title}}</p>

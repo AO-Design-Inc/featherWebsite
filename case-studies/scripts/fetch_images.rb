@@ -1,41 +1,68 @@
 # Script to fetch all the images from the Strapi API
-
-require 'httparty'  # gem install httparty
+require 'httparty'
 require 'json'      # gem install json
+require 'parallel'
 require 'shellwords'
 
 response = HTTParty.get('https://strapifeather.ngrok.io/contents')
 json_text = JSON.parse(response.body)
 
 # Writes JSON to a file for debugging purposes
-#File.write('../content.json', JSON.pretty_generate(json_text))
+File.write('../content.json', JSON.pretty_generate(json_text))
 
-API_URL = "https://strapifeather.ngrok.io"
-THUMB_DIR_PATH = "../assets/thumbnails/"
-IMG_DIR_PATH = "../assets/images/"
+$API_URL = "http://strapifeather.ngrok.io"
+$THUMB_DIR_PATH = "../assets/thumbnails/"
+$IMG_DIR_PATH = "../assets/images/"
 
-json_text.each{ |item| 
+def pull_images(format_list, directory_path)
 
-    # Download thumbnail images
-    if item["thumbnail"]
-        img_thumbnail_format = item["thumbnail"]["formats"]["medium"]
+    Parallel.each(format_list) { |format, value|
+        # set up img_url and path to download folder
+        img_url = $API_URL + value["url"]
+        img_path = directory_path + value["name"]
 
-        # get image url and set up image path
-        img_url = API_URL + img_thumbnail_format["url"]
-        img_path = THUMB_DIR_PATH + img_thumbnail_format["name"]
-
-        # set up escaped path for webp conversion
         img_path_escaped = Shellwords.escape(img_path)
         img_webp_path = img_path_escaped + ".webp"
+        img_jpg_path = img_path_escaped + ".jpg"
 
-        # check if images exists already
-        if !(File.file?(img_path)) || !(File.file?(img_webp_path))
-            File.write(img_path , HTTParty.get(img_url))
+        if !(File.file?(img_webp_path))
+            puts "Fetching #{img_webp_path}"
+            `convert #{img_url} -define webp:lossless=true #{img_webp_path}`
+            `convert #{img_url} #{img_jpg_path}`
+        end  
+    }
+end
 
-            # write webp version with shell script
-            `convert #{img_path_escaped} -define webp:lossless=true #{img_webp_path}`
-        end
-
+json_text.each{ |item| 
+    # Download thumbnail images
+    if item["thumbnail"]
+        thumbnails_formats = item["thumbnail"]["formats"]
+        pull_images(thumbnails_formats, $THUMB_DIR_PATH)
     end
     
+    # Download content images
+    if item["Section1"]
+        item["Section1"].each{ |section|
+            if section["image"]
+                img_formats = section["image"]["formats"]
+                pull_images(img_formats, $IMG_DIR_PATH)
+            end
+        }
+    end
+
+    # Download splash images
+    if item["splash"]["splashImage"]
+        img_url = $API_URL + item["splash"]["splashImage"]["url"]
+        img_path = $THUMB_DIR_PATH + item["splash"]["splashImage"]["name"]
+
+        img_path_escaped = Shellwords.escape(img_path)
+        img_webp_path = img_path_escaped + ".webp"
+        img_jpg_path = img_path_escaped + ".jpg"
+
+        if !(File.file?(img_webp_path))
+            puts "Fetching #{img_webp_path}"
+            `convert #{img_url} -define webp:lossless=true #{img_webp_path}`
+            `convert #{img_url} #{img_jpg_path}`
+        end  
+    end
 }

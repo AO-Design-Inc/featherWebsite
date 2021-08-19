@@ -1,0 +1,169 @@
+#splash {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    #splash-text {
+        padding: 8vh 8vw;
+        color: white;
+    }
+}
+
+// not nested because these classes are also used in the footer
+.splash-title {
+    font-size: $fontMedium;
+    margin: 0 0 4vh 0;
+    width: 50%;
+}
+
+.splash-org, .splash-year {
+    font-size: $fontMini;
+}
+
+#section-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    padding: 0 10vw;
+    margin: 0 auto;
+
+    .section {
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+
+        .section-title {
+            padding: 0 2vw;
+            color: $boacOrange;
+            font-size: $fontMini;
+        }
+
+        .section-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 0 2vw;
+            margin: 5vh 0 15vh 0;
+
+            .section-heading {
+                width: 40%;
+                min-width: 200px;
+                font-size: $fontMedium;
+                margin: 0;
+            }
+
+            .section-text {
+                width: 50%; 
+                min-width: 300px;
+                line-height: 24px;
+                font-size: 18px;
+            
+                white-space: pre-wrap;
+            }
+        }
+
+        .section-image {
+            border-radius: 20px;
+            width: 100%;
+            box-shadow: 1px 1px 4px rgba(255,92,92,0.25);
+        }
+
+        hr {
+            width: 92%;
+            border-top: none;
+            border-bottom: 1px solid $boacOrange;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .section-text {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section-text {
+        width: 100%;
+    }
+
+    .section-heading {
+        width: 100%;
+        margin-top: 4vh;
+        font-size: $statTitle;
+    }
+}
+
+#footer {
+
+    .footer-banner {
+        color: $textColor;
+        padding: 5% 10vw;
+
+        .footer-text {
+            max-width: 1000px;
+            margin: 5% auto;
+
+            .logo-subtext{
+                width: 60%;
+                font-size: $fontMedium;
+                margin: 3% 0;
+            }
+            
+            // abstract this out
+            .contact-button {
+                border: none;
+                border-radius: 30px;
+                background-color: $boacOrange;
+                color: white;
+                padding: 2vh 2vw;
+                font-size: $fontMini
+            }
+
+        }
+    }
+
+    .next-study {
+        color: white;
+        padding: 8vh 0;
+
+        h3 {
+            margin: 0;
+        }
+
+        .next-study-container {
+            width: 85vw;
+            margin: 0 auto;
+
+            .next-study-content {
+                margin-top: 10%;
+            }
+        }       
+    }
+}
+
+@media (min-width: 1000px) {
+    .footer-text .logo {
+        width: 35%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .logo-subtext{
+        font-size: 2.563em;
+        margin: 4vh 0;
+    }
+
+    .footer-text .logo {
+        width: 50%;
+    }
+}
