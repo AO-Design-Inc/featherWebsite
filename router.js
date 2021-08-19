@@ -17,7 +17,9 @@ function onRouteChanged() {
         else 
             page.style.display = "none";
     }
-    window.scrollTo(0,0);
+    if (hash != "main"){
+        window.scrollTo(0,0);
+    }
 }
 
 window.addEventListener("hashchange", onRouteChanged);
