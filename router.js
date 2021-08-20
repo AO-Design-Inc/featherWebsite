@@ -16,21 +16,21 @@ function onRouteChanged() {
     for (page of pages) {
         page.style.display = (page.id == hash ? "block" : "none");
     }
-    if (hash != "main"){
-        window.scrollTo(0,0);
-    }
 
+    window.scrollTo(0,0);
     currPage = hash;
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 // smooth scrolls to elements on main page
-function mainSmoothScroll(element_id){
+async function mainSmoothScroll(element_id){
 
     if (currPage != "main"){
-        for (page of pages) {
-            page.style.display = (page.id == 'main' ? "block" : "none");
-        }
-        currPage = "main";
+        window.location.hash = "main";
+        await sleep(50);
     }
 
     document.getElementById(element_id).scrollIntoView({behavior: "smooth"});
