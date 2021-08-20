@@ -1,6 +1,6 @@
 let {{filename}}String = `
 <template id="{{filename}}">
-    <dash-board></dash-board>
+    <dash-board action="email"></dash-board>
     <div id="splash" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%), 
         url('./case-studies/assets/thumbnails/{{splash.splashImage.name}}.webp');">
         <div id="splash-text">
@@ -72,7 +72,7 @@ let {{filename}}String = `
                 </div>
                 <p class="logo-subtext">Beautiful, lightweight websites</p>
                 
-                <button class="contact-button">Contact Us</button>
+                <button class="contact-button" onclick="mainSmoothScroll('cta_container');">Contact Us</button>
             </div>
         </div>
 

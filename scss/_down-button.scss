@@ -1,0 +1,10 @@
+@import "variables";
+
+down-button{
+    display: block;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
