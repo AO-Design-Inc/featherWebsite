@@ -1,0 +1,19 @@
+@import "variables";
+
+#main {
+    .color-path {
+        fill: $featherColorPink;
+    }
+}
+
+#boac {
+    .color-path {
+        fill: $boacOrange;
+    }
+}
+
+#varuna {
+    .color-path {
+        fill: $varunaGreen;
+    }
+}
