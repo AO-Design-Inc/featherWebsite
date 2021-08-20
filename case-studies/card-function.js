@@ -1,5 +1,4 @@
 const slider = document.querySelector('work-container');
-console.log(slider);
 var isDown = false;
 var startX;
 var scrollLeft;

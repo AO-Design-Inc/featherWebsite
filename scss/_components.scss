@@ -4,6 +4,10 @@
     .color-path {
         fill: $featherColorPink;
     }
+
+    #main-button .color-path {
+        fill: black;
+    }
 }
 
 #boac {
@@ -15,5 +19,13 @@
 #varuna {
     .color-path {
         fill: $varunaGreen;
+    }
+}
+
+down-button{
+    display: block;
+
+    &:hover {
+        cursor: pointer;
     }
 }

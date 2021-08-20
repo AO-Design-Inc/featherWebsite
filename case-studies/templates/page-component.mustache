@@ -7,13 +7,7 @@ let {{filename}}String = `
             <p class="splash-year">{{splash.year}}</p>
             <p class="splash-org">{{splash.orgType}}</p>
             <p class="splash-title">{{splash.title}}</p>
-            <div id="down">
-                <svg width="90" height="30" viewBox="0 0 90 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="90" height="30" rx="15" fill="#F08B6F"/>
-                    <path d="M45.4688 18.75L38.4375 11.25H52.5L45.4688 18.75Z" fill="white" stroke="white" stroke-linejoin="round"/>
-                </svg>
-
-            </div>
+            <down-button onclick="smoothScrollOneFrameDown()"></down-button>
         </div>
     </div>
     <div id="section-container">
@@ -77,9 +71,8 @@ let {{filename}}String = `
                     </svg>
                 </div>
                 <p class="logo-subtext">Beautiful, lightweight websites</p>
-
+                
                 <button class="contact-button">Contact Us</button>
-                    
             </div>
         </div>
 
@@ -96,10 +89,7 @@ let {{filename}}String = `
                     <p class="splash-org">{{splash.orgType}}</p>
                     <p class="splash-title">{{splash.title}}</p>
 
-                    <svg width="90" height="30" viewBox="0 0 90 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="90" height="30" rx="15" fill="#F08B6F"/>
-                        <path d="M45.4688 18.75L38.4375 11.25H52.5L45.4688 18.75Z" fill="white" stroke="white" stroke-linejoin="round"/>
-                    </svg>
+                    <down-button onclick="smoothScrollTo('{{filename}}')"></down-button>
                 </div>
             </div>          
         </div>

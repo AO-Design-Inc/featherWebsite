@@ -77,6 +77,7 @@
 
     <!-- Non-generated components -->
     <script src="components/dashboard.js"></script>
+    <script src="components/downButton.js"></script>
 
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="/icons/browserconfig.xml" />
@@ -153,30 +154,7 @@
           <div id="pitch">
             <span id="feather">Feather</span> makes beautiful, lightweight
             websites.
-            <div id="down">
-              <svg
-                width="90"
-                height="31"
-                viewBox="0 0 90 31"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  y="0.814087"
-                  width="90"
-                  height="30"
-                  rx="15"
-                  fill="black"
-                  fill-opacity="0.8"
-                />
-                <path
-                  d="M45.4688 19.5641L38.4375 12.0641H52.5L45.4688 19.5641Z"
-                  fill="white"
-                  stroke="white"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
+            <down-button id="main-button" onclick="smoothScrollOneFrameDown()"></down-button>
           </div>
         </div>
       </div>
@@ -494,8 +472,8 @@
       </div>
     </footer>
   </div>
-  <boac-page id="boac" class="page"></boac-page>
-  <varuna-page id="varuna" class="page"></varuna-page>
+  <boac-page id="boac" class="page" style="display:none;"></boac-page>
+  <varuna-page id="varuna" class="page" style="display:none;"></varuna-page>
 </body>
 <script src="particle.js"></script>
 <script src="router.js"></script>

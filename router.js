@@ -10,16 +10,22 @@ if(window.location.hash == ""){
 // relies on the page ids matching up to the hash
 function onRouteChanged() {
     var hash = window.location.hash.split('#')[1];
+
+    // temporary fix
+    if (hash == "cta_container") {
+        for (page of pages) {
+            page.style.display = (page.id == 'main' ? "block" : "none");
+        }
+        return;
+    }
+
     for (page of pages) {
-        console.log(pages);
-        if (page.id == hash)
-            page.style.display = "block"; 
-        else 
-            page.style.display = "none";
+        page.style.display = (page.id == hash ? "block" : "none");
     }
     if (hash != "main"){
         window.scrollTo(0,0);
     }
+    
 }
 
 window.addEventListener("hashchange", onRouteChanged);
