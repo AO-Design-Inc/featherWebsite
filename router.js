@@ -11,14 +11,30 @@ if(window.location.hash == ""){
 
 // relies on the page ids matching up to the hash
 function onRouteChanged() {
-    var hash = window.location.hash.split('#')[1];
+    var hashList = window.location.hash.split('#');
+    
+    var pageHash = hashList[1];
+    var contentHash = null;
 
-    for (page of pages) {
-        page.style.display = (page.id == hash ? "block" : "none");
+    if (hashList.length == 3)
+        contentHash = hashList[2];
+
+    if (currPage != pageHash){
+        for (page of pages) {
+            page.style.display = (page.id == pageHash ? "block" : "none");
+        }
+        currPage = pageHash;
     }
 
-    window.scrollTo(0,0);
-    currPage = hash;
+    if (contentHash !== null) {
+        console.log("scrolling to content");
+        document.getElementById(contentHash).scrollIntoView();
+    } else {
+        console.log("start at top");
+        window.scrollTo(0,0);
+    }
+
+    
 }
 
 function sleep(ms) {
@@ -30,10 +46,12 @@ async function mainSmoothScroll(element_id){
 
     if (currPage != "main"){
         window.location.hash = "main";
-        await sleep(50);
+        //await sleep(25);
+        console.log(document.getElementById(element_id));
+        document.getElementById(element_id).scrollIntoView();
+    } else {
+        document.getElementById(element_id).scrollIntoView({behavior: "smooth"});
     }
-
-    document.getElementById(element_id).scrollIntoView({behavior: "smooth"});
 }
 
 window.addEventListener("hashchange", onRouteChanged);

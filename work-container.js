@@ -33,7 +33,6 @@ class caseStudy extends HTMLElement{
         // fetch html from string
         var cardHtml = parser.parseFromString(caseStudiesTemplate, 'text/html');
         var card = cardHtml.getElementById("temp-work-container");
-        console.log(card.content);
         this.appendChild(card.content);
     }
 }

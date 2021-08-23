@@ -63,7 +63,7 @@ var dashboardString = `
         </svg>
     </div>
 </button>
-<button aria-label="Email Us" id="butt_contact_form" onclick="mainSmoothScroll('cta_container');">
+<button aria-label="Email Us" id="butt_contact_form" onclick="mainSmoothScroll('cta-screencell');">
     <div>
         <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path

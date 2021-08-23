@@ -1,7 +1,6 @@
+// splash screen css
 #splash {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
     overflow: hidden;
     width: 100%;
     height: 100vh;
@@ -14,6 +13,12 @@
         padding: 8vh 8vw;
         color: white;
     }
+}
+
+.image-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 // not nested because these classes are also used in the footer
@@ -127,8 +132,7 @@
             // abstract this out
             .contact-button {
                 border: none;
-                border-radius: 30px;
-                background-color: $boacOrange;
+                border-radius: 9999px;
                 color: white;
                 padding: 2vh 2vw;
                 font-size: $fontMini
@@ -196,6 +200,10 @@
     #splash {
         background-color: #f3a18b;
     }
+
+    .themed {
+        background-color: $boacOrange
+    }
 }
 
 #varuna {
@@ -205,5 +213,9 @@
 
     #splash {
         background-color: $varunaGreen
+    }
+
+    .themed {
+        background-color: $varunaGreen;
     }
 }
