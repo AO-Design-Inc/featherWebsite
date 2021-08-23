@@ -1,5 +1,7 @@
 const pages = document.getElementsByClassName("page");
 var currPage;
+var newSession = true;
+
 
 // if there is no hash, default to main hash
 if(window.location.hash == ""){
@@ -11,47 +13,36 @@ if(window.location.hash == ""){
 
 // relies on the page ids matching up to the hash
 function onRouteChanged() {
+
+    // parse hash list
     var hashList = window.location.hash.split('#');
     
     var pageHash = hashList[1];
-    var contentHash = null;
+    var pageChanged = false;
 
-    if (hashList.length == 3)
-        contentHash = hashList[2];
-
+    // handles page change
     if (currPage != pageHash){
         for (page of pages) {
             page.style.display = (page.id == pageHash ? "block" : "none");
         }
+        pageChanged = true;
         currPage = pageHash;
     }
 
-    if (contentHash !== null) {
-        console.log("scrolling to content");
-        document.getElementById(contentHash).scrollIntoView();
+    // checks  and handles content hash. If content is on the same page, scroll into view
+    // otherwise just jump to it. On a new session, the content hash is ignored since 
+    // Page position is cached between page reloads, so when the page is reloaded, trying to
+    // force an element scroll can cause the page to jump between content and last cached page position
+    if (!newSession && hashList.length == 3){
+        console.log("page scrolled");
+        var hashElement = document.getElementById(hashList[2]);
+        hashElement.scrollIntoView( pageChanged ? {behavior: "auto"} : {behavior: "smooth"} );
     } else {
-        console.log("start at top");
         window.scrollTo(0,0);
     }
 
-    
-}
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-// smooth scrolls to elements on main page
-async function mainSmoothScroll(element_id){
-
-    if (currPage != "main"){
-        window.location.hash = "main";
-        //await sleep(25);
-        console.log(document.getElementById(element_id));
-        document.getElementById(element_id).scrollIntoView();
-    } else {
-        document.getElementById(element_id).scrollIntoView({behavior: "smooth"});
-    }
+    newSession = false;
 }
 
 window.addEventListener("hashchange", onRouteChanged);
+
