@@ -142,16 +142,6 @@
         .footer-text {
             max-width: 1000px;
             margin: 5% auto;
-            
-            // abstract this out
-            .contact-button {
-                border: none;
-                border-radius: 9999px;
-                color: white;
-                padding: 15px 25px;
-                font-size: $fontMini;
-            }
-
         }
     }
 
