@@ -5,21 +5,15 @@
   justify-content: center;
   max-height: 1400px;
   height: 100vh;
+  padding: 0px;
+
   @media only screen and (max-width: 900px) {
-    justify-content: left;
-  }
-}
-.cta {
-  // padding: 0px 6vw;
-  @media only screen and (min-width: 1200px) {
-    padding: 0px;
-  }
-  @media only screen and (max-width: 900px) {
-    padding: 0px;
+
     .point {
       margin-bottom: 120px;
     }
   }
+
   #cta_container {
     grid-area: c;
     @media only screen and (max-width: 900px) {
