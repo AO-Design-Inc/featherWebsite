@@ -34,13 +34,27 @@
         grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
         .left {
             background-color: $featherColorBlue;
+            justify-content: flex-end;
+
         }
         .right {
             background-color: $featherColorPink;
+            justify-content: flex-start;
         }
         .box {
-            #content_container {
-                margin: 130px clamp(0.3rem, 9vw, 6.25rem) 130px clamp(0.3rem, 9vw, 7.5rem);
+            display: flex;
+            flex-direction: row;
+            @media (min-width: 1000px){
+                padding: 130px;
+            }
+
+            @media (max-width: 1000px){
+                padding: 130px 8vw;
+            }
+            
+            .content_container {
+                width: 100%;
+                max-width: 600px;
                 color: white;
                 #duo_title {
                     font-size: clamp(55px, 10vw, 83px);
