@@ -216,7 +216,15 @@
     }
 
     .themed {
-        background-color: $boacOrange
+        background-color: $boacOrange;
+    }
+
+    feather-button::part(button):after {
+        background-color: $boacOrange;
+    }
+    
+    feather-button::part(button):before {
+        background-color: rgba(255,255,255,0.2);
     }
 }
 
@@ -226,10 +234,18 @@
     }
 
     #splash {
-        background-color: $varunaGreen
+        background-color: $varunaGreen;
     }
 
     .themed {
         background-color: $varunaGreen;
+    }
+
+    feather-button::part(button):after {
+        background-color: $varunaGreen;
+    }
+    
+    feather-button::part(button):before {
+        background-color: rgba(255,255,255,0.2);
     }
 }
