@@ -16,12 +16,19 @@ slider.addEventListener('mouseleave', () => {
 });
 
 slider.addEventListener('mouseup', (e) => {
-    isDown = false;
-    if (mouseMoved){
-        e.preventDefault();
-        e.stopPropagation();
-    }
+    isDown = false;  
 });
+
+// not perfect yet
+document.querySelectorAll(".use-case").forEach(item => {
+    item.addEventListener('click', (e) => {
+        console.log(mouseMoved);
+        if (mouseMoved){
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    })
+})
 
 slider.addEventListener('mousemove', (e) => {
     mouseMoved = true;
