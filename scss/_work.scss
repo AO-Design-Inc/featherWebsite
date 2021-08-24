@@ -59,9 +59,17 @@
             }
 
             // to see if drag to scroll works
-            .spacer {
-                height: 275px;
-                min-width: 50%;
+            // bigger screens
+            @media (min-width: 1000px) {
+                .spacer {
+                    min-width: 50%;
+                }
+            }
+
+            @media (max-width: 1000px) {
+                .spacer {
+                    min-width: 10%;
+                }
             }
 
             .use-case {
