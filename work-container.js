@@ -16,7 +16,7 @@ var caseStudiesTemplate = `
         <img class="use-img" src="./case-studies/assets/thumbnails/medium_varuna-thumbnail.png.webp"/>
         <div class="use-text">
             <p class="use-title">Varuna</p>
-            <p class="use-blurb">When COVID19 first hit, doctors in India lacked a succinct way of reaching patients without physical contact. </p>
+            <p class="use-blurb">When COVID19 first hit, doctors in India found that they lacked a succinct way of reaching patients without physical contact. Methods of communication between providers and patients were limited. Unlike the heavily centralized US system, few doctors in India had an existing web presence. </p>
         </div>
     </div>
     <div class="spacer"></div>
