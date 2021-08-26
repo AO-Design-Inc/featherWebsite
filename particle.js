@@ -51,15 +51,7 @@ class Particle {
       this.relocate();
     }
   }
-  o() {
-    if (window.scrollY.map(0, height, 0, 1) >= 0.06) {
-      canvas.style.transition = '0.6s cubic-bezier(0.65, 0, 0.35, 1)'
-      canvas.style.opacity = 0;
-    } else {
-      canvas.style.transition = '0.6s cubic-bezier(0.65, 0, 0.35, 1)';
-      canvas.style.opacity = 0.5;
-    }
-  }
+
 }
 
 function init() {
@@ -70,13 +62,22 @@ function init() {
 
 var gradient;
 
+
 function move() {
   if (canvas.getContext) {
-    ctx.fillStyle = "#fffafb";
-    ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+
+    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+    if (window.scrollY.map(0, height, 0, 1) >= 0.06) {
+      canvas.style.transition = '0.6s cubic-bezier(0.65, 0, 0.35, 1)'
+      canvas.style.opacity = 0;
+    } else {
+      canvas.style.transition = '0.6s cubic-bezier(0.65, 0, 0.35, 1)';
+      canvas.style.opacity = 0.5;
+    }
+
     for (i in particles) {
       p = particles[i];
-      p.o();
       p.move();
       gradient = ctx.createRadialGradient(
         p.x,
