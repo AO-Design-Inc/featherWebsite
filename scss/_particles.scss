@@ -1,7 +1,14 @@
 .c {
     position: fixed;
     z-index: -4;
-    // width: 100vw;
-    // height: 100vh;
     opacity: 35%;
 }
+
+#particles {
+    opacity: 35%;
+}
+
+#feather {
+    z-index: -5;
+}
+
