@@ -1,32 +1,32 @@
-const featherCanvas = document.getElementById("feather");
+const featherCanvas = document.getElementById("feather-canvas");
 var featherCtx = featherCanvas.getContext("2d");
 
 // set canvas dimensions to screen size
-featherCanvas.width = window.innerWidth;
-featherCanvas.height = window.innerHeight;
+featherCanvas.width = Math.min(window.innerWidth, 1800);
+featherCanvas.height = Math.min(window.innerHeight, 1200);
 
 // linear gradient for circles
 var canvasGradient = featherCtx.createLinearGradient(0,500,0, 0);
-canvasGradient.addColorStop(1, '#FFFFFF');
-canvasGradient.addColorStop(0, '#FB7680');
+canvasGradient.addColorStop(1, '#fffafb');
+canvasGradient.addColorStop(0, 'rgba(251, 118, 128, 0.35)');
 
 function drawCircles(){
-    featherCtx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    featherCtx.clearRect(0, 0, featherCanvas.width, featherCanvas.height);
 
     featherCtx.fillStyle = "#fffafb";
-    featherCtx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+    featherCtx.fillRect(0, 0, featherCanvas.width, featherCanvas.height);
 
     featherCtx.globalCompositeOperation = "multiply";
     featherCtx.strokeStyle = canvasGradient;
 
-    var position = [window.innerWidth * .75, window.innerHeight * .40];
+    var position = [featherCanvas.width * .75, featherCanvas.height * .40];
 
     featherCtx.beginPath();
-    featherCtx.arc(...position, window.innerHeight*.75, 0, 2*Math.PI);
+    featherCtx.arc(...position, featherCanvas.height*.75, 0, 2*Math.PI);
     featherCtx.stroke();
 
     featherCtx.beginPath();
-    featherCtx.arc(...position, window.innerHeight*1.05, 0, 2*Math.PI);
+    featherCtx.arc(...position, featherCanvas.height*1.05, 0, 2*Math.PI);
     featherCtx.stroke();
 
 }
@@ -39,13 +39,20 @@ function drawImage(){
     console.log("in draw image");
     featherCtx.save();
 
-    featherCtx.translate(window.innerWidth * .15, window.innerHeight*.9)
+
+    featherCtx.translate(featherCanvas.width * .25, featherCanvas.height*.9);
     featherCtx.rotate(-45 * Math.PI / 180);
-    featherCtx.drawImage(image, 0, 0, window.innerHeight*2, (window.innerHeight*2)/3);
+    featherCtx.drawImage(image, 0, 0, featherCanvas.height*2, (featherCanvas.height*2)/3);
 
     featherCtx.restore();
 }
 
+window.onresize = () => {
+    featherCanvas.width = Math.min(window.innerWidth, 2000);
+    featherCanvas.height = Math.min(window.innerHeight, 1300);
+    drawCircles();
+    drawImage();
+}
 
 
 drawCircles();
