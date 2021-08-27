@@ -6,14 +6,14 @@ var caseStudiesTemplate = `
 <template id="temp-work-container">
     <div class="spacer"></div>
     <div class="use-case" onclick="location.href='#boac';">
-        <img class="use-img" src="./case-studies/assets/thumbnails/medium_thumbnail-boac.png.webp"/>
+        <img class="use-img" src="./case-studies/assets/thumbnails/medium_cover.png.webp"/>
         <div class="use-text">
             <p class="use-title">Business Owners Advisory Council</p>
             <p class="use-blurb">The Business Owners Advisory Council (BOAC) is a forum of industry leaders and successful entrepreneurs that share information and critical strategies to achieve professional and personal objectives. </p>
         </div>
     </div>
     <div class="use-case" onclick="location.href='#varuna';">
-        <img class="use-img" src="./case-studies/assets/thumbnails/medium_varuna-thumbnail.png.webp"/>
+        <img class="use-img" src="./case-studies/assets/thumbnails/medium_varuna-splash.png.webp"/>
         <div class="use-text">
             <p class="use-title">Varuna</p>
             <p class="use-blurb">When COVID19 first hit, doctors in India found that they lacked a succinct way of reaching patients without physical contact. Methods of communication between providers and patients were limited. Unlike the heavily centralized US system, few doctors in India had an existing web presence. </p>
