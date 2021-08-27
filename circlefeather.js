@@ -1,14 +1,16 @@
 const featherCanvas = document.getElementById("feather-canvas");
 var featherCtx = featherCanvas.getContext("2d");
 
-// set canvas dimensions to screen size
-featherCanvas.width = Math.min(window.innerWidth, 1800);
-featherCanvas.height = Math.min(window.innerHeight, 1200);
-
 // linear gradient for circles
 var canvasGradient = featherCtx.createLinearGradient(0,500,0, 0);
 canvasGradient.addColorStop(1, '#fffafb');
 canvasGradient.addColorStop(0, 'rgba(251, 118, 128, 0.35)');
+
+const resizeCanvas = () => {
+    // set canvas dimensions 
+    featherCanvas.width = Math.min(window.innerWidth, 2000);
+    featherCanvas.height = Math.max(800, Math.min(window.innerHeight, 1200));
+}
 
 function drawCircles(){
     featherCtx.clearRect(0, 0, featherCanvas.width, featherCanvas.height);
@@ -39,20 +41,21 @@ function drawImage(){
     console.log("in draw image");
     featherCtx.save();
 
-
-    featherCtx.translate(featherCanvas.width * .25, featherCanvas.height*.9);
+    featherCtx.translate(featherCanvas.width-1100, featherCanvas.height*.9);
     featherCtx.rotate(-45 * Math.PI / 180);
-    featherCtx.drawImage(image, 0, 0, featherCanvas.height*2, (featherCanvas.height*2)/3);
+    var featherDimensions = [Math.min(1600, featherCanvas.height*2), Math.min(1600/3, (featherCanvas.height*2)/3)]
+    //var featherDimensions = [featherCanvas.height*2, (featherCanvas.height*2)/3];
+    featherCtx.drawImage(image, 0, 0, ...featherDimensions);
 
     featherCtx.restore();
 }
 
 window.onresize = () => {
-    featherCanvas.width = Math.min(window.innerWidth, 2000);
-    featherCanvas.height = Math.min(window.innerHeight, 1300);
+    featherCanvas.width = Math.min(window.innerWidth, 1800);
+    featherCanvas.height = Math.max(800, Math.min(window.innerHeight, 1200));
     drawCircles();
     drawImage();
 }
 
-
+resizeCanvas();
 drawCircles();
