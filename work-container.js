@@ -19,6 +19,13 @@ var caseStudiesTemplate = `
             <p class="use-blurb">When COVID19 first hit, doctors in India found that they lacked a succinct way of reaching patients without physical contact. Methods of communication between providers and patients were limited. Unlike the heavily centralized US system, few doctors in India had an existing web presence. </p>
         </div>
     </div>
+    <div class="use-case" onclick="location.href='#featherlabs';">
+        <img class="use-img" src="./case-studies/assets/thumbnails/medium_labs_splash.png.webp"/>
+        <div class="use-text">
+            <p class="use-title">Feather Labs</p>
+            <p class="use-blurb">A project that exemplifies our approach to web development, design &amp; 3D rendering.</p>
+        </div>
+    </div>
     <div class="spacer"></div>
 </template>;`
 
