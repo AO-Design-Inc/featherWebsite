@@ -29,21 +29,7 @@ let {{filename}}String = `
             </div>
 
             {{#image}}
-                {{#image.formats.large}}
-                <img class="section-image" src="./case-studies/assets/images/{{image.formats.large.name}}.webp"/>
-                {{/image.formats.large}}
-
-                {{^image.formats.large}}
-                    {{#image.formats.medium}}
-                    <img class="section-image" src="./case-studies/assets/images/{{image.formats.medium.name}}.webp"/>
-                    {{/image.formats.medium}}
-
-                    {{^image.formats.medium}}
-                        {{#image.formats.small}}
-                        <img class="section-image" src="./case-studies/assets/images/{{image.formats.small.name}}.webp"/>
-                        {{/image.formats.small}}
-                    {{/image.formats.medium}}
-                {{/image.formats.large}}
+                <img class="section-image" src="./case-studies/assets/images/{{image.name}}.webp"/>
             {{/image}}
 
             {{^image}}
