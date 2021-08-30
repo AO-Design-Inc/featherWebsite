@@ -15,18 +15,14 @@ slider.addEventListener('mouseleave', () => {
     isDown = false;
 });
 
-slider.addEventListener('mouseup', (e) => {
+slider.addEventListener('mouseup', () => {
     isDown = false;  
 });
 
-// not perfect yet
 document.querySelectorAll(".use-case").forEach(item => {
-    item.addEventListener('click', (e) => {
-        console.log(mouseMoved);
-        if (mouseMoved){
-            e.preventDefault();
-            e.stopPropagation();
-        }
+    item.addEventListener('click', () => {
+        if (!mouseMoved)
+            location.href="#"+item.id.split("-")[0];
     })
 })
 
