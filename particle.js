@@ -68,6 +68,8 @@ function move() {
 
     ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
+    canvas.style.display = (window.innerWidth < 800 ? "none" : "block");
+
     if (window.scrollY.map(0, height, 0, 1) >= 0.06) {
       canvas.style.transition = '0.6s cubic-bezier(0.65, 0, 0.35, 1)'
       canvas.style.opacity = 0;

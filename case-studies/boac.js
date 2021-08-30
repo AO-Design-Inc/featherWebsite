@@ -146,7 +146,7 @@ Our strategy required a two pronged approach. First we transformed the root doma
             </div>
         </div>
 
-        <div class="next-study" class="image-cover"
+        <div class="next-study image-cover" class="image-cover"
                 style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%), 
                     url('./case-studies/assets/thumbnails/varuna-splash.png.webp');">
             <div class="next-study-container">
