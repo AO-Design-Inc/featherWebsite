@@ -1,5 +1,7 @@
 const featherCanvas = document.getElementById("feather-canvas");
 var featherCtx = featherCanvas.getContext("2d");
+
+// fading in and out transition
 featherCanvas.style.transition = '0.2s cubic-bezier(0.65, 0, 0.35, 1)'
 
 // linear gradient for circles
@@ -7,9 +9,7 @@ var canvasGradient = featherCtx.createLinearGradient(0,500,0, 0);
 canvasGradient.addColorStop(1, '#fffafb');
 canvasGradient.addColorStop(0, 'rgba(251, 118, 128, 0.35)');
 
-Number.prototype.map = function (in_min, in_max, out_min, out_max) {
-    return ((this - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
-};
+var duoContainer = document.getElementById("duo_container");
 
 // set canvas dimensions 
 const resizeCanvas = () => {
@@ -35,7 +35,7 @@ function drawCircles(){
 
     if (window.scrollY.map(0, height, 0, 1) < 0.20) {
         circlePosition = [featherCanvas.width * .75, featherCanvas.height * .40];
-    } else if (window.scrollY.map(0, height, 0, 1) > 0.30) {
+    } else {
         circlePosition = [featherCanvas.width * .15, featherCanvas.height * .40];
     }
 
@@ -65,7 +65,7 @@ function drawImage(){
     if (window.scrollY.map(0, height, 0, 1) < 0.20) {
         featherPosition = [0.8 * canvasWidth - 1000, 0.9 * canvasHeight];
         featherAngle = -45;
-    } else if (window.scrollY.map(0, height, 0, 1) > 0.30) {
+    } else {
         featherPosition = [0 , -1 * canvasHeight];
         featherAngle = 65;
     }
@@ -78,9 +78,11 @@ function drawImage(){
     featherCtx.restore();
 }
 
-function drawBackground(){
+var duoBottom = duoContainer.offsetTop + duoContainer.offsetHeight;
 
-    if (window.scrollY.map(0, height, 0, 1) < 0.20 || window.scrollY.map(0, height, 0, 1) > 0.60) {
+function drawBackground(){
+    
+    if (window.scrollY.map(0, height, 0, 1) < 0.20 || window.scrollY + window.innerHeight > duoBottom) {
         drawCircles();
         drawImage();
         featherCanvas.style.opacity = 1;
@@ -89,6 +91,8 @@ function drawBackground(){
     }
 
     window.onresize = () => {
+        // recalculate height
+        duoBottom = duoContainer.offsetTop + duoContainer.offsetHeight;
         resizeCanvas();
         drawCircles();
         drawImage();
