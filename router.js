@@ -34,7 +34,6 @@ function onRouteChanged() {
     // Page position is cached between page reloads, so when the page is reloaded, trying to
     // force an element scroll can cause the page to jump between content and last cached page position
     if (!newSession && hashList.length == 3){
-        console.log("page scrolled");
         var hashElement = document.getElementById(hashList[2]);
         hashElement.scrollIntoView( pageChanged ? {behavior: "auto"} : {behavior: "smooth"} );
     } else {

@@ -18,7 +18,11 @@ const resizeCanvas = () => {
     featherCanvas.width = Math.min(window.innerWidth, 2500);
 
     // bound height between 800 and 1440
-    featherCanvas.height = Math.max(800, Math.min(window.innerHeight, 1440));
+    var currHeight = featherCanvas.height;
+    var tempHeight = Math.max(800, Math.min(window.innerHeight, 1440));
+
+    if (Math.abs(currHeight - tempHeight) > 100)
+        featherCanvas.height = tempHeight;
 }
 
 var circlePosition;
