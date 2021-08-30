@@ -90,7 +90,7 @@ function drawBackground(){
         drawCircles();
         drawImage();
 
-        featherCanvas.style.opacity = (window.innerWidth < 800 ? 0.5 : 1);
+        featherCanvas.style.opacity = (window.innerWidth < 800 ? 0.65 : 1);
     } else { 
         featherCanvas.style.opacity = 0;
     }

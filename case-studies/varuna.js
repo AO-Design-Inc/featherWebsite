@@ -112,7 +112,7 @@ Because Varuna was a new service, gaining the trust of providers was difficult. 
         
             <div class="section-content">
                 <p class="section-heading">
-                    Adaptation 2
+                    Adaptation Two
                 </p>
 
                 <p class="section-text">After gaining a decent client base, we began to refine the UI of the Varuna system for the patients using the site to book appointments.  
