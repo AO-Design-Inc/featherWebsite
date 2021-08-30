@@ -20,8 +20,15 @@
     @media only screen and (max-width: 900px) {
       grid-area: e;
     }
-    // max-width: 540px;
-    width: 65%;
+
+    @media (max-width: 700px) {
+      width: 95%;
+    }
+
+    @media (min-width: 700px) {
+      width: 65%;
+    }
+    
     min-width: 303px;
     height: 580px;
     background: #ffffff;

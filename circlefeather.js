@@ -85,8 +85,9 @@ function drawBackground(){
     if (window.scrollY.map(0, height, 0, 1) < 0.20 || window.scrollY + window.innerHeight > duoBottom) {
         drawCircles();
         drawImage();
-        featherCanvas.style.opacity = 1;
-    } else {
+
+        featherCanvas.style.opacity = (window.innerWidth < 800 ? 0.5 : 1);
+    } else { 
         featherCanvas.style.opacity = 0;
     }
 
