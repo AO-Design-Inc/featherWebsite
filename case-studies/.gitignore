@@ -1,7 +1,2 @@
-assets/**/*.webp
-assets/**/*.jpg
-
-*.js
 content.json
 
-!card-function.js
