@@ -5,6 +5,13 @@
 var caseStudiesTemplate = `
 <template id="temp-work-container">
     <div class="spacer"></div>
+    <div class="use-case" id="featherlabs-card">
+        <img class="use-img" src="./case-studies/assets/thumbnails/medium_labs_splash.png.webp" draggable="false"/>
+        <div class="use-text">
+            <p class="use-title">Feather Labs</p>
+            <p class="use-blurb">A project that exemplifies our approach to web development, design &amp; 3D rendering.</p>
+        </div>
+    </div>
     <div class="use-case" id="boac-card">
         <img class="use-img" src="./case-studies/assets/thumbnails/medium_cover.png.webp" draggable="false"/>
         <div class="use-text">
@@ -17,13 +24,6 @@ var caseStudiesTemplate = `
         <div class="use-text">
             <p class="use-title">Varuna</p>
             <p class="use-blurb">When COVID19 first hit, doctors in India found that they lacked a succinct way of reaching patients without physical contact. Methods of communication between providers and patients were limited. Unlike the heavily centralized US system, few doctors in India had an existing web presence. </p>
-        </div>
-    </div>
-    <div class="use-case" id="featherlabs-card">
-        <img class="use-img" src="./case-studies/assets/thumbnails/medium_labs_splash.png.webp" draggable="false"/>
-        <div class="use-text">
-            <p class="use-title">Feather Labs</p>
-            <p class="use-blurb">A project that exemplifies our approach to web development, design &amp; 3D rendering.</p>
         </div>
     </div>
     <div class="spacer"></div>

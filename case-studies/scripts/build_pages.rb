@@ -2,7 +2,7 @@ require 'httparty'  # gem install httparty
 require 'json'      # gem install json
 require 'mustache'  # gem install mustache
 
-response = HTTParty.get('https://strapifeather.ngrok.io/contents')
+response = HTTParty.get('https://strapifeather.ngrok.io/contents?_sort=listOrder:DESC')
 json_text_pages = JSON.parse(response.body)
 json_text_cards = { page: json_text_pages }
 

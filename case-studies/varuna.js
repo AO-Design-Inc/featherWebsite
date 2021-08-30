@@ -183,21 +183,6 @@ Through rapid user-testing, we found that the key to improving user experience f
             </div>
         </div>
 
-        <div class="next-study" class="image-cover"
-                style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%), 
-                    url('./case-studies/assets/thumbnails/labs_splash.png.webp');">
-            <div class="next-study-container">
-                <h3>NEXT CASE STUDY</h3>
-
-                <div class="next-study-content">
-                    <p class="splash-year">2021</p>
-                    <p class="splash-org">Design</p>
-                    <p class="splash-title">Feather Labs</p>
-
-                    <down-button onclick="smoothScrollTo('featherlabs')"></down-button>
-                </div>
-            </div>          
-        </div>
     </div>
 </template>
 `;

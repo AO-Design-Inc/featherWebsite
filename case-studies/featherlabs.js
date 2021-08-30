@@ -118,6 +118,21 @@ let featherlabsString = `
             </div>
         </div>
 
+        <div class="next-study" class="image-cover"
+                style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%), 
+                    url('./case-studies/assets/thumbnails/cover.png.webp');">
+            <div class="next-study-container">
+                <h3>NEXT CASE STUDY</h3>
+
+                <div class="next-study-content">
+                    <p class="splash-year">2021</p>
+                    <p class="splash-org">Professional Organization</p>
+                    <p class="splash-title">Business Owners Advisory Council</p>
+
+                    <down-button onclick="smoothScrollTo('boac')"></down-button>
+                </div>
+            </div>          
+        </div>
     </div>
 </template>
 `;
