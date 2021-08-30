@@ -36,7 +36,15 @@
     display: flex;
     flex-direction: column;
     max-width: 1000px;
-    padding: 0 8vw;
+    
+    @media (max-width: 1000px) {
+        padding: 0 6vw;
+    }
+
+    @media (min-width: 1000px) {
+        padding: 0 8vw;
+    }
+    
     margin: 0 auto;
 
     .section {
@@ -59,7 +67,6 @@
 
             .section-text {
                 white-space: pre-wrap;
-                line-height: 24px;
             }
         }
 
@@ -94,6 +101,7 @@
         width: 50%; 
         min-width: 300px;
         font-size: $fontMini;
+        line-height: 2 * $fontMini;
         margin: 0;
     }
 
@@ -109,6 +117,7 @@
     .section-text {
         width: 100%;
         font-size: $fontMini;
+        line-height: 2.25rem;
     }
 
     .section-heading {
@@ -129,6 +138,11 @@
         width: 60%;
         font-size: $fontSmall;
         margin: 3% 0;
+    }
+
+    .splash-title {
+        font-size: $statTitle;
+        width: 100%;
     }
 }
 

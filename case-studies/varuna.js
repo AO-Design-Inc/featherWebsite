@@ -64,7 +64,7 @@ The goal of the service was to help doctors who didn&#39;t have a sufficient inf
 Throughout the development process, we worked closely with the client. We first tested our MVP with providers and patients to get feedback. The suggestions and opinions we received would tell us which parts of the system needed improvement.</p>
             </div>
 
-                <img class="section-image" src="./case-studies/assets/images/varuna-process.png.webp"/>
+                <img class="section-image" src="./case-studies/assets/images/varuna-process1.png.webp"/>
 
 
         </div>

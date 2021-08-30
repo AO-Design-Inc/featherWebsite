@@ -3,4 +3,7 @@
     font-size: 27px;
     grid-area: c;
     width: clamp(320px, 45vw, 560px);
+    @media (max-width: 700px) {
+        width: 90%;
+    }
 }

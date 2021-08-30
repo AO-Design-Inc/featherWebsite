@@ -79,7 +79,14 @@
   #comparison {
     margin-top: 40px;
     background-color: #ffe3e6af;
-    width: clamp(320px, 50vw, 570px);
+    // width: clamp(320px, 50vw, 570px);
+    @media (max-width: 700px) {
+      width: 90%;
+    }
+
+    // @media (min-width: 700px) {
+    //   width: 65%;
+    // }
     height: 270px;
     border-radius: 20px;
     display: flex;
@@ -98,6 +105,13 @@
   flex-wrap: wrap;
   #fact {
     width: clamp(280px, 45vw, 560px);
+    @media (max-width: 700px) {
+      width: 90%;
+    }
+
+    // @media (min-width: 700px) {
+    //   width: 65%;
+    // }
     #number {
       margin-top: 20px;
       font-size: clamp(83px, 15vw, 164px);

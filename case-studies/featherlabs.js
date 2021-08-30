@@ -21,7 +21,7 @@ let featherlabsString = `
                     Minimalistic 3D for the Web
                 </p>
 
-                <p class="section-text">As part of an effort to create experimental, cutting edge web graphics, we made Feather Labs. A space for us to serve and demo cutting edge web experiments and art. Labs&#39; first project can be found here: [https://labs.feather.systems/](https://labs.feather.systems/). It is an MVP demo of a fast, performant 3D scene on the web.</p>
+                <p class="section-text">As part of an effort to create experimental, cutting edge web graphics, we made Feather Labs. A space for us to serve and demo cutting edge web experiments and art. Labs&#39; first project can be found here: https://labs.feather.systems/. It is an MVP demo of a fast, performant 3D scene on the web.</p>
             </div>
 
                 <img class="section-image" src="./case-studies/assets/images/labs_content_4.png.webp"/>
@@ -119,7 +119,7 @@ let featherlabsString = `
         </div>
 
         <div class="next-study image-cover" class="image-cover"
-                style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%), 
+                style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.8) 100%), 
                     url('./case-studies/assets/thumbnails/cover.png.webp');">
             <div class="next-study-container">
                 <h3>NEXT CASE STUDY</h3>
