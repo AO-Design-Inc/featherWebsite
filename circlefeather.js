@@ -68,7 +68,7 @@ function drawImage(){
 
     if (window.scrollY.map(0, height, 0, 1) < 0.20) {
         featherPosition = [0.8 * canvasWidth - 1000, 0.9 * canvasHeight];
-        featherAngle = -45;
+        featherAngle = -40;
     } else {
         featherPosition = [0 , -1 * canvasHeight];
         featherAngle = 65;
