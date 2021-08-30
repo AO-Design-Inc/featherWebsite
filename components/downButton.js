@@ -43,7 +43,7 @@ async function smoothScrollTo(page_id){
         await sleep(700);
     }
     window.removeEventListener("wheel", preventScroll);
-    window.location.hash = 'varuna';
+    window.location.hash = page_id;
     
 }
 

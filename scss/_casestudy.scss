@@ -213,9 +213,6 @@
         background-color: $boacOrange;
     }
     
-    feather-button::part(button):before {
-        background-color: rgba(255,255,255,0.2);
-    }
 }
 
 #varuna {
@@ -234,8 +231,26 @@
     feather-button::part(button):after {
         background-color: $varunaGreen;
     }
-    
-    feather-button::part(button):before {
-        background-color: rgba(255,255,255,0.2);
+}
+
+#featherlabs {
+    .color-path {
+        fill: $labsBlack;
     }
+
+    #splash {
+        background-color: $labsBlack;
+    }
+
+    .themed {
+        background-color: $labsBlack;
+    }
+
+    feather-button::part(button):after {
+        background-color: $labsBlack;
+    }
+}
+
+feather-button::part(button):before {
+    background-color: rgba(255,255,255,0.2);
 }
