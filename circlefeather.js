@@ -50,7 +50,7 @@ function drawCircles(){
 }
 
 var image = new Image();
-image.src = 'icons/feather.jpg';
+image.src = 'icons/feather.webp';
 image.onload = drawImage;
 
 var featherPosition;
