@@ -46,7 +46,6 @@
 
         .section-title {
             padding: 0 2vw;
-            color: $boacOrange;
             font-size: $fontMini;
         }
 
@@ -73,7 +72,6 @@
         hr {
             width: 92%;
             border-top: none;
-            border-bottom: 1px solid $boacOrange;
         }
     }
 }
@@ -149,9 +147,7 @@
     .next-study {
         color: white;
         padding: 8vh 0;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background-position: center top;
 
         h3 {
             margin: 0;
@@ -214,6 +210,14 @@
         background-color: $boacOrange;
     }
     
+    .section-title {
+        color: $boacOrange;
+    }
+
+    hr {
+        border-bottom: 1px solid $boacOrange;
+    }
+    
 }
 
 #varuna {
@@ -221,16 +225,20 @@
         fill: $varunaGreen;
     }
 
-    #splash {
-        background-color: $varunaGreen;
-    }
-
-    .themed {
+    #splash, .themed {
         background-color: $varunaGreen;
     }
 
     feather-button::part(button):after {
         background-color: $varunaGreen;
+    }
+
+    .section-title {
+        color: $varunaGreen;
+    }
+
+    hr {
+        border-bottom: 1px solid $varunaGreen;
     }
 }
 
@@ -239,16 +247,20 @@
         fill: $labsBlack;
     }
 
-    #splash {
-        background-color: $labsBlack;
-    }
-
-    .themed {
+    #splash, .themed {
         background-color: $labsBlack;
     }
 
     feather-button::part(button):after {
         background-color: $labsBlack;
+    }
+
+    .section-title {
+        color: $labsBlack;
+    }
+
+    hr {
+        border-bottom: 1px solid $labsBlack;
     }
 }
 
