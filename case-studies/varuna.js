@@ -26,7 +26,11 @@ let varunaString = `
 Varuna, a low-cost Electronic Medical Records (EMR) and Scheduling System, aimed to change this. The system was developed to give doctors the power of a departmental EMR in a small, cheap, and beautifully designed website independent from large providers.</p>
             </div>
 
-                <img class="section-image" src="./case-studies/assets/images/2021-07-19-09-27-varunadao.com.png.webp"/>
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/2021-07-19-09-27-varunadao.com.png.webp"
+                alt=""
+                />
 
 
         </div>
@@ -45,7 +49,11 @@ Varuna, a low-cost Electronic Medical Records (EMR) and Scheduling System, aimed
 The goal of the service was to help doctors who didn&#39;t have a sufficient infrastructure with their transition to a digital solution during the pandemic.</p>
             </div>
 
-                <img class="section-image" src="./case-studies/assets/images/varuna-graph.png.webp"/>
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/varuna-graph.png.webp"
+                alt="Varuna Graph"
+                />
 
 
         </div>
@@ -64,7 +72,11 @@ The goal of the service was to help doctors who didn&#39;t have a sufficient inf
 Throughout the development process, we worked closely with the client. We first tested our MVP with providers and patients to get feedback. The suggestions and opinions we received would tell us which parts of the system needed improvement.</p>
             </div>
 
-                <img class="section-image" src="./case-studies/assets/images/varuna-process1.png.webp"/>
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/varuna-process1.png.webp"
+                alt="Varuna Process"
+                />
 
 
         </div>

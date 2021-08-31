@@ -29,7 +29,11 @@ let {{filename}}String = `
             </div>
 
             {{#image}}
-                <img class="section-image" src="./case-studies/assets/images/{{image.name}}.webp"/>
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/{{image.name}}.webp"
+                alt="{{image.alternativeText}}"
+                />
             {{/image}}
 
             {{^image}}

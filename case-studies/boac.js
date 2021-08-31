@@ -26,7 +26,11 @@ let boacString = `
 As part of a 2021 complete relaunch of the BOAC, we were tasked with giving the brand the legitimacy it deserved while maintaining it’s core values of diversity and inclusion. The conservation of a functional blogging system to keep members up to date while building a fresh digital face for public awareness was a dual task that required a rethinking of how to design a professional forum.</p>
             </div>
 
-                <img class="section-image" src="./case-studies/assets/images/2021-07-16-15-02-www.boacorg.com_(1).png.webp"/>
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/2021-07-16-15-02-www.boacorg.com_(1).png.webp"
+                alt=""
+                />
 
 
         </div>
@@ -45,7 +49,11 @@ As part of a 2021 complete relaunch of the BOAC, we were tasked with giving the 
 With this problem in mind, the BOAC brought us into the loop to rework their digital portfolio and design something that represented their new expansion initiatives. Three primary goals were set; to improve recognition, increase member conversions, and keep existing members in the loop on events.</p>
             </div>
 
-                <img class="section-image" src="./case-studies/assets/images/boac-old.png.webp"/>
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/boac-old.png.webp"
+                alt="image of the old BOAC main site"
+                />
 
 
         </div>
@@ -80,7 +88,11 @@ With this problem in mind, the BOAC brought us into the loop to rework their dig
 The site was built on a simplistic and old single page grid template leading to confusing navigation and the site looking outdated. The site lacked a content management system (CMS) which led to issues updating content and required direct edits to the page itself. This meant it was difficult to update material without breaking something on the front end of the site. Compared to the BOAC’s other branding material, the website also severely lacked cohesion. Therefore we focused our redesign on reformatting the site navigation structure, implementing more imagery and colors representing the BOAC, and making content updates easier through a CMS system.</p>
             </div>
 
-                <img class="section-image" src="./case-studies/assets/images/boac-old-layout (2).png.webp"/>
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/boac-old-layout (2).png.webp"
+                alt=""
+                />
 
 
         </div>
@@ -101,7 +113,11 @@ From our discovery we learned that the primary way that Explorers would navigate
 Our strategy required a two pronged approach. First we transformed the root domain of the site into a dashboard of the latest important articles alongside upcoming workshops to keep members informed. For explorers we utilize the /about page path as the page many marketing content would link to.  We further segmented the original one page design of the site into a 6 page layout targeted towards allowing explorers to learn more about past workshops, articles, and ambassadors with future expansion easily accessible.</p>
             </div>
 
-                <img class="section-image" src="./case-studies/assets/images/boac-wide.png.webp"/>
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/boac-wide.png.webp"
+                alt="Boac wide image"
+                />
 
 
         </div>

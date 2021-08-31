@@ -24,7 +24,11 @@ let featherlabsString = `
                 <p class="section-text">As part of an effort to create experimental, cutting edge web graphics, we made Feather Labs. A space for us to serve and demo cutting edge web experiments and art. Labs&#39; first project can be found here: https://labs.feather.systems/. It is an MVP demo of a fast, performant 3D scene on the web.</p>
             </div>
 
-                <img class="section-image" src="./case-studies/assets/images/labs_content_4.png.webp"/>
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/labs_content_4.png.webp"
+                alt="Labs Screenshot"
+                />
 
 
         </div>
@@ -41,7 +45,11 @@ let featherlabsString = `
                 <p class="section-text">Rendering 3D graphics on the web is hard. Rendering 3D graphics without huge dependencies and slow load times is even harder. Figuring out how to make an aesthetically coherent site with our minimalistic approach to web development was definitely a challenge. We effectively communicated the advantages of our site through real time calculated stats to show that we practice what we preach. You can achieve a rich website experience with a minimalistic approach to development.</p>
             </div>
 
-                <img class="section-image" src="./case-studies/assets/images/labs_content_1.png.webp"/>
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/labs_content_1.png.webp"
+                alt="Labs Illustrations"
+                />
 
 
         </div>
@@ -58,7 +66,11 @@ let featherlabsString = `
                 <p class="section-text">We needed an MVP to demonstrate our capabilities in a succinct project. To keep the design/development process quick we sprinted through a bunch of layout &amp; illustration iterations while developing workflows to efficiently execute complex web graphics in parallel. Our minimalistic approach to both design &amp; development made it easy to make fast changes.</p>
             </div>
 
-                <img class="section-image" src="./case-studies/assets/images/labs_content_2.png.webp"/>
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/labs_content_2.png.webp"
+                alt="3D Modeling Workflow"
+                />
 
 
         </div>
@@ -73,7 +85,11 @@ let featherlabsString = `
                 <p class="section-text"></p>
             </div>
 
-                <img class="section-image" src="./case-studies/assets/images/labs_content_3.png.webp"/>
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/labs_content_3.png.webp"
+                alt="Design Iterations"
+                />
 
 
         </div>

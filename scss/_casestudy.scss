@@ -1,4 +1,27 @@
-// splash screen css
+/*  General class styling  */
+.image-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.splash-title {
+    font-size: $fontMedium;
+    margin: 0 0 4vh 0;
+    width: 50%;
+
+    @media (max-width: 1000px) {
+        font-size: $statTitle;
+        width: 100%;
+    }
+}
+
+.splash-org, .splash-year {
+    font-size: $fontMini;
+}
+
+/*  Splash screen css  */
 #splash {
     width: 100%;
     height: 100vh;
@@ -14,28 +37,13 @@
     }
 }
 
-.image-cover {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-}
-
-// not nested because these classes are also used in the footer
-.splash-title {
-    font-size: $fontMedium;
-    margin: 0 0 4vh 0;
-    width: 50%;
-}
-
-.splash-org, .splash-year {
-    font-size: $fontMini;
-}
-
+/*  Section CSS  */
 #section-container {
     display: flex;
     flex-direction: column;
+
     max-width: 1000px;
+    margin: 0 auto;
     
     @media (max-width: 1000px) {
         padding: 0 6vw;
@@ -44,8 +52,6 @@
     @media (min-width: 1000px) {
         padding: 0 8vw;
     }
-    
-    margin: 0 auto;
 
     .section {
         margin-top: 10vh;
@@ -55,6 +61,25 @@
         .section-title {
             padding: 0 2vw;
             font-size: $fontMini;
+
+            @media (max-width: 1000px) {
+                margin-bottom: 0;
+            }
+        }
+
+        .section-heading {
+            @media (min-width: 1000px) {
+                width: 40%;
+                min-width: 200px;
+                font-size: $fontMedium;
+                margin: 0;
+            }
+
+            @media (max-width: 1000px) {
+                width: 100%;
+                margin: 2vh 0 3vh 0;
+                font-size: $statTitle;
+            }
         }
 
         .section-content {
@@ -65,8 +90,30 @@
             justify-content: space-between;
             padding: 0 2vw;
 
+            @media (min-width: 1000px) {
+                margin: 2vh 0 15vh 0;
+            }
+
+            @media (max-width: 1000px) {
+                margin-bottom: 5vh;
+            }
+
             .section-text {
                 white-space: pre-wrap;
+
+                @media (min-width: 1000px) {
+                    width: 50%; 
+                    min-width: 300px;
+                    font-size: $fontMini;
+                    line-height: 2 * $fontMini;
+                    margin: 0;
+                }
+    
+                @media (max-width: 1000px) {
+                    width: 100%;
+                    font-size: $fontMini;
+                    line-height: 2.25rem;
+                }
             }
         }
 
@@ -83,69 +130,7 @@
     }
 }
 
-// bigger screens
-@media (min-width: 1000px) {
-
-    .section-heading {
-        width: 40%;
-        min-width: 200px;
-        font-size: $fontMedium;
-        margin: 0;
-    }
-
-    .section-content {
-        margin: 2vh 0 15vh 0;
-    }
-
-    .section-text {
-        width: 50%; 
-        min-width: 300px;
-        font-size: $fontMini;
-        line-height: 2 * $fontMini;
-        margin: 0;
-    }
-
-    .logo-subtext{
-        width: 60%;
-        font-size: $fontMedium;
-        margin: 3% 0;
-    }
-}
-
-@media (max-width: 1000px) {
-
-    .section-text {
-        width: 100%;
-        font-size: $fontMini;
-        line-height: 2.25rem;
-    }
-
-    .section-heading {
-        width: 100%;
-        margin: 2vh 0 3vh 0;
-        font-size: $statTitle;
-    }
-
-    .section-content {
-        margin-bottom: 5vh;
-    }
-
-    .section-title {
-        margin-bottom: 0;
-    }
-
-    .logo-subtext{
-        width: 60%;
-        font-size: $fontSmall;
-        margin: 3% 0;
-    }
-
-    .splash-title {
-        font-size: $statTitle;
-        width: 100%;
-    }
-}
-
+/*  Footer CSS  */
 #footer {
 
     .footer-banner {
@@ -155,6 +140,32 @@
         .footer-text {
             max-width: 1000px;
             margin: 5% auto;
+
+            .logo {
+                @media (min-width: 1000px) {
+                    width: 35%;
+                }
+
+                @media (max-width: 1000px) {
+                    width: 50%;
+                }
+            }
+
+            .logo-subtext {
+                @media (min-width: 1000px) {
+                    width: 60%;
+                    font-size: $fontMedium;
+                    margin: 3% 0;
+                }
+
+                @media (max-width: 1000px) {
+                    width: 60%;
+                    font-size: $fontSmall;
+                    margin: 3% 0;
+                    font-size: 2.563em;
+                    margin: 4vh 0;
+                }
+            }
         }
     }
 
@@ -178,22 +189,6 @@
     }
 }
 
-@media (min-width: 1000px) {
-    .footer-text .logo {
-        width: 35%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .logo-subtext{
-        font-size: 2.563em;
-        margin: 4vh 0;
-    }
-
-    .footer-text .logo {
-        width: 50%;
-    }
-}
 
 
 // color theming
