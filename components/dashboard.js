@@ -37,7 +37,7 @@ customElements.define('dash-board', dashboard);
 var dashboardString = /*html*/`
 <template id="dashboard">
     <div id="logo">
-        <a href="#main">
+        <a aria-label="Feather" role="link" href="#main">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="color-path"
                     d="M60 30C60 13.4315 46.5685 0 29.9999 0C13.4314 0 0 13.4315 0 30C0 46.5685 13.4314 60 29.9999 60C46.5685 60 60 46.5685 60 30Z"
@@ -54,15 +54,6 @@ var dashboardString = /*html*/`
     <div id="butt_container"></div>
 </template>
 <button onclick="location.href='https://blog.feather.systems/';" id="butt_blog">Blog</button>
-<button aria-label="Close" id="butt_contact_form" onclick="location.href='./index.html';">
-    <div>
-        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M0.712812 0.29289C1.10334 -0.09763 1.7365 -0.09763 2.12703 0.29289L7.41992 5.5858L12.7128 0.29289C13.1033 -0.09763 13.7365 -0.09763 14.127 0.29289C14.5175 0.68342 14.5175 1.31658 14.127 1.70711L8.83412 7L14.127 12.2929C14.5175 12.6834 14.5175 13.3166 14.127 13.7071C13.7365 14.0976 13.1033 14.0976 12.7128 13.7071L7.41992 8.4142L2.12703 13.7071C1.7365 14.0976 1.10334 14.0976 0.712812 13.7071C0.322292 13.3166 0.322292 12.6834 0.712812 12.2929L6.00572 7L0.712812 1.70711C0.322292 1.31658 0.322292 0.68342 0.712812 0.29289Z"
-                fill="#0D0D0D" />
-        </svg>
-    </div>
-</button>
 <button aria-label="Email Us" id="butt_contact_form" onclick="location.href='#main#work_head'; location.href='#main#cta-screencell';">
     <div>
         <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
