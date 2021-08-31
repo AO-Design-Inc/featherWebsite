@@ -25,7 +25,7 @@ def pull_images(format_list, directory_path)
         img_webp_path = img_path_escaped + ".webp"
         img_jpg_path = img_path_escaped + ".jpg"
 
-        if !(File.file?(img_webp_path))
+        if !(File.file?(img_path+".webp"))
             puts "Fetching #{img_webp_path}"
             `convert #{img_url} -define webp:lossless=true #{img_webp_path}`
             `convert #{img_url} #{img_jpg_path}`
