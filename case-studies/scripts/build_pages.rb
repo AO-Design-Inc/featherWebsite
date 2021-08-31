@@ -31,3 +31,5 @@ json_text_pages.each_with_index{ |item, index|
 Mustache.template_file="../templates/card-component.mustache"
 File.write('../../work-container.js', Mustache.render(json_text_cards))
 
+Mustache.template_file="../templates/index.mustache"
+File.write('../../index.html', Mustache.render(json_text_cards))

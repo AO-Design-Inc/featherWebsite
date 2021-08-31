@@ -38,9 +38,9 @@
 
   <!-- Generated components -->
   <script src="work-container.js"></script>
-  <script src="case-studies/featherlabs.js"></script>
-  <script src="case-studies/boac.js"></script>
-  <script src="case-studies/varuna.js"></script>
+  {{#page}}
+  <script src="case-studies/{{filename}}.js"></script>
+  {{/page}}
 
   <!-- Non-generated components -->
   <script src="components/dashboard.js"></script>
@@ -331,9 +331,9 @@
       </div>
     </footer>
   </div>
-  <featherlabs-page id="featherlabs" class="page" style="display:none;"></featherlabs-page>
-  <boac-page id="boac" class="page" style="display:none;"></boac-page>
-  <varuna-page id="varuna" class="page" style="display:none;"></varuna-page>
+  {{#page}}
+  <{{filename}}-page id="{{filename}}" class="page" style="display:none;"></{{filename}}-page>
+  {{/page}}
   
 </body>
 <script src="particle.js"></script>

@@ -34,7 +34,7 @@ class dashboard extends HTMLElement{
 
 customElements.define('dash-board', dashboard);
 
-var dashboardString = `
+var dashboardString = /*html*/`
 <template id="dashboard">
     <div id="logo">
         <a href="#main">
