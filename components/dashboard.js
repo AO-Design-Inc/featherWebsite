@@ -34,7 +34,7 @@ class dashboard extends HTMLElement{
 
 customElements.define('dash-board', dashboard);
 
-var dashboardString = `
+var dashboardString = /*html*/`
 <template id="dashboard">
     <div id="logo">
         <a href="#main">
@@ -53,7 +53,7 @@ var dashboardString = `
     </div>
     <div id="butt_container"></div>
 </template>
-<button onclick="location.href='https://blog.feather.systems/';" id="butt_blog">Our Blog.</button>
+<button onclick="location.href='https://blog.feather.systems/';" id="butt_blog">Blog</button>
 <button aria-label="Close" id="butt_contact_form" onclick="location.href='./index.html';">
     <div>
         <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
