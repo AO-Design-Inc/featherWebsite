@@ -94,5 +94,8 @@ dash-board {
                 width: 24px;
             }
         }
+        button#butt_blog {
+            width: clamp(120px, 180px, 12.5vw);;
+        }
     }
 }
