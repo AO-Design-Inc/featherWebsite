@@ -5,7 +5,7 @@
 var caseStudiesTemplate = `
 <template id="temp-work-container">
     <div class="spacer"></div>
-    <a class="use-case" href="#featherlabs">
+    <a class="use-case" href="#featherlabs" draggable="false">
         <img class="use-img" 
             src="./case-studies/assets/thumbnails/medium_labs_splash.png.webp" 
             alt="Labs Splash Image"
@@ -15,7 +15,7 @@ var caseStudiesTemplate = `
             <p class="use-blurb">A project that exemplifies our approach to web development, design &amp; 3D rendering.</p>
         </span>
     </a>
-    <a class="use-case" href="#boac">
+    <a class="use-case" href="#boac" draggable="false">
         <img class="use-img" 
             src="./case-studies/assets/thumbnails/medium_cover.png.webp" 
             alt="BOAC Splash Image"
@@ -25,7 +25,7 @@ var caseStudiesTemplate = `
             <p class="use-blurb">The Business Owners Advisory Council (BOAC) is a forum of industry leaders and successful entrepreneurs that share information and critical strategies to achieve professional and personal objectives. </p>
         </span>
     </a>
-    <a class="use-case" href="#varuna">
+    <a class="use-case" href="#varuna" draggable="false">
         <img class="use-img" 
             src="./case-studies/assets/thumbnails/medium_varuna-splash.png.webp" 
             alt="Varuna Splash Image"
