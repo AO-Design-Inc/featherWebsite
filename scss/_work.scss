@@ -3,14 +3,12 @@
 .work {
     padding-top: 60px;
 
-    @media (min-width: 900px) {
-        .spacer {
+    .spacer {
+        @media (min-width: 900px) {
             min-width: 50%;
         }
-    }
 
-    @media (max-width: 900px) {
-        .spacer {
+        @media (max-width: 900px) {
             min-width: $margins;
         }
     }
@@ -43,7 +41,6 @@
             flex-direction: row;
 
             width: 100%;
-            height: 452px;
             
             overflow-x: auto;
             overflow-y: hidden;
@@ -65,48 +62,70 @@
                 display: block;
                 text-decoration: none;
                 margin-right: 30px;
-                background: #ffffff;
                 color: #333232;
 
-                width: 290px;
-                height: 450px;
+                background-size: cover;
+                background-position: center;
+
+                overflow: hidden;
+
+                @media (min-width: 800px) {
+                    width: 450px;
+                    height: 295px;
+                }
+
+                @media (max-width: 800px) {
+                    width: 80vw;
+                    height: 60vw;
+                }
 
                 border-radius: 20px;
-                border: 1px solid rgba(255, 92, 92, 0.25);
+
+                //box-shadow: inset 0 0 0 0 rgba(0,0,0,0.5);
+                
 
                 &:hover {
-                    box-shadow: 0px 2px 4px rgba(255, 92, 92, 0.2), 0px 4px 5px 5px rgba(255, 92, 92, 0.05),
-                         0px 4px 4px rgba(255, 92, 92, 0.05);
+                    /*box-shadow: 0px 2px 4px rgba(255, 92, 92, 0.2), 0px 4px 5px 5px rgba(255, 92, 92, 0.05),
+                         0px 4px 4px rgba(255, 92, 92, 0.05);*/
+                    //box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.5);
+                    .color-overlay {
+                        background-color: rgba(0,0,0,0.5);
+                    }
+                    
+                    .card-title {
+                        opacity: 1;
+                    }
                 }
           
                 flex-shrink: 0;
                 scroll-snap-align: start;
 
-                .use-img {
-                    width: 290px;
-                    height: 200px;
-                    background: #ffe3e6;
-                    border-radius: 20px 20px 0px 0px;
-                }
-                .use-text {
-                    display: block;
-                    padding: 20px;
+                .color-overlay {
+                    display: flex;
+                    align-items: center;
 
-                    -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1) 65%, transparent 100%);
-                    mask-image: linear-gradient(180deg, rgba(0,0,0,1) 65%, transparent 100%);
+                    height: 100%;
+                    width: 100%;
                     
-                    height: 210px;
-                    overflow-y: hidden;
-                    .use-title {
-                        margin-top: 0;
-                        font-size: 27px;
-                        font-weight: 700;
-                    }
-                    .use-blurb {
-                        font-size: 18px;
-                        font-weight: 400;
-                    }
+                    background-color: rgba(0,0,0,0);
+                    transition: background-color 0.3s;
                 }
+
+                .card-title {
+                    display: block;
+                    width: 70%;
+
+                    font-size: 27px;
+                    font-weight: 300;
+                    color: white;
+
+                    margin: 0 auto;
+
+                    text-align: center;
+                    
+                    opacity: 0;
+                }
+
             }
         }
     }

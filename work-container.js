@@ -5,34 +5,22 @@
 var caseStudiesTemplate = `
 <template id="temp-work-container">
     <div class="spacer"></div>
-    <a class="use-case" href="#featherlabs">
-        <img class="use-img" 
-            src="./case-studies/assets/thumbnails/medium_labs_splash.png.webp" 
-            alt="Labs Splash Image"
-            draggable="false"/>
-        <span class="use-text">
-            <p class="use-title">Feather Labs</p>
-            <p class="use-blurb">A project that exemplifies our approach to web development, design &amp; 3D rendering.</p>
+    <a class="use-case" href="#featherlabs" 
+        style="background-image: url('./case-studies/assets/thumbnails/medium_labs_splash.png.webp')">
+        <span class="color-overlay">
+            <span class="card-title">Feather Labs</span>
         </span>
     </a>
-    <a class="use-case" href="#boac">
-        <img class="use-img" 
-            src="./case-studies/assets/thumbnails/medium_cover.png.webp" 
-            alt="BOAC Splash Image"
-            draggable="false"/>
-        <span class="use-text">
-            <p class="use-title">Business Owners Advisory Council</p>
-            <p class="use-blurb">The Business Owners Advisory Council (BOAC) is a forum of industry leaders and successful entrepreneurs that share information and critical strategies to achieve professional and personal objectives. </p>
+    <a class="use-case" href="#boac" 
+        style="background-image: url('./case-studies/assets/thumbnails/medium_cover.png.webp')">
+        <span class="color-overlay">
+            <span class="card-title">Business Owners Advisory Council</span>
         </span>
     </a>
-    <a class="use-case" href="#varuna">
-        <img class="use-img" 
-            src="./case-studies/assets/thumbnails/medium_varuna-splash.png.webp" 
-            alt="Varuna Splash Image"
-            draggable="false"/>
-        <span class="use-text">
-            <p class="use-title">Varuna</p>
-            <p class="use-blurb">When COVID19 first hit, doctors in India found that they lacked a succinct way of reaching patients without physical contact. Methods of communication between providers and patients were limited. Unlike the heavily centralized US system, few doctors in India had an existing web presence. </p>
+    <a class="use-case" href="#varuna" 
+        style="background-image: url('./case-studies/assets/thumbnails/medium_varuna-splash.png.webp')">
+        <span class="color-overlay">
+            <span class="card-title">Varuna</span>
         </span>
     </a>
     <div class="spacer"></div>
