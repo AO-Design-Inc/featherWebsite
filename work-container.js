@@ -5,19 +5,19 @@
 var caseStudiesTemplate = `
 <template id="temp-work-container">
     <div class="spacer"></div>
-    <a class="use-case" href="#featherlabs" 
+    <a draggable="false" class="use-case" href="#featherlabs" 
         style="background-image: url('./case-studies/assets/thumbnails/medium_labs_splash.png.webp')">
         <span class="color-overlay">
             <span class="card-title">Feather Labs</span>
         </span>
     </a>
-    <a class="use-case" href="#boac" 
+    <a draggable="false" class="use-case" href="#boac" 
         style="background-image: url('./case-studies/assets/thumbnails/medium_cover.png.webp')">
         <span class="color-overlay">
             <span class="card-title">Business Owners Advisory Council</span>
         </span>
     </a>
-    <a class="use-case" href="#varuna" 
+    <a draggable="false" class="use-case" href="#varuna" 
         style="background-image: url('./case-studies/assets/thumbnails/medium_varuna-splash.png.webp')">
         <span class="color-overlay">
             <span class="card-title">Varuna</span>
