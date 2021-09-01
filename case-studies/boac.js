@@ -6,7 +6,7 @@ let boacString = `
         <div id="splash-text">
             <p class="splash-year">2021</p>
             <p class="splash-org">Professional Organization</p>
-            <p class="splash-title">Business Owners Advisory Council</p>
+            <h1 style="font-weight: 300;" class="splash-title">Business Owners Advisory Council</h1>
             <down-button onclick="smoothScrollOneFrameDown()"></down-button>
         </div>
     </div>
@@ -17,9 +17,9 @@ let boacString = `
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Modernizing an Industry Standard
-                </p>
+                </h2>
 
                 <p class="section-text">The Business Owners Advisory Council (BOAC) is a forum of industry leaders and successful entrepreneurs that share information and critical strategies to achieve professional and personal objectives. 
 
@@ -40,9 +40,9 @@ As part of a 2021 complete relaunch of the BOAC, we were tasked with giving the 
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Three Key Goals
-                </p>
+                </h2>
 
                 <p class="section-text">BOAC leaders were looking to expand outside of their Long Island roots and build their network nationally around the United States. Their existing website was haphazardly designed, lacked organization and created confusion over the BOAC’s mission for prospective members. Complicating this, the on going pandemic restricted physical promotion and made digital presence more important than ever before. 
 
@@ -63,9 +63,9 @@ With this problem in mind, the BOAC brought us into the loop to rework their dig
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Discovering the Brand Through Interviews
-                </p>
+                </h2>
 
                 <p class="section-text">To understand the project better, we conducted interviews with BOAC&#39;s leadership to help us understand the brand as well as the direction that they looked to bring the BOAC towards. These interviews allowed us to break down the issue into the formerly mentioned three primary goals, and shaped our future implementation strategy that required both a focus on content delivery to existing users and a platform for stakeholders to learn more about the BOAC itself. We also learned of how the BOAC intends to utilize the site as primarily an awareness tool by directing users to the site physically during events and workshops.</p>
             </div>
@@ -79,9 +79,9 @@ With this problem in mind, the BOAC brought us into the loop to rework their dig
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Analyzing the Content
-                </p>
+                </h2>
 
                 <p class="section-text">While analyzing BOAC’s previous website it was clear that the site was not in line with the professional presence and future thinking mindset that BOAC set out to accomplish. The previous site did not achieve the BOAC&#39;s goals of being seen as a leading organization for business owners and advisors. The existing site was described - even in relation to the older designs of other competitors - to be outdated, boring, and confusing. 
 
@@ -102,9 +102,9 @@ The site was built on a simplistic and old single page grid template leading to 
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     The Two Pronged Approach
-                </p>
+                </h2>
 
                 <p class="section-text">Aligning the site with the existing brand is only one of the two tasks we needed to address. As the BOAC catered to two seperate groups of users, identifying and maintaining relevant information was key. We catagorized these users as either Members or Explorers.
 
@@ -127,9 +127,9 @@ Our strategy required a two pronged approach. First we transformed the root doma
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     A Seamless Launch
-                </p>
+                </h2>
 
                 <p class="section-text">After multiple revisions with the BOAC’s leadership alongside optimizations to SEO and backend CMS we pushed an initial round of testing to existing members of the BOAC before going fully live. From this we collected key user feedback on various mobile and desktop devices and browsers to optimize further and made any last minute changes required to achieve the BOAC leadership’s new vision. With a launch plan and date in place we created an exciting and stress free launch day for the BOAC.</p>
             </div>

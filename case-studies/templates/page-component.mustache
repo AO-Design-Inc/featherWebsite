@@ -6,7 +6,7 @@ let {{filename}}String = `
         <div id="splash-text">
             <p class="splash-year">{{splash.year}}</p>
             <p class="splash-org">{{splash.orgType}}</p>
-            <p class="splash-title">{{splash.title}}</p>
+            <h1 style="font-weight: 300;" class="splash-title">{{splash.title}}</h1>
             <down-button onclick="smoothScrollOneFrameDown()"></down-button>
         </div>
     </div>
@@ -20,10 +20,10 @@ let {{filename}}String = `
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                 {{#heading}}
                     {{heading}}
-                {{/heading}}</p>
+                {{/heading}}</h2>
 
                 <p class="section-text">{{content}}</p>
             </div>

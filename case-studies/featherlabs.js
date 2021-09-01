@@ -6,7 +6,7 @@ let featherlabsString = `
         <div id="splash-text">
             <p class="splash-year">2021</p>
             <p class="splash-org">Design</p>
-            <p class="splash-title">Feather Labs</p>
+            <h1 style="font-weight: 300;" class="splash-title">Feather Labs</h1>
             <down-button onclick="smoothScrollOneFrameDown()"></down-button>
         </div>
     </div>
@@ -17,9 +17,9 @@ let featherlabsString = `
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Minimalistic 3D for the Web
-                </p>
+                </h2>
 
                 <p class="section-text">As part of an effort to create experimental, cutting edge web graphics, we made Feather Labs. A space for us to serve and demo cutting edge web experiments and art. Labs&#39; first project can be found here: https://labs.feather.systems/. It is an MVP demo of a fast, performant 3D scene on the web.</p>
             </div>
@@ -38,9 +38,9 @@ let featherlabsString = `
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     The Web is Finicky &amp; Difficult to Work With
-                </p>
+                </h2>
 
                 <p class="section-text">Rendering 3D graphics on the web is hard. Rendering 3D graphics without huge dependencies and slow load times is even harder. Figuring out how to make an aesthetically coherent site with our minimalistic approach to web development was definitely a challenge. We effectively communicated the advantages of our site through real time calculated stats to show that we practice what we preach. You can achieve a rich website experience with a minimalistic approach to development.</p>
             </div>
@@ -59,9 +59,9 @@ let featherlabsString = `
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     The Iterative Process is our God
-                </p>
+                </h2>
 
                 <p class="section-text">We needed an MVP to demonstrate our capabilities in a succinct project. To keep the design/development process quick we sprinted through a bunch of layout &amp; illustration iterations while developing workflows to efficiently execute complex web graphics in parallel. Our minimalistic approach to both design &amp; development made it easy to make fast changes.</p>
             </div>
@@ -79,8 +79,8 @@ let featherlabsString = `
 
         
             <div class="section-content">
-                <p class="section-heading">
-</p>
+                <h2 style="font-weight: 300;" class="section-heading">
+</h2>
 
                 <p class="section-text"></p>
             </div>
@@ -99,9 +99,9 @@ let featherlabsString = `
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Fast &amp; Fabulous
-                </p>
+                </h2>
 
                 <p class="section-text">We have successfully made a lightweight website (transferring only ~140kb over the wire) with cutting edge web graphics and a coherent visual style. In the future, we will be serving new experiments and innovations at this page. Keep a look out for more fun web experiments!</p>
             </div>
