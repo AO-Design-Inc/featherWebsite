@@ -6,16 +6,16 @@ var caseStudiesTemplate = `
 <template id="temp-work-container">
     <div class="spacer"></div>
     {{#page}}
-    <div class="use-case" id="{{filename}}-card">
+    <a class="use-case" href="#{{filename}}">
         <img class="use-img" 
             src="./case-studies/assets/thumbnails/{{splash.splashImage.formats.medium.name}}.webp" 
             alt="{{splash.splashImage.alternativeText}}"
             draggable="false"/>
-        <div class="use-text">
+        <span class="use-text">
             <p class="use-title">{{splash.title}}</p>
             <p class="use-blurb">{{cardText}}</p>
-        </div>
-    </div>
+        </span>
+    </a>
     {{/page}}
     <div class="spacer"></div>
 </template>;`

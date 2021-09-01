@@ -20,9 +20,9 @@ slider.addEventListener('mouseup', () => {
 });
 
 document.querySelectorAll(".use-case").forEach(item => {
-    item.addEventListener('click', () => {
-        if (!mouseMoved)
-            location.href="#"+item.id.split("-")[0];
+    item.addEventListener('click', (e) => {
+        if (mouseMoved)
+            e.preventDefault();
     })
 })
 
