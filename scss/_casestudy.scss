@@ -37,6 +37,17 @@
     }
 }
 
+image-carousel {
+    display: block;
+    margin: 10px auto;
+    max-width: 1000px;
+    /* width must be in vw sad face */
+    //width: 60vw;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+  }
+
 /*  Section CSS  */
 #section-container {
     display: flex;

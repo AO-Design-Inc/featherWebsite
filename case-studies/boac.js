@@ -32,6 +32,9 @@ As part of a 2021 complete relaunch of the BOAC, we were tasked with giving the 
                 alt=""
                 />
 
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
+
 
         </div>
         <div class="section">
@@ -55,6 +58,9 @@ With this problem in mind, the BOAC brought us into the loop to rework their dig
                 alt="image of the old BOAC main site"
                 />
 
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
+
 
         </div>
         <div class="section">
@@ -70,6 +76,9 @@ With this problem in mind, the BOAC brought us into the loop to rework their dig
                 <p class="section-text">To understand the project better, we conducted interviews with BOAC&#39;s leadership to help us understand the brand as well as the direction that they looked to bring the BOAC towards. These interviews allowed us to break down the issue into the formerly mentioned three primary goals, and shaped our future implementation strategy that required both a focus on content delivery to existing users and a platform for stakeholders to learn more about the BOAC itself. We also learned of how the BOAC intends to utilize the site as primarily an awareness tool by directing users to the site physically during events and workshops.</p>
             </div>
 
+
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
 
             <hr>
 
@@ -93,6 +102,9 @@ The site was built on a simplistic and old single page grid template leading to 
                 src="./case-studies/assets/images/boac-old-layout (2).png.webp"
                 alt=""
                 />
+
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
 
 
         </div>
@@ -119,6 +131,9 @@ Our strategy required a two pronged approach. First we transformed the root doma
                 alt="Boac wide image"
                 />
 
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
+
 
         </div>
         <div class="section">
@@ -134,8 +149,15 @@ Our strategy required a two pronged approach. First we transformed the root doma
                 <p class="section-text">After multiple revisions with the BOAC’s leadership alongside optimizations to SEO and backend CMS we pushed an initial round of testing to existing members of the BOAC before going fully live. From this we collected key user feedback on various mobile and desktop devices and browsers to optimize further and made any last minute changes required to achieve the BOAC leadership’s new vision. With a launch plan and date in place we created an exciting and stress free launch day for the BOAC.</p>
             </div>
 
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/New Project (1).jpg.webp"
+                alt=""
+                />
 
-            <hr>
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
+
 
         </div>
     </div>

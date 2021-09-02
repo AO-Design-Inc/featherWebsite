@@ -30,6 +30,9 @@ let featherlabsString = `
                 alt="Labs Screenshot"
                 />
 
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
+
 
         </div>
         <div class="section">
@@ -50,6 +53,9 @@ let featherlabsString = `
                 src="./case-studies/assets/images/labs_content_1.png.webp"
                 alt="Labs Illustrations"
                 />
+
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
 
 
         </div>
@@ -72,6 +78,9 @@ let featherlabsString = `
                 alt="3D Modeling Workflow"
                 />
 
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
+
 
         </div>
         <div class="section">
@@ -91,6 +100,9 @@ let featherlabsString = `
                 alt="Design Iterations"
                 />
 
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
+
 
         </div>
         <div class="section">
@@ -106,6 +118,9 @@ let featherlabsString = `
                 <p class="section-text">We have successfully made a lightweight website (transferring only ~140kb over the wire) with cutting edge web graphics and a coherent visual style. In the future, we will be serving new experiments and innovations at this page. Keep a look out for more fun web experiments!</p>
             </div>
 
+
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
 
             <hr>
 

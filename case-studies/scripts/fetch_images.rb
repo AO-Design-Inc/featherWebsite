@@ -57,6 +57,12 @@ json_text.each{ |item|
             if section["image"]
                 pullOneImage(section["image"], $IMG_DIR_PATH)
             end
+
+            if section["gallery"]
+                section["gallery"].each{ |image|
+                    pullOneImage(image, $IMG_DIR_PATH)
+                }
+            end  
         }
     end
 

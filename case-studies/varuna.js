@@ -32,6 +32,9 @@ Varuna, a low-cost Electronic Medical Records (EMR) and Scheduling System, aimed
                 alt=""
                 />
 
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
+
 
         </div>
         <div class="section">
@@ -54,6 +57,9 @@ The goal of the service was to help doctors who didn&#39;t have a sufficient inf
                 src="./case-studies/assets/images/varuna-graph.png.webp"
                 alt="Varuna Graph"
                 />
+
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
 
 
         </div>
@@ -78,6 +84,9 @@ Throughout the development process, we worked closely with the client. We first 
                 alt="Varuna Process"
                 />
 
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
+
 
         </div>
         <div class="section">
@@ -98,6 +107,9 @@ Because Varuna was a new service, gaining the trust of providers was difficult. 
             </div>
 
 
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
+
             <hr>
 
         </div>
@@ -115,7 +127,11 @@ Because Varuna was a new service, gaining the trust of providers was difficult. 
             </div>
 
 
-            <hr>
+            <image-carousel slideno=0 >
+                <img src="./case-studies/assets/images/varuna-solution.png.webp" class="slide-image" style="display:none;">
+                <img src="./case-studies/assets/images/varuna-solution-1.png.webp" class="slide-image" style="display:none;">
+            </image-carousel>
+
 
         </div>
         <div class="section">
@@ -135,6 +151,9 @@ Through rapid user-testing, we found that the key to improving user experience f
             </div>
 
 
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
+
             <hr>
 
         </div>
@@ -150,6 +169,9 @@ Through rapid user-testing, we found that the key to improving user experience f
                 <p class="section-text">Open source EMR projects such as OpenEMR already had powerful features that would take us far too long to develop on our own. Unfortunately, their interface was inaccessible to most individuals. Setting up an OpenEMR required technical knowledge and the ability to work with bad user interfaces. Building a functional frontend became a priority for us because it would allow us to capitalize on existing features while developing a better setup experience through NuxtJS. </p>
             </div>
 
+
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
 
             <hr>
 
@@ -167,6 +189,9 @@ Through rapid user-testing, we found that the key to improving user experience f
                 <p class="section-text">For providers, Varuna helped them sustain their business through the pandemic. We provided all doctors using Varuna with a web presence through personal websites and branding. For the patients of those providers, we developed an interface that was easy to use and able to serve a diverse customer base. After a year, Varuna continues to have active monthly users. </p>
             </div>
 
+
+            <image-carousel slideno=0 style="display:none;">
+            </image-carousel>
 
             <hr>
 

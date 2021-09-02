@@ -36,8 +36,16 @@ let {{filename}}String = `
                 />
             {{/image}}
 
+            <image-carousel slideno=0 {{^gallery}}style="display:none;"{{/gallery}}>
+            {{#gallery}}
+                <img src="./case-studies/assets/images/{{name}}.webp" class="slide-image" style="display:none;">
+            {{/gallery}}
+            </image-carousel>
+
             {{^image}}
+            {{^gallery}}
             <hr>
+            {{/gallery}}
             {{/image}}
 
         </div>
