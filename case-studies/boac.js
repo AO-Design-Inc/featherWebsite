@@ -1,13 +1,14 @@
 let boacString = `
 <template id="boac">
     <dash-board action="email"></dash-board>
-    <div id="splash" class="image-cover" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%), 
-        url('./case-studies/assets/thumbnails/cover.png.webp');">
-        <div id="splash-text">
-            <p class="splash-year">2021</p>
-            <p class="splash-org">Professional Organization</p>
-            <h1 style="font-weight: 300;" class="splash-title">Business Owners Advisory Council</h1>
-            <down-button onclick="smoothScrollOneFrameDown()"></down-button>
+    <div id="splash" class="image-cover" style="background-image: url('./case-studies/assets/thumbnails/cover.png.webp');">
+        <div id="splash-gradient">
+            <div id="splash-text">
+                <p class="splash-year">2021</p>
+                <p class="splash-org">Professional Organization</p>
+                <h1 style="font-weight: 300;" class="splash-title">Business Owners Advisory Council</h1>
+                <down-button onclick="smoothScrollOneFrameDown()"></down-button>
+            </div>
         </div>
     </div>
     <div id="section-container">
@@ -134,8 +135,12 @@ Our strategy required a two pronged approach. First we transformed the root doma
                 <p class="section-text">After multiple revisions with the BOAC’s leadership alongside optimizations to SEO and backend CMS we pushed an initial round of testing to existing members of the BOAC before going fully live. From this we collected key user feedback on various mobile and desktop devices and browsers to optimize further and made any last minute changes required to achieve the BOAC leadership’s new vision. With a launch plan and date in place we created an exciting and stress free launch day for the BOAC.</p>
             </div>
 
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/New Project (1).jpg.webp"
+                alt=""
+                />
 
-            <hr>
 
         </div>
     </div>
