@@ -6,7 +6,7 @@ let varunaString = `
         <div id="splash-text">
             <p class="splash-year">2020</p>
             <p class="splash-org">Medical Service</p>
-            <p class="splash-title">Varuna</p>
+            <h1 style="font-weight: 300;" class="splash-title">Varuna</h1>
             <down-button onclick="smoothScrollOneFrameDown()"></down-button>
         </div>
     </div>
@@ -17,9 +17,9 @@ let varunaString = `
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Relevant Solutions
-                </p>
+                </h2>
 
                 <p class="section-text">When COVID19 first hit, doctors in India found that they lacked a succinct way of reaching patients without physical contact. Methods of communication between providers and patients were limited. Unlike the heavily centralized US system, few doctors in India had an existing web presence. 
 
@@ -40,9 +40,9 @@ Varuna, a low-cost Electronic Medical Records (EMR) and Scheduling System, aimed
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Initial Interviews
-                </p>
+                </h2>
 
                 <p class="section-text">In March 2020, we met with a doctor about the troubles they were having with their existing medical software. Their current internal digital systems were clunky and an eyesore, but alternative third-party applications were often expensive and irresponsible when it came to data collection and storage. Simply put, there was a gap in the market for a simple and affordable solution for doctors who needed to quickly set up a web presence.
 
@@ -63,9 +63,9 @@ The goal of the service was to help doctors who didn&#39;t have a sufficient inf
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Scoping Out
-                </p>
+                </h2>
 
                 <p class="section-text">As we offered to build a custom solution for the doctor, we realized that we could scale this service out to other medical providers as well. We built a landing page for the doctor&#39;s firm that would link to our service. We quickly deployed a MVP, keeping the development process functional and the software lightweight. 
 
@@ -86,9 +86,9 @@ Throughout the development process, we worked closely with the client. We first 
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Problems
-                </p>
+                </h2>
 
                 <p class="section-text">After building and deploying the MVP we recognized two major problems. 
 
@@ -107,9 +107,9 @@ Because Varuna was a new service, gaining the trust of providers was difficult. 
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Adaptation One
-                </p>
+                </h2>
 
                 <p class="section-text">To encourage providers to try Varuna, we developed custom landing pages for doctors with SEO support. As they used the service, they noted that our SEO and site design increased their patient sign-ups.</p>
             </div>
@@ -123,9 +123,9 @@ Because Varuna was a new service, gaining the trust of providers was difficult. 
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Adaptation Two
-                </p>
+                </h2>
 
                 <p class="section-text">After gaining a decent client base, we began to refine the UI of the Varuna system for the patients using the site to book appointments.  
 
@@ -143,9 +143,9 @@ Through rapid user-testing, we found that the key to improving user experience f
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Adaptation Three
-                </p>
+                </h2>
 
                 <p class="section-text">Open source EMR projects such as OpenEMR already had powerful features that would take us far too long to develop on our own. Unfortunately, their interface was inaccessible to most individuals. Setting up an OpenEMR required technical knowledge and the ability to work with bad user interfaces. Building a functional frontend became a priority for us because it would allow us to capitalize on existing features while developing a better setup experience through NuxtJS. </p>
             </div>
@@ -160,9 +160,9 @@ Through rapid user-testing, we found that the key to improving user experience f
 
         
             <div class="section-content">
-                <p class="section-heading">
+                <h2 style="font-weight: 300;" class="section-heading">
                     Continued Use
-                </p>
+                </h2>
 
                 <p class="section-text">For providers, Varuna helped them sustain their business through the pandemic. We provided all doctors using Varuna with a web presence through personal websites and branding. For the patients of those providers, we developed an interface that was easy to use and able to serve a diverse customer base. After a year, Varuna continues to have active monthly users. </p>
             </div>

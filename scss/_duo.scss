@@ -1,91 +1,91 @@
 //shows the two main vectors in our approach
 @import "variables";
 .duo_blurb {
-    /*margin-top: clamp(120px, 15vw, 240px);*/
-    margin-bottom: 60px;
+  /*margin-top: clamp(120px, 15vw, 240px);*/
+  margin-bottom: 60px;
 
-    display: grid;
-    place-items: center;
-    text-align: center;
-    #blurb {
-        width: clamp(300px, 50vw, 670px);
-        @media (max-width: 700px) {
-            width: 90%;
-          }
-        font-size: 27px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  #blurb {
+    width: clamp(300px, 50vw, 670px);
+    @media (max-width: 700px) {
+      width: 90%;
     }
-    #speedbeauty {
-        font-size: clamp(55px, 10vw, 83px);
-        font-weight: 700;
-        margin-bottom: 60px;
-    }
+    font-size: 27px;
+  }
+  #speedbeauty {
+    font-size: clamp(55px, 10vw, 83px);
+    font-weight: 700;
+    margin-bottom: 0.02em;
+    margin-top: 0.25em;
+  }
 }
 @media only screen and (max-width: 1030px) {
-    .duo_blurb {
-        place-items: center left;
-        text-align: left;
-    }
+  .duo_blurb {
+    place-items: center left;
+    text-align: left;
+  }
 }
 .duo {
-    // display: none;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    width: 100%;
-    // width: 100vw;
-    #duo_container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-        .left {
-            background-color: $featherColorBlue;
-            justify-content: flex-end;
-            @media (max-width: 700px) {
-                justify-content: flex-start;
-            }
+  // display: none;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  // width: 100vw;
+  #duo_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    .left {
+      background-color: $featherColorBlue;
+      justify-content: flex-end;
+      @media (max-width: 700px) {
+        justify-content: flex-start;
+      }
+    }
+    .right {
+      background-color: $featherColorPink;
+      justify-content: flex-start;
+    }
+    .box {
+      display: flex;
+      flex-direction: row;
+      @media (min-width: 1000px) {
+        padding: 130px;
+      }
 
-        }
-        .right {
-            background-color: $featherColorPink;
-            justify-content: flex-start;
-        }
-        .box {
-            display: flex;
-            flex-direction: row;
-            @media (min-width: 1000px){
-                padding: 130px;
-            }
+      @media (max-width: 1000px) {
+        padding: 130px 8vw;
+      }
 
-            @media (max-width: 1000px){
-                padding: 130px 8vw;
-            }
-            
-            .content_container {
-                width: 100%;
-                max-width: 600px;
-                @media (max-width: 700px) {
-                    max-width: 90%;
-                }
-                color: white;
-                #duo_title {
-                    font-size: clamp(55px, 10vw, 83px);
-                    font-weight: 700;
-                    margin-bottom: 60px;
-                }
-                #small_blurb_container {
-                    // display: none;
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                    grid-gap: 50px 2rem;
-                    font-size: 18px;
-                    /*.small_blurb {
+      .content_container {
+        width: 100%;
+        max-width: 600px;
+        @media (max-width: 700px) {
+          max-width: 90%;
+        }
+        color: white;
+        #duo_title {
+          font-size: clamp(55px, 10vw, 83px);
+          font-weight: 700;
+          margin-bottom: 60px;
+        }
+        #small_blurb_container {
+          // display: none;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-gap: 50px 2rem;
+          font-size: 18px;
+          /*.small_blurb {
                         width: clamp(100px, 25%, 230px);
                         border-left: solid 1px white;
                     }*/
 
-                    a {
-                        color: white;
-                    }
-                }
-            }
+          a {
+            color: white;
+          }
         }
+      }
     }
+  }
 }
