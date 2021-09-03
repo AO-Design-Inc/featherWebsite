@@ -124,15 +124,12 @@ function drawFeather(){
     if (window.scrollY + window.innerHeight < featherBreakpoint) {
         featherPosition = [0.8 * canvasWidth - 1000, 0.9 * canvasHeight];
         featherAngle = -40;
-    } else {
-        featherPosition = [0 , -1 * canvasHeight];
-        featherAngle = 65;
-    }
 
-    featherCtx.translate(...featherPosition);
-    featherCtx.rotate(featherAngle * Math.PI /180);
-    var featherDimensions = [Math.min(1600, canvasHeight*2), Math.min(1600/3, (canvasHeight*2)/3)]
-    featherCtx.drawImage(image, 0, 0, ...featherDimensions);
+        featherCtx.translate(...featherPosition);
+        featherCtx.rotate(featherAngle * Math.PI /180);
+        var featherDimensions = [Math.min(1600, canvasHeight*2), Math.min(1600/3, (canvasHeight*2)/3)]
+        featherCtx.drawImage(image, 0, 0, ...featherDimensions);
+    } 
 
     featherCtx.restore();
 }
@@ -179,6 +176,7 @@ window.addEventListener("scroll", ()=>{
   if (window.scrollY + window.innerHeight < featherBreakpoint || window.scrollY + window.innerHeight > duoBottom) {
     drawCircles();
     drawFeather();
+
 
     featherCanvas.style.opacity = (window.innerWidth < 800 ? 0.65 : 1);
   } else { 
