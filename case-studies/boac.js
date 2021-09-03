@@ -1,13 +1,14 @@
 let boacString = `
 <template id="boac">
     <dash-board action="email"></dash-board>
-    <div id="splash" class="image-cover" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%), 
-        url('./case-studies/assets/thumbnails/cover.png.webp');">
-        <div id="splash-text">
-            <p class="splash-year">2021</p>
-            <p class="splash-org">Professional Organization</p>
-            <h1 style="font-weight: 300;" class="splash-title">Business Owners Advisory Council</h1>
-            <down-button onclick="smoothScrollOneFrameDown()"></down-button>
+    <div id="splash" class="image-cover" style="background-image: url('./case-studies/assets/thumbnails/cover.png.webp');">
+        <div id="splash-gradient">
+            <div id="splash-text">
+                <p class="splash-year">2021</p>
+                <p class="splash-org">Professional Organization</p>
+                <h1 style="font-weight: 300;" class="splash-title">Business Owners Advisory Council</h1>
+                <down-button onclick="smoothScrollOneFrameDown()"></down-button>
+            </div>
         </div>
     </div>
     <div id="section-container">

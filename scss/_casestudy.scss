@@ -30,10 +30,25 @@
     flex-direction: row;
     align-items: flex-end;
 
-    #splash-text {
-        width: 85vw;
-        margin: 8vh auto;
-        color: white;
+    #splash-gradient {
+        @media (min-width: 800px) {
+            padding-top: 10vh;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.8) 100%);
+        }
+
+        @media (max-width: 800px) {
+            padding-top: 15vh;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.9) 100%);
+        }
+        
+        
+        width: 100%;
+
+        #splash-text {
+            width: 85vw;
+            margin: 8vh auto;
+            color: white;
+        }
     }
 }
 
