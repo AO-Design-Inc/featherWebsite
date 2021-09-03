@@ -15,7 +15,7 @@ amount = 20; // number of particles
 
 // various breakpoints
 var firstScreencell = document.querySelector(".title");
-var duoContainer = document.getElementById("duo_container");
+var duoContainer = document.getElementById("whatwedo");
 var secondScreencell = document.querySelector(".intro");
 
 var particlesBreakpoint = firstScreencell.offsetTop + firstScreencell.offsetHeight;
