@@ -23,7 +23,6 @@ var caseStudiesTemplate = `
             <span class="card-title">Varuna</span>
         </span>
     </a>
-    <div class="spacer"></div>
 </template>;`
 
 class caseStudy extends HTMLElement{

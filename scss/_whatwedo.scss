@@ -1,0 +1,111 @@
+@import "variables";
+#whatwedo {
+  width: 100%;
+  height: 510px;
+  margin: 0.34vw;
+  margin-bottom: 60px;
+
+  background: linear-gradient(91.18deg, #11131c 10.41%, #323543 96.18%);
+  border-radius: 20px;
+  color: $bg;
+  @media (max-width: 1120px) {
+    hr,
+    #intro {
+      display: none;
+    }
+  }
+
+  // position: relative;
+
+  hr#dividing-line {
+    height: 320px;
+    border: 0.25px solid #ffffff4d;
+  }
+  a {
+    box-sizing: content-box;
+    width: 50%;
+  }
+  #hero {
+    width: 50%;
+    position: relative;
+    &:hover {
+      #phone {
+        transform: scale(0.75) translate(90px, -560px);
+        @media (max-width: 1120px) {
+          transform-origin: center;
+          transform: scale(0.75) translate(0px, -560px);
+        }
+        @media (max-width: 700px) {
+          transform-origin: center;
+          top: 50%;
+          right: 50%;
+          transform: scale(0.75) translate(75%, -65%);
+        }
+      }
+    }
+  }
+  #gutter {
+    margin: 0px 4.166vw;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @media (max-width: 1120px) {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .inner {
+    // transform-origin: center;
+    position: absolute;
+    // transform: translateY(250px);
+  }
+  #link {
+    cursor: pointer;
+    transform: translate(30px, -2.08vw);
+    @media (max-width: 1120px) {
+      transform: translate(-8.08vw, -2.08vw);
+    }
+    @media (max-width: 700px) {
+      transform-origin: center;
+      top: 50%;
+      right: 50%;
+      transform: scale(0.75) translate(100%, -60%);
+      z-index: 1;
+      #four,
+      #five {
+        fill: $labsBlack;
+        mix-blend-mode: difference;
+      }
+    }
+  }
+  #ellipses {
+    transform: translate(80px, -270px);
+    @media (max-width: 1120px) {
+      transform: translate(-5.55vw, -300px);
+    }
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+  #phone {
+    transform: scale(0.75) translate(90px, -530px);
+    @media (max-width: 1120px) {
+      transform-origin: center;
+      transform: scale(0.75) translate(0px, -530px);
+    }
+    @media (max-width: 700px) {
+      transform-origin: center;
+      transform: scale(0.75) translate(-36vw, -560px);
+      z-index: 0;
+    }
+    @media (max-width: 550px) {
+      transform-origin: center;
+      top: 50%;
+      right: 50%;
+      transform: scale(0.75) translate(75%, -65%);
+    }
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
