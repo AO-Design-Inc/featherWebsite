@@ -134,8 +134,12 @@ Our strategy required a two pronged approach. First we transformed the root doma
                 <p class="section-text">After multiple revisions with the BOAC’s leadership alongside optimizations to SEO and backend CMS we pushed an initial round of testing to existing members of the BOAC before going fully live. From this we collected key user feedback on various mobile and desktop devices and browsers to optimize further and made any last minute changes required to achieve the BOAC leadership’s new vision. With a launch plan and date in place we created an exciting and stress free launch day for the BOAC.</p>
             </div>
 
+                <img 
+                class="section-image" 
+                src="./case-studies/assets/images/New Project (1).jpg.webp"
+                alt=""
+                />
 
-            <hr>
 
         </div>
     </div>

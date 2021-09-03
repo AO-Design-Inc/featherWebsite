@@ -9,7 +9,7 @@ var canvasGradient = featherCtx.createLinearGradient(0,500,0, 0);
 canvasGradient.addColorStop(1, '#fffafb');
 canvasGradient.addColorStop(0, 'rgba(251, 118, 128, 0.35)');
 
-var duoContainer = document.getElementById("duo_container");
+var duoContainer = document.getElementById("work_section");
 
 // set canvas dimensions 
 const resizeCanvas = () => {

@@ -4,7 +4,7 @@
 @import "pitch";
 @import "variables";
 @import "stats";
-@import "duo";
+// @import "duo";
 @import "work";
 @import "contact";
 @import "cta";
@@ -12,11 +12,12 @@
 @import "particles";
 @import "casestudy";
 @import "down-button";
+@import "whatwedo";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
 html,
 body {
   max-width: 100%;
-  @media only screen and (max-width: 1280px)  {
+  @media only screen and (max-width: 1280px) {
     overflow-x: hidden;
   }
 }
@@ -28,9 +29,9 @@ body {
   font-weight: 300;
   -webkit-text-size-adjust: 100%;
 
-  // overflow-x: hidden;
-  /*touch-action: pan-y;
-  -ms-touch-action: pan-y;*/
+  h3 {
+    font-size: $statTitle;
+  }
 
   position: relative;
   overflow-x: hidden;

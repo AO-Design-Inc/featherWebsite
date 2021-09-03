@@ -12,6 +12,7 @@ $fontMedium: 3.43rem;
 $statTitle: 2.563rem;
 $fontSmall: 1.68rem;
 $fontMini: 1.125rem;
+$fontForSection: 0.875rem;
 
 $margins: 8.3vw;
 
@@ -84,4 +85,9 @@ $vw-viewport: 1920;
       }
     }
   }
+}
+h2.section {
+  font-size: $fontForSection;
+  margin-bottom: -1.6em;
+  color: #FB7680;
 }
