@@ -10,6 +10,8 @@ fullImage.onload = () => {
   image.src = "icons/feather.webp";
 }
 
+//comment for the sake of it
+
 // canvases
 const particlesCanvas = document.getElementById("particles");
 var particlesCtx = particlesCanvas.getContext("2d");
