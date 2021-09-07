@@ -78,6 +78,7 @@ body {
 #page_wrapper {
   margin: 0 auto;
   width: 100vw - ($margins * 2);
+  padding: 0 0.34vw;
   @media only screen and (min-width: 1500px) {
     max-width: 1440px;
   }

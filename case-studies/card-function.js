@@ -21,6 +21,7 @@ slider.addEventListener('mouseup', () => {
 
 document.querySelectorAll(".use-case").forEach(item => {
     item.addEventListener('click', (e) => {
+        console.log(mouseMoved);
         if (mouseMoved)
             e.preventDefault();
     })

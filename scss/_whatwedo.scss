@@ -1,8 +1,8 @@
 @import "variables";
+
 #whatwedo {
   width: 100%;
   height: 510px;
-  margin: 0.34vw;
   margin-bottom: 60px;
 
   background: linear-gradient(91.18deg, #11131c 10.41%, #323543 96.18%);
@@ -14,8 +14,6 @@
       display: none;
     }
   }
-
-  // position: relative;
 
   hr#dividing-line {
     height: 320px;

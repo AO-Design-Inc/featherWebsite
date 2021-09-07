@@ -25,6 +25,7 @@ function onRouteChanged() {
     // handles page change
     if (currPage != pageHash){
         for (page of pages) {
+            page.style.visibility = (page.id == pageHash ? "visible" : "hidden");
             page.style.display = (page.id == pageHash ? "block" : "none");
         }
         pageChanged = true;
