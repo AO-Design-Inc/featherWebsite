@@ -4,11 +4,11 @@
   padding-top: 60px;
 
   .spacer {
-    @media (min-width: 900px) {
+    @media (min-width: 1000px) {
       min-width: 50%;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
       min-width: $margins;
     }
   }
