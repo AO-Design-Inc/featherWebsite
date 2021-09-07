@@ -1,3 +1,15 @@
+// images
+var image = new Image();
+image.src = 'icons/feather-blurred-harder.webp';
+image.onload = drawFeather;
+
+var fullImage = new Image();
+fullImage.src = 'icons/feather.webp';
+fullImage.onload = () => {
+  drawCircles();
+  image.src = "icons/feather.webp";
+}
+
 // canvases
 const particlesCanvas = document.getElementById("particles");
 var particlesCtx = particlesCanvas.getContext("2d");
@@ -106,16 +118,13 @@ function drawCircles(){
 
 }
 
-var image = new Image();
-image.src = 'icons/feather.webp';
-image.onload = drawFeather;
-
 var featherPosition;
 var featherAngle;
 
-
 // draws feather image
 function drawFeather(){
+
+    console.log("drawing feather");
     featherCtx.save();
 
     canvasHeight = featherCanvas.height;
