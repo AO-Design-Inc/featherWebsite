@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-gap: 10rem;
-  margin: 0.34vw;
+  //margin: 0.34vw;
 }
 #problem {
   @media (max-width: 700px) {
