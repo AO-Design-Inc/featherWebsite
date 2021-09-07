@@ -39,7 +39,7 @@
   <!-- Generated components -->
   <script src="work-container.js"></script>
   {{#page}}
-  <script src="case-studies/{{filename}}.js"></script>
+  <script src="case-studies/{{filename}}.js" defer></script>
   {{/page}}
 
   <!-- Non-generated components -->
@@ -51,8 +51,6 @@
   {{#page}}
   <link rel="prefetch" href="case-studies/assets/thumbnails/{{splash.splashImage.name}}.webp">
   {{/page}}
-
-  <link rel="preload" href="icons/feather.webp">
 
   <script defer data-domain="feather.systems" src="https://plausible.io/js/plausible.js"></script>
 

@@ -124,7 +124,6 @@ var featherAngle;
 // draws feather image
 function drawFeather(){
 
-    console.log("drawing feather");
     featherCtx.save();
 
     canvasHeight = featherCanvas.height;
