@@ -47,6 +47,13 @@
   <script src="components/downButton.js"></script>
   <script src="components/featherButton.js"></script>
 
+  <!-- Prefetch large splash images -->
+  {{#page}}
+  <link rel="prefetch" href="case-studies/assets/thumbnails/{{splash.splashImage.name}}.webp">
+  {{/page}}
+
+  <link rel="preload" href="icons/feather.webp">
+
   <script defer data-domain="feather.systems" src="https://plausible.io/js/plausible.js"></script>
 
   <meta name="msapplication-TileColor" content="#da532c" />
