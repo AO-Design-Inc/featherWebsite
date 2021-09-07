@@ -71,15 +71,16 @@
 
         overflow: hidden;
 
-        @media (min-width: 800px) {
+        @media (min-width: 1000px) {
           width: 41.7vw;
           max-width: 720px;
-          height: 394px;
+          height: 27.38vw;
+          max-height: 473px;
         }
 
-        @media (max-width: 800px) {
-          width: 80vw;
-          height: 60vw;
+        @media (max-width: 1000px) {
+          width: 83.4vw;
+          height: 54.7vw;
         }
 
         border-radius: 20px;
