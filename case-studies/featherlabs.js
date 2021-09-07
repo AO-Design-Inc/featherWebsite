@@ -139,7 +139,7 @@ let featherlabsString = `
                 style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.8) 100%), 
                     url('./case-studies/assets/thumbnails/cover.png.webp');">
             <div class="next-study-container">
-                <h3>NEXT CASE STUDY</h3>
+                <h4>NEXT CASE STUDY</h4>
 
                 <div class="next-study-content">
                     <p class="splash-year">2021</p>
