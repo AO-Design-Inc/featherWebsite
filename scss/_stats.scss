@@ -11,18 +11,24 @@
   @media (max-width: 700px) {
     width: 75%;
   }
+  @media (min-width: 1280px) {
+    margin-bottom: 115px;
+  }
   @media (min-width: 450px) {
     position: sticky;
     position: -webkit-sticky;
     top: 14vh;
-    height: 20vh;
-    min-height: 700px;
+    height: 550px;
     box-sizing: border-box;
     z-index: -1;
   }
   @media (max-width: 1280px) {
     height: auto;
     min-height: auto;
+  }
+
+  h2 {
+    margin-top:0;
   }
 }
 @keyframes time {
@@ -87,6 +93,8 @@
     margin-top: 40px;
     background-color: #ffe3e6af;
     width: clamp(320px, 50vw, 570px);
+    height: 270px;
+    min-height: 270px;
     @media (max-width: 700px) {
       width: clamp(83vw, 50vw, 570px);
     }
