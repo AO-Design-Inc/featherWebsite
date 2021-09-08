@@ -5,9 +5,8 @@ var newSession = true;
 
 // if there is no hash, default to main hash
 if(window.location.hash == ""){
-    
-    window.location.hash = 'main';
     window.history.replaceState({}, '', '/#main');
+    window.location.hash = 'main';
 } else {
     onRouteChanged()
 }
