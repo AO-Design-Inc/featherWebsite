@@ -30,6 +30,7 @@ var downButtonString = `
 // smooth scrolls to the next page, provided to page id
 async function smoothScrollTo(page_id){
     document.getElementById(page_id).style.display='block'; 
+    document.getElementById(page_id).style.visibility='visible'; 
 
     var originalPosition = window.pageYOffset;
     var targetPosition = originalPosition + window.innerHeight;

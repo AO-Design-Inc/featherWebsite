@@ -2,13 +2,77 @@
 footer {
     background-color: $featherColorPink;
     height: auto;
-    min-height: 350px;
-    // width: 100vw;
+    padding: 10vh 0 8vh 0;
 
     display: grid;
     place-items: center;
     z-index: -2;
+
+    .footer {
+        margin: 0;
+    }
+
     #mail {
         color:white;
+
+        hr {
+            margin: 0;
+            border: none;
+            border-bottom: white 2px solid;
+        }
+
+        #footer-end {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            margin: 20px 0;
+
+            p {
+                margin: 0;
+                font-size: $fontMini;
+                @media (max-width: 800px){
+                    display: none;
+                }
+            }
+
+            #social-links {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                //justify-content: space-between;
+
+                @media (max-width: 800px){
+                    //margin: 0 auto;
+                }
+
+                @media (min-width: 800px){
+                    margin: 0;
+                }
+                
+                padding: 0;
+
+                a {
+                    font-size: 42px;
+                    line-height: 0;
+                }
+
+                svg {
+                    
+                    @media (min-width: 800px){
+                        height: 25px;
+                        width: 25px;
+                        margin-left: 15px;
+                    }
+
+                    @media (max-width: 800px){
+                        height: 42px;
+                        width: 42px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
     }
 }

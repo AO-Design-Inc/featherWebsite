@@ -5,17 +5,15 @@ var newSession = true;
 
 // if there is no hash, default to main hash
 if(window.location.hash == ""){
-    currPage = 'main';
     
-    window.history.replaceState({}, "", '/#main');
-    window.location.hash = currPage;
+    window.location.hash = 'main';
+    window.history.replaceState({}, '', '/#main');
 } else {
     onRouteChanged()
 }
 
 // relies on the page ids matching up to the hash
 function onRouteChanged() {
-
     // parse hash list
     var hashList = window.location.hash.split('#');
     
@@ -25,6 +23,7 @@ function onRouteChanged() {
     // handles page change
     if (currPage != pageHash){
         for (page of pages) {
+            console.log(page);
             page.style.visibility = (page.id == pageHash ? "visible" : "hidden");
             page.style.display = (page.id == pageHash ? "block" : "none");
         }
