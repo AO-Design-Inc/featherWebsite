@@ -23,7 +23,7 @@ featherCanvas.style.transition = '0.2s cubic-bezier(0.65, 0, 0.35, 1)'
 
 // particles array
 particles = [];
-amount = 20; // number of particles
+amount = 10; // number of particles
 
 // various breakpoints
 var firstScreencell = document.querySelector(".title");
