@@ -87,6 +87,8 @@ const resizeCanvases = () => {
 
   if (Math.abs(currHeight - tempHeight) > 100)
       featherCanvas.height = tempHeight;
+
+  featherCanvas.style.opacity = (window.innerWidth < 800 ? 0.65 : 1);
 }
 
 var circlePosition;
@@ -184,7 +186,6 @@ window.addEventListener("scroll", ()=>{
   if (window.scrollY + window.innerHeight < featherBreakpoint || window.scrollY + window.innerHeight > duoBottom) {
     drawCircles();
     drawFeather();
-
 
     featherCanvas.style.opacity = (window.innerWidth < 800 ? 0.65 : 1);
   } else { 
