@@ -1,1 +1,0 @@
-for thumbnails and splash images
