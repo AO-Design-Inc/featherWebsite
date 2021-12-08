@@ -1,0 +1,36 @@
+$g: 0.3472222222222222vw;
+$gh: calc(500 / 900) * 1vh;
+$viewport: get-vw(5px);
+@function lerp($min, $minv, $max, $maxv) {
+  $m: calc(($maxv - $minv) / ($max - $min));
+  $b: $maxv - ($m * $max);
+  @return calc(#{$m * 100}vw + #{$b}px);
+}
+@function lerper($min, $max, $f) {
+  $s: $max - $min;
+  @return $s * $f + $min;
+}
+
+
+
+$max-breakpoint: 1440;
+
+// This could be one of your media query breakpoint variables
+$wide-screen: "(min-width: #{$max-breakpoint}px)"; 
+// Function
+@function get-vw($target) {
+  // 1 vw is equal to 1% of the viewport width
+  $vw-context: ($max-breakpoint * .01) * 1px; // 1% viewport width
+  @return calc($target/$vw-context) * 1vw;
+}
+// Mixin
+@mixin vw($size) {
+  font-size: get-vw($size);
+  // Prevent font-size from getting too big
+  @media #{$wide-screen} {
+    font-size: $size;
+  }
+}
+// function lerp(min, max, fraction) {
+//   return (max — min) * fraction + min;
+// }

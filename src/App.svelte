@@ -1,28 +1,39 @@
 <script>
   import Dash from "./dash.svelte";
   import Splash from "./splash.svelte";
+  import Tutorial from "./tutorial.svelte";
+  import Features from "./features.svelte";
+  import Footer from "./footer.svelte";
 </script>
 
 <main>
   <Dash />
-  <div style="height: calc(13 * var(--g));" />
+  <div class="spacer one" />
   <Splash />
+  <div class="spacer two" />
+  <Tutorial />
+  <div class="spacer two" />
+  <Features />
+  <div class="spacer two" />
+  <Footer />
 </main>
 
-<style>
-  :root {
-    --g: 0.3472222222222222vw;
-  }
+<style lang="scss">
+  @import "./vars";
   main {
-    padding-left: calc(20 * var(--g));
-    padding-right: calc(20 * var(--g));
-    width: calc(248 * var(--g));
-    height: calc(558 * var(--g));
+    padding-left: calc(20 * $g);
+    padding-right: calc(20 * $g);
+    width: calc(248 * $g);
+    min-height: calc(558 * $g);
     margin: 0px;
   }
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
+
+  .spacer.one {
+    min-height: 65px;
+    height: get-vw(65px);
+  }
+  .spacer.two {
+    min-height: 190px;
+    height: get-vw(190px)
   }
 </style>

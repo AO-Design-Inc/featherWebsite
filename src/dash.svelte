@@ -1,39 +1,55 @@
-<main>
+<main class="d">
   <div id="logo">
     <img src="./assets/logo.svg" alt="Feather Logo" />
   </div>
-  <div style="width: calc(155 * var(--g))" />
+  <div class=" spacer one" />
   <div class="link">About us</div>
   <div class="link">Blog</div>
-  <div style="width: calc(3 * var(--g))" />
+  <div class="spacer two" />
   <button> Get Feather </button>
 </main>
 
-<style>
+<style lang="scss">
+  @import "./vars";
   main {
     display: flex;
     align-items: center;
-    height: calc(15 * var(--g));
+    min-height: 75px;
+    max-height: calc(75/5) * $g;
     position: relative;
   }
   #logo img {
-    width: calc(10 * var(--g));
-    height: calc(10 * var(--g));
+    /* width: calc(10 * var(--g)); */
+    /* height: calc(10 * var(--g)); */
     display: grid;
     place-items: center;
   }
   .link {
-    width: calc(24.6 * var(--g));
+    width: 24.6 * $g;
     text-align: center;
+  }
+  @media (max-width: 640px) {
+    .link {
+      opacity: 0;
+    }
   }
   button {
     color: #fffffb;
     margin: 0px;
-    width: calc(36 * var(--g));
-    height: calc(9 * var(--g));
+    width: 36 * $g;
+    height: 45px;
     box-shadow: none;
     border: none;
     background: #fb7680;
-    border-radius: calc(2 * var(--g));
+    border-radius: 2 * $g;
+    display: grid;
+    place-items: center;
+  }
+
+  .spacer.one {
+    width: 155 * $g
+  }
+  .spacer.two {
+    width: 3 * $g
   }
 </style>

@@ -3,6 +3,8 @@
 html,
 body {
   position: relative;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -10,7 +12,7 @@ body {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-weight: 300;
-  font-size: 1.11vw;
+  font-size: 1em;
   color: #fffffb;
   background: #11131c;
 }
