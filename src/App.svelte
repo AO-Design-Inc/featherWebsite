@@ -15,8 +15,8 @@
   <div class="spacer two" />
   <Features />
   <div class="spacer two" />
-  <Footer />
 </main>
+<Footer />
 
 <style lang="scss">
   @import "./vars";
@@ -24,7 +24,8 @@
     padding-left: calc(20 * $g);
     padding-right: calc(20 * $g);
     width: calc(248 * $g);
-    min-height: calc(558 * $g);
+    // min-height: calc(558 * $g);
+    height: auto;
     margin: 0px;
   }
 

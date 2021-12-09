@@ -17,13 +17,13 @@
   #ft_main {
     width: 100%;
     height: get-vw(870px);
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $bp) {
       height: auto;
       @include vw((4 * 410px) + (3 * 50px));
     }
     .container {
       display: flex;
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: $bp) {
         display: block;
         height: auto;
       }
@@ -31,7 +31,8 @@
         height: get-vw(410px);
         aspect-ratio: 595 / 410;
         background: cornflowerblue;
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: $bp) {
+          aspect-ratio: 4 / 5;
           height: auto;
           width: 100%;
         }
@@ -40,7 +41,7 @@
 
     .spacer.one {
       width: get-vw(50px);
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: $bp) {
         width: auto;
         height: 50px;
         @include vw(50px);
@@ -48,7 +49,7 @@
     }
     .spacer.two {
       height: get-vw(50px);
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: $bp) {
         width: auto;
         height: 50px;
         @include vw(50px);

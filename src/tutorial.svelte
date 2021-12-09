@@ -14,7 +14,7 @@
 
         display: flex;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: $bp) {
             display: block;
             height: auto;
             @include vw((3 * 470px) + (2 * 50px));
@@ -24,14 +24,14 @@
             background: cornflowerblue;
             height: 100%;
             width: get-vw(380px);
-            @media screen and (max-width: 1000px) {
+            @media screen and (max-width: $bp) {
                 height: auto;
                 width: 100%;
             }
         }
         .spacer.one {
             width: get-vw(50px);
-            @media screen and (max-width: 1000px) {
+            @media screen and (max-width: $bp) {
                 width: 0px;
                 height: 50px;
                 @include vw(50px);

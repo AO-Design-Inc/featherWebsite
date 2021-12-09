@@ -28,7 +28,7 @@
     width: 24.6 * $g;
     text-align: center;
   }
-  @media (max-width: 640px) {
+  @media (max-width: $bp) {
     .link {
       opacity: 0;
     }
@@ -44,6 +44,9 @@
     border-radius: 2 * $g;
     display: grid;
     place-items: center;
+    @media screen and (max-width: $bp) {
+      width: 180px
+    }
   }
 
   .spacer.one {
