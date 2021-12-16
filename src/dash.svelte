@@ -11,6 +11,7 @@
 
 <style lang="scss">
   @import "./vars";
+  $bpDash: 850px;
   main {
     aspect-ratio: 288 / 17;
     display: flex;
@@ -22,14 +23,18 @@
   #logo img {
     /* width: calc(10 * var(--g)); */
     /* height: calc(10 * var(--g)); */
+    aspect-ratio: 1 / 1;
+    width: get-vw(50px);
+    min-width: 50px;
     display: grid;
     place-items: center;
   }
   .link {
     width: 24.6 * $g;
     text-align: center;
+    font-size: max(get-vw(16px), 16px);
   }
-  @media (max-width: $bp) {
+  @media (max-width: $bpDash) {
     .link {
       opacity: 0;
     }
@@ -38,7 +43,7 @@
     color: #fffffb;
     margin: 0px;
     width: 36 * $g;
-    height: get-ve(45px);
+    height: get-vw(45px);
     box-shadow: none;
     border: none;
     background: #fb7680;
@@ -49,7 +54,7 @@
     min-height: 45px;
     font-size: max(get-vw(16px), 16px);
 
-    @media screen and (max-width: $bp) {
+    @media screen and (max-width: $bpDash) {
       width: 180px;
     }
   }

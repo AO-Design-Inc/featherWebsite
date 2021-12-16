@@ -30,8 +30,8 @@
   }
 
   .spacer.one {
-    min-height: 65px;
-    height: get-vw(65px);
+    min-height: 55px;
+    height: get-vw(55px);
   }
   .spacer.two {
     min-height: 190px;

@@ -22,6 +22,7 @@
 
 <style lang="scss">
   @import "./vars";
+  $bpBreak: 850px;
   #main {
     height: get-vw(450px);
     width: 100%;
@@ -40,7 +41,7 @@
   }
   #left {
     .spacer.two {
-      height: get-vw(55px);
+      height: get-vw(40px);
     }
     #bs {
       height: get-vw(385px);
@@ -66,7 +67,10 @@
       display: flex;
       button {
         min-height: 45px;
-        font-size: max(get-vw(16px), 16px);
+        font-size: max(get-vw(20px), 20px);
+        @media screen and (max-width: $bpBreak) {
+          font-size: max(get-vw(16px), 16px);
+        }
       }
       .primary {
         aspect-ratio: 35/11;
@@ -74,10 +78,11 @@
         @media screen and (max-width: $bp) {
           width: 175px;
         }
-        color: #fffffb;
+        color: hsla(355, 52%, 30%, 1);
+        font-weight: 400;
         box-shadow: none;
         border: none;
-        background: #fb7680;
+        background: hsla(0, 100%, 85%, 1);
         border-radius: get-vw(10px);
         display: grid;
         place-items: center;
