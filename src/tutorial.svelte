@@ -32,7 +32,6 @@
     @media screen and (max-width: $bp) {
       display: block;
       height: auto;
-      @include vw((3 * 470px) + (2 * 50px));
     }
     .tut {
       aspect-ratio: 38 / 47;
