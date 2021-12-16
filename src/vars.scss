@@ -3,18 +3,6 @@ $gh: calc(500 / 900) * 1vh;
 $viewport: get-vw(5px);
 $bp: 810px;
 
-@function lerp($min, $minv, $max, $maxv) {
-  $m: calc(($maxv - $minv) / ($max - $min));
-  $b: $maxv - ($m * $max);
-  @return calc(#{$m * 100}vw + #{$b}px);
-}
-@function lerper($min, $max, $f) {
-  $s: $max - $min;
-  @return $s * $f + $min;
-}
-
-
-
 $max-breakpoint: 1440;
 
 // This could be one of your media query breakpoint variables
@@ -33,6 +21,3 @@ $wide-screen: "(min-width: #{$max-breakpoint}px)";
     font-size: $size;
   }
 }
-// function lerp(min, max, fraction) {
-//   return (max — min) * fraction + min;
-// }

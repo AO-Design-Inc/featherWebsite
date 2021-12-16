@@ -40,7 +40,7 @@
   }
   #left {
     .spacer.two {
-      height: get-vw(65px);
+      height: get-vw(55px);
     }
     #bs {
       height: get-vw(385px);
@@ -64,18 +64,21 @@
     }
     #button-container {
       display: flex;
+      button {
+        min-height: 45px;
+        font-size: max(get-vw(16px), 16px);
+      }
       .primary {
-        height: get-vw(55px);
+        aspect-ratio: 35/11;
         width: get-vw(175px);
         @media screen and (max-width: $bp) {
           width: 175px;
         }
         color: #fffffb;
-        height: 45px;
         box-shadow: none;
         border: none;
         background: #fb7680;
-        border-radius: 10px;
+        border-radius: get-vw(10px);
         display: grid;
         place-items: center;
       }
@@ -83,18 +86,17 @@
         width: get-vw(15px);
       }
       .secondary {
-        height: get-vw(55px);
+        aspect-ratio: 42/11;
         width: get-vw(210px);
         @media screen and (max-width: $bp) {
           width: 200px;
         }
 
         color: #fffffb;
-        height: 45px;
         box-shadow: none;
         border: 1px solid #ffdede;
         background: #fb768100;
-        border-radius: 10px;
+        border-radius: get-vw(10px);
         display: grid;
         place-items: center;
 

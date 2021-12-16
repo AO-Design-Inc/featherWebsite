@@ -35,6 +35,6 @@
   }
   .spacer.two {
     min-height: 190px;
-    height: get-vw(190px)
+    height: get-vw(190px);
   }
 </style>

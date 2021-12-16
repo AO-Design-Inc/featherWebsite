@@ -12,10 +12,11 @@
 <style lang="scss">
   @import "./vars";
   main {
+    aspect-ratio: 288 / 17;
     display: flex;
     align-items: center;
-    min-height: 75px;
-    max-height: calc(75/5) * $g;
+    width: 100%;
+    min-height: 85px;
     position: relative;
   }
   #logo img {
@@ -37,22 +38,26 @@
     color: #fffffb;
     margin: 0px;
     width: 36 * $g;
-    height: 45px;
+    height: get-ve(45px);
     box-shadow: none;
     border: none;
     background: #fb7680;
     border-radius: 2 * $g;
     display: grid;
     place-items: center;
+
+    min-height: 45px;
+    font-size: max(get-vw(16px), 16px);
+
     @media screen and (max-width: $bp) {
-      width: 180px
+      width: 180px;
     }
   }
 
   .spacer.one {
-    width: 155 * $g
+    width: 155 * $g;
   }
   .spacer.two {
-    width: 3 * $g
+    width: 3 * $g;
   }
 </style>
