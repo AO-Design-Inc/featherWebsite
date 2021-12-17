@@ -67,7 +67,7 @@
       display: flex;
       button {
         min-height: 45px;
-        font-size: max(get-vw(20px), 20px);
+        font-size: get-vw(20px);
         @media screen and (max-width: $bpBreak) {
           font-size: max(get-vw(16px), 16px);
         }
@@ -111,7 +111,7 @@
         #small {
           display: none;
         }
-        @media screen and (min-width: $bp) and (max-width: 1000px) {
+        @media screen and (min-width: $bp) and (max-width: 1050px) {
           #big {
             display: none;
           }
