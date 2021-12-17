@@ -65,6 +65,9 @@
 
     .spacer-gutter {
       padding: get-vw(80px) get-vw(130px) get-vw(70px) get-vw(130px);
+      @media screen and (max-width: $bp) {
+        padding: 60px get-vw(130px) 80px get-vw(130px);
+      }
     }
     .top-container {
       display: flex;
@@ -152,7 +155,7 @@
           aspect-ratio: 1 / 1;
           height: get-vw(30px);
           @media screen and (max-width: $bp) {
-            height: max(get-vw(30px),30px);
+            height: max(get-vw(30px), 30px);
           }
         }
       }
