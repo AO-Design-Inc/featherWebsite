@@ -16,7 +16,7 @@
     aspect-ratio: 288 / 17;
     display: flex;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     min-height: 85px;
     position: relative;
   }
@@ -55,7 +55,7 @@
     font-size: max(get-vw(16px), 16px);
 
     @media screen and (max-width: $bpDash) {
-      width: 180px;
+      width: get-vw(180px*6);
     }
   }
 

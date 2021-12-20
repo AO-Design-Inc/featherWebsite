@@ -42,11 +42,15 @@
   #left {
     .spacer.two {
       height: get-vw(40px);
+      @media screen and (max-width: $bp){
+        height: get-vw(40px);
+      }
     }
     #bs {
       height: get-vw(385px);
       @media screen and (max-width: $bp) {
-        height: 385px;
+        height: auto;
+        width: 100%;
       }
     }
     #title {
@@ -59,14 +63,18 @@
       width: get-vw(400px);
       height: get-vw(210px);
       @media screen and (max-width: $bp) {
-        width: 90%;
-        height: 190px;
+        width: 100%;
+        height: auto;
+        font-size: 65px;
+        padding-bottom: 20px;
+        // font-size: get-vw(280px);
       }
     }
     #button-container {
       display: flex;
       button {
         min-height: 45px;
+        max-height: 55px;
         font-size: get-vw(20px);
         @media screen and (max-width: $bpBreak) {
           font-size: max(get-vw(16px), 16px);
@@ -76,7 +84,7 @@
         aspect-ratio: 35/11;
         width: get-vw(175px);
         @media screen and (max-width: $bp) {
-          width: 175px;
+          width: 49%;
         }
         color: hsla(355, 52%, 30%, 1);
         font-weight: 400;
@@ -94,7 +102,7 @@
         aspect-ratio: 42/11;
         width: get-vw(210px);
         @media screen and (max-width: $bp) {
-          width: 200px;
+          width: 49%;
         }
 
         color: #fffffb;
@@ -120,19 +128,26 @@
           }
         }
       }
+      @media screen and (max-width: $bp) {
+        padding-bottom: 50px;
+      }
+    }
+    @media screen and (max-width: $bp){
+      width: 100%;
     }
   }
   #left #blurb {
     width: get-vw(400px);
     height: get-vw(80px);
     @media screen and (max-width: $bp) {
-      width: 90%;
-      height: 80px;
+      width: 100%;
+      height: auto;
+      padding-bottom: 20px;
     }
     font-family: Inter;
     font-size: get-vw(26px);
     @media screen and (max-width: $bp) {
-      font-size: 26px;
+      font-size: 20px;
     }
     font-style: normal;
     font-weight: 400;
