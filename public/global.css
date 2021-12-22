@@ -26,6 +26,13 @@ a {
   color: #fffffb;
   text-decoration: none;
 }
+body.lightmode a {
+  color: #11131c;
+}
+body.lightmode a:hover {
+  color: #FB7680;
+  text-decoration: none;
+}
 
 a:hover {
   color: #FB7680;

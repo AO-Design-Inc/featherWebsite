@@ -12,12 +12,13 @@
     print 'indent 4 spaces'
   `;
   export const post_struct = {
-      category: 'UX',
+      category: 'Post',
       date: '12th December 2021',
-      title: 'Example Post',
+      title: 'Example Post Comp',
       summary: `
         This is an example post to guide you in making your own posts in the future!
-      `
+      `,
+      thumbnail: './assets/twitter.svg',
   }
 </script>
 
