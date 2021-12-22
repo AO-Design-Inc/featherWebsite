@@ -1,10 +1,12 @@
 <main class="d">
-  <div id="logo">
-    <img src="./assets/logo.svg" alt="Feather Logo" />
-  </div>
+  <a href="#/">
+    <div id="logo">
+      <img src="./assets/logo.svg" alt="Feather Logo" />
+    </div>
+  </a>
   <div class=" spacer one" />
-  <div class="link">About us</div>
-  <div class="link">Blog</div>
+  <a href="#/about" class="link">About us</a>
+  <a href="#/blog" class="link">Blog</a>
   <div class="spacer two" />
   <button> Get Feather </button>
 </main>
@@ -55,7 +57,7 @@
     font-size: max(get-vw(16px), 16px);
 
     @media screen and (max-width: $bpDash) {
-      width: get-vw(180px*6);
+      width: get-vw(180px * 6);
     }
   }
 
