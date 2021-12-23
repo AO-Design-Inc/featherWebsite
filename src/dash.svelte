@@ -1,3 +1,7 @@
+<script>
+  import Form from "./form.svelte";
+</script>
+
 <main class="d">
   <a href="#/">
     <div id="logo">
@@ -5,15 +9,23 @@
     </div>
   </a>
   <div class=" spacer one" />
-  <a href="#/about" class="link">About us</a>
-  <a href="#/blog" class="link">Blog</a>
+  <div class="link" />
+  <div class="link" />
+  <!-- <a href="#/blog" class="link">Blog</a> -->
+  <div class="form-container">
+    <Form />
+  </div>
   <div class="spacer two" />
-  <button> Get Feather </button>
+  <!-- <button> Get Feather </button> -->
 </main>
 
 <style lang="scss">
   @import "./vars";
   $bpDash: 850px;
+  .form-container {
+    min-width: 350px;
+    width: get-vw(450px);
+  }
   main {
     aspect-ratio: 288 / 17;
     display: flex;
@@ -41,26 +53,6 @@
       opacity: 0;
     }
   }
-  button {
-    color: #fffffb;
-    margin: 0px;
-    width: 36 * $g;
-    height: get-vw(45px);
-    box-shadow: none;
-    border: none;
-    background: #fb7680;
-    border-radius: 2 * $g;
-    display: grid;
-    place-items: center;
-
-    min-height: 45px;
-    font-size: max(get-vw(16px), 16px);
-
-    @media screen and (max-width: $bpDash) {
-      width: get-vw(180px * 6);
-    }
-  }
-
   .spacer.one {
     width: 155 * $g;
   }

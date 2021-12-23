@@ -1,3 +1,7 @@
+<script>
+  import Gallery from "./image-gallery.svelte";
+</script>
+
 <div id="main" class="d">
   <div id="left">
     <div id="bs">
@@ -12,12 +16,14 @@
           <div id="small">Docs</div>
         </button>
         <div class="spacer three" />
-        <button class="primary download">Download</button>
+        <button class="primary download">Read 👇🏽</button>
       </div>
     </div>
   </div>
   <div class="spacer one" />
-  <div id="right" />
+  <div id="right">
+    <Gallery />
+  </div>
 </div>
 
 <style lang="scss">
@@ -73,11 +79,12 @@
     #button-container {
       display: flex;
       button {
-        min-height: 45px;
-        max-height: 55px;
+        height: get-vw(55px);
+        // min-height: 55px;
         font-size: get-vw(20px);
         @media screen and (max-width: $bpBreak) {
           font-size: max(get-vw(16px), 16px);
+          min-height: 55px;
         }
       }
       .primary {
@@ -166,6 +173,7 @@
     );
     border-radius: 10px;
     height: 100%;
+    position: relative;
     aspect-ratio: 16 / 9;
     @media screen and (max-width: $bp) {
       aspect-ratio: 4 / 5;

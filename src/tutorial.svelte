@@ -1,3 +1,7 @@
+<script>
+  import Form from "./form.svelte";
+</script>
+
 <div id="t_main" class="d">
   <div class="d tut one">
     <div class="spacer gutter">
@@ -13,7 +17,7 @@
         Download & install Feather on all the devices you want to connect.
       </div>
     </div>
-    <button>Download Feather</button>
+    <Form />
   </div>
   <div class="spacer one" />
   <div class="tut two">

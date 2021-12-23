@@ -24,6 +24,7 @@
     "markdown-wasm": "^1.2.0",
     "micromark": "^3.0.10",
     "sirv-cli": "^1.0.0",
+    "svelte-routing": "^1.6.0",
     "svelte-spa-router": "^3.2.0"
   }
 }

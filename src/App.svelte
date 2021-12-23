@@ -3,10 +3,8 @@
   import Dash from "./dash.svelte";
   import Footer from "./footer.svelte";
   import Home from "./home.svelte";
-  import About from "./about.svelte";
-  import Blog from "./blog/blog.svelte";
-  import Post from "./blog/posts/post.svelte";
-  
+  import Blog from "./blog/blog.svelte"
+import Post from "./blog/posts/post.svelte";
 </script>
 
 <main>
@@ -15,12 +13,10 @@
 <Router
   routes={{
     "/": Home,
-    "/about": About,
     "/blog": Blog,
-    "/blog/mandel": Post
+    "/blog/post": Post,
   }}
-  />
-
+/>
 <Footer />
 
 <style lang="scss">
