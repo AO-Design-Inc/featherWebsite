@@ -65,6 +65,9 @@
       display: block;
       height: auto;
     }
+    @media screen and (min-width: 1240px) {
+      height: min(get-vw(470px),470px);
+    }
     .tut {
       position: relative;
       aspect-ratio: 38 / 47;

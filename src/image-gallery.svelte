@@ -11,28 +11,28 @@
   let index = 0;
   setInterval(() => {
     index++;
-    if (index >= 2) index = 0;
+    if (index >= 3) index = 0;
   }, 3000);
 </script>
 
 <div class="image-gallery-main">
   {#if index === 0}
     <img
-      transition:fade={{ delay: 250, duration: 300, easing: quintOut }}
+      transition:fade={{ delay: 600, duration: 600, easing: quintOut }}
       class="image"
       src={image[0]}
       alt=""
     />
   {:else if index === 1}
     <img
-      transition:fade={{ delay: 250, duration: 300, easing: quintOut }}
+      transition:fade={{ delay: 600, duration: 600, easing: quintOut }}
       class="image"
       src={image[1]}
       alt=""
     />
   {:else}
     <img
-      transition:fade={{ delay: 250, duration: 300, easing: quintOut }}
+      transition:fade={{ delay: 600, duration: 600, easing: quintOut }}
       class="image"
       src={image[2]}
       alt=""
@@ -40,15 +40,19 @@
   {/if}
 </div>
 
-<style>
+<style lang="scss">
+  @import "./vars";
   .image {
     position: absolute;
     left: 0;
     right: 0;
-    margin-top: -100px;
     margin-left: auto;
     margin-right: auto;
-    aspect-ratio: 1 / 1;
-    height: 150%;
+    aspect-ratio: 63 / 44;
+    height: 100%;
+    @media screen and (max-width: $bp) {
+      height: auto;
+      width: 100%;
+    }
   }
 </style>

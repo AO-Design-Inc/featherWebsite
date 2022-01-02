@@ -22,7 +22,7 @@
   </div>
   <div class="spacer one" />
   <div id="right">
-    <Gallery />
+    <!-- <Gallery /> -->
   </div>
 </div>
 
@@ -37,6 +37,12 @@
       display: block;
       height: auto;
     }
+    max-width: 1240px;
+    @media screen and (min-width: 1240px) {
+      padding: 0px;
+      margin: 0px auto;
+      height: min(get-vw(450px), 450px);
+    }
   }
   #left {
     display: flex;
@@ -48,12 +54,18 @@
   #left {
     .spacer.two {
       height: get-vw(40px);
-      @media screen and (max-width: $bp){
+      @media screen and (max-width: $bp) {
         height: get-vw(40px);
+      }
+      @media screen and (min-width: 1240px) {
+        height: min(get-vw(40px), 40px);
       }
     }
     #bs {
       height: get-vw(385px);
+      @media screen and (min-width: 1240px) {
+        height: min(get-vw(385px), 385px);
+      }
       @media screen and (max-width: $bp) {
         height: auto;
         width: 100%;
@@ -63,6 +75,11 @@
       font-size: get-vw(90px);
       @media screen and (max-width: $bp) {
         font-size: 80px;
+      }
+      @media screen and (min-width: 1240px) {
+        font-size: min(get-vw(90px), 90px);
+        width: min(get-vw(400px), 400px);
+        height: min(get-vw(210px), 210px);
       }
       font-weight: normal;
       line-height: 101%;
@@ -86,6 +103,13 @@
           font-size: max(get-vw(16px), 16px);
           min-height: 55px;
         }
+        @media screen and (max-width: $bp) {
+          font-size: 138%;
+        }
+        @media screen and (min-width: 1240px) {
+          height: min(get-vw(55px), 55px);
+          font-size: min(get-vw(20px), 20px);
+        }
       }
       .primary {
         aspect-ratio: 35/11;
@@ -101,9 +125,16 @@
         border-radius: get-vw(10px);
         display: grid;
         place-items: center;
+        @media screen and (min-width: 1240px) {
+          width: min(get-vw(175px), 175px);
+          border-radius: min(get-vw(10px), 10px);
+        }
       }
       .spacer.three {
         width: get-vw(15px);
+        @media screen and (min-width: 1240px) {
+          width: min(get-vw(15px), 15px);
+        }
       }
       .secondary {
         aspect-ratio: 42/11;
@@ -111,7 +142,6 @@
         @media screen and (max-width: $bp) {
           width: 49%;
         }
-
         color: #fffffb;
         box-shadow: none;
         border: 1px solid #ffdede;
@@ -119,6 +149,10 @@
         border-radius: get-vw(10px);
         display: grid;
         place-items: center;
+        @media screen and (min-width: 1240px) {
+          width: min(get-vw(210px), 210px);
+          border-radius: min(get-vw(10px), 10px);
+        }
 
         #big {
           display: block;
@@ -139,7 +173,7 @@
         padding-bottom: 50px;
       }
     }
-    @media screen and (max-width: $bp){
+    @media screen and (max-width: $bp) {
       width: 100%;
     }
   }
@@ -164,6 +198,11 @@
 
     color: #fffffb;
     opacity: 0.6;
+    @media screen and (min-width: 1240px) {
+      width: min(get-vw(400px), 400px);
+      height: min(get-vw(80px), 80px);
+      font-size: min(get-vw(26px),26px);
+    }
   }
   #right {
     background: linear-gradient(
@@ -173,6 +212,7 @@
     );
     border-radius: 10px;
     height: 100%;
+    width: 100%;
     position: relative;
     aspect-ratio: 16 / 9;
     @media screen and (max-width: $bp) {
