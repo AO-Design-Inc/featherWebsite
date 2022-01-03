@@ -68,6 +68,12 @@
     @media screen and (max-width: $bp) {
       height: auto;
     }
+    @media screen and (min-width: 1240px) {
+      max-width: 1240px;
+      height: min(get-vw(870px), 870px);
+      padding: 0px;
+      margin: 0px auto;
+    }
     .container {
       display: flex;
       @media screen and (max-width: $bp) {
@@ -83,11 +89,18 @@
           height: auto;
           width: 100%;
         }
+        @media screen and (min-width: 1240px) {
+          height: min(get-vw(410px), 410px);
+        }
         border-radius: 10px;
         .space-gutter {
           padding: get-vw(30px) get-vw(50px) 30px get-vw(30px);
           @media screen and (max-width: $bp) {
             padding: 35px 30px;
+          }
+          @media screen and (min-width: 1240px) {
+            padding: min(get-vw(30px), 30px) min(get-vw(50px), 50px) 30px
+              min(get-vw(30px), 30px);
           }
         }
         .illus {
@@ -96,12 +109,18 @@
           @media screen and (max-width: $bp) {
             width: max(get-vw(55px), 55px);
           }
+          @media screen and (min-width: 1240px) {
+            width: min(get-vw(55px), 55px);
+          }
         }
         .spacer.one.feature {
           width: 100%;
           height: get-vw(25px);
           @media screen and (max-width: $bp) {
             height: max(get-vw(25px), 25px);
+          }
+          @media screen and (min-width: 1240px) {
+            height: min(get-vw(25px), 25px);
           }
         }
         .title {
@@ -116,14 +135,20 @@
             width: 100%;
           }
           line-height: 120%;
-
           color: #fffffb;
+          @media screen and (min-width: 1240px) {
+            width: min(get-vw(420px), 420px);
+            font-size: min(get-vw(37px), 37px);
+          }
         }
         .spacer.two.feature {
           width: 100%;
           height: get-vw(10px);
           @media screen and (max-width: $bp) {
             height: max(get-vw(10px), 20px);
+          }
+          @media screen and (min-width: 1240px) {
+            height: min(get-vw(10px), 10px);
           }
         }
         .des {
@@ -136,10 +161,11 @@
           }
           line-height: 150%;
           /* or 150% */
-
           color: #fffbfc;
-
           opacity: 0.75;
+          @media screen and (min-width: 1240px) {
+            font-size: min(get-vw(20px), 20px);
+          }
         }
       }
       .ft.one {
@@ -178,12 +204,18 @@
         width: auto;
         height: 50px;
       }
+      @media screen and (min-width: 1240px) {
+        width: min(get-vw(50px), 50px);
+      }
     }
     .spacer.two {
       height: get-vw(50px);
       @media screen and (max-width: $bp) {
         width: auto;
         height: 50px;
+      }
+      @media screen and (min-width: 1240px) {
+        height: min(get-vw(50px), 50px);
       }
     }
   }

@@ -25,6 +25,9 @@
   .form-container {
     min-width: 350px;
     width: get-vw(450px);
+    @media screen and (min-width: 1240px) {
+      width: min(get-vw(450px), 450px);
+    }
   }
   main {
     aspect-ratio: 288 / 17;
@@ -33,6 +36,11 @@
     max-width: 100%;
     min-height: 85px;
     position: relative;
+    @media screen and (min-width: 1240px) {
+      max-width: 1240px;
+      padding: 0px;
+      margin: 0px auto;
+    }
   }
   #logo img {
     /* width: calc(10 * var(--g)); */
@@ -42,11 +50,17 @@
     min-width: 50px;
     display: grid;
     place-items: center;
+    @media screen and (min-width: 1240px) {
+      width: min(get-vw(50px), 50px);
+    }
   }
   .link {
     width: 24.6 * $g;
     text-align: center;
     font-size: max(get-vw(16px), 16px);
+    @media screen and (min-width: 1240px) {
+      font-size: min(get-vw(16px), 16px);
+    }
   }
   @media (max-width: $bpDash) {
     .link {

@@ -62,11 +62,20 @@
       rgba(29, 32, 48, 0.25) 81.51%
     );
     border-radius: 10px 10px 0px 0px;
+    @media screen and (min-width: 1240px) {
+      height: min(get-vw(310px), 310px);
+    }
 
     .spacer-gutter {
       padding: get-vw(80px) get-vw(130px) get-vw(70px) get-vw(130px);
       @media screen and (max-width: $bp) {
         padding: 60px get-vw(130px) 80px get-vw(130px);
+      }
+      @media screen and (min-width: 1240px) {
+        padding: min(get-vw(80px), 80px) min(get-vw(130px), 130px)
+          min(get-vw(70px), 70px) min(get-vw(130px), 130px);
+        max-width: 1240px;
+        margin: 0px auto;
       }
     }
     .top-container {
@@ -79,6 +88,9 @@
         width: get-vw(190px);
         @media screen and (max-width: $bp) {
           width: max(get-vw(190px), 190px);
+        }
+        @media screen and (min-width: 1240px) {
+          width: min(get-vw(190px), 190px);
         }
       }
       .spacer.one.footer {
@@ -96,7 +108,11 @@
         border: none;
         background: hsla(0, 100%, 85%, 1);
         border-radius: get-vw(10px);
-
+        @media screen and (min-width: 1240px) {
+          width: min(get-vw(235px), 235px);
+          font-size: min(get-vw(16px), 16px);
+          border-radius: min(get-vw(10px), 10px);
+        }
         .text {
           display: block;
         }
@@ -124,6 +140,9 @@
       height: get-vw(40px);
       @media screen and (max-width: $bp) {
         height: max(get-vw(40px), 40px);
+      }
+      @media screen and (min-width: 1240px) {
+        height: min(get-vw(40px), 40px);
       }
     }
     .divider {
@@ -156,6 +175,9 @@
           height: get-vw(30px);
           @media screen and (max-width: $bp) {
             height: max(get-vw(30px), 30px);
+          }
+          @media screen and (min-width: 1240px) {
+            height: min(get-vw(30px), 30px);
           }
         }
       }

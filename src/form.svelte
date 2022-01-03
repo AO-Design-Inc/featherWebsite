@@ -35,9 +35,13 @@
       width: 100%;
       font-size: max(get-vw(16px), 16px);
 
-    //   margin-right: get-vw(80px);
+      //   margin-right: get-vw(80px);
       margin-bottom: 0;
       padding: 8px 16px;
+      @media screen and (min-width: 1240px) {
+        height: min(get-vw(45px), 45px);
+        font-size: min(get-vw(16px), 16px);
+      }
     }
     .email:focus-visible {
       background: #5f646d;
@@ -65,10 +69,15 @@
       @media screen and (max-width: $bpDash) {
         width: get-vw(100px);
       }
+      @media screen and (min-width: 1240px) {
+        width: min(get-vw(100px), 100px);
+        height: min(get-vw(45px), 45px);
+        font-size: min(get-vw(16px), 16px);
+      }
     }
     .sub {
-        transition: background 0.3s ease-in-out;
-        background: #f87c86;
+      transition: background 0.3s ease-in-out;
+      background: #f87c86;
     }
   }
 </style>
